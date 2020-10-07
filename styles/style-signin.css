@@ -219,6 +219,7 @@ textarea {
 
 .mid-box {
   display: flex;
+  flex: 1;
   width: 100%;
   justify-items: center;
   margin: 0px;
@@ -241,35 +242,8 @@ textarea {
   text-decoration: none;
 }
 
-.mid-box a:hover {
-  cursor: pointer;
-  color: #e1ad01;
-}
-
 .mid-box h4.active {
   text-decoration: underline;
-}
-
-.mid-box-1 {
-  flex: 1;
-  order: 1;
-  display: block;
-}
-
-.mid-box-2 {
-  flex: 1;
-  order: 2;
-}
-
-.mid-box-3 {
-  flex: 1;
-  order: 3;
-}
-
-.mid-box-4 {
-  flex: 1;
-  order: 4;
-  display: block;
 }
 
 /*footer*/
