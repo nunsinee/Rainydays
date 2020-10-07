@@ -7,7 +7,7 @@
     <meta name="description" content="Rainydays online shop homepage" />
     <meta name="keywords" content="rain jacket, rainydays brand," />
     <meta name="auther" content="Rainnydays" />
-    <link rel="stylesheet" href="./styles/style-signin.css" />
+    <link rel="stylesheet" href="./styles/style-formsignin.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
@@ -52,42 +52,41 @@
     <main class="container">
       <section class="main-box">
         <div class="main-box-1">
-          <h1>First time with us?</h1>
+          <h1>Welcome Back!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
             voluptas.
           </p>
-          <form action="action_page.php" method="get" target="blank">
-            <fieldset>
-              <legend>Your Details</legend>
-              <label for="username">Username</label>
+        </div>
+        <!--Form-->
+          <div class="main-box-form">
+
+          <form action="action_page.php" method="get">
+            
+              <label for="username"><h2>User name</h2></label>
               <input
                 type="text"
+                placeholder="Enter username"
                 id="username"
                 name="username"
-                class="form__input"
                 required
               />
-              <label for="password">Password</label>
+              <label for="password"><h2>Password</h2></label>
               <input
                 type="password"
+                placeholder="Enter password"
                 id="password"
                 name="password"
-                class="form__input"
                 required
               />
-              <input
-                type="submit"
-                id="submit"
-                name="password"
-                class="form__input"
-                required
-              />
-            </fieldset>
+              <button type="submit"> Sign In </button>
+              <label>
+                <input type="checkbox" name="remember" check="checked"/>Remember me
+              </label>
+             <br> <a href="forget_password.html"><p class="main-box-form-text-l">Forget your password?</p></a>  
+              <a href="sign_up.html"><p class="main-box-form-text-r">Sign Up</p></a> 
           </form>
-        </div>
-
-        <div class="main-box-2"></div>
+          </div>   
       </section>
       <section class="mid-container">
         <div class="mid-box">
@@ -107,6 +106,7 @@
             </h4>
           </a>
         </div>
+        </section>
       </section>
       <footer class="foot-container">
         <section class="foot-box">

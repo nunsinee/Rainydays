@@ -83,10 +83,10 @@ ul {
 }
 
 /* Input text for Seach Menu */
-input[type='text'],
+input[type='text'],input[type='password'],
 select,
 textarea {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2rem;
   text-align: center;
   width: 300px;
@@ -167,6 +167,7 @@ textarea {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   line-height: 2rem;
+  color: #0a3641;
   font-weight: bold;
 }
 .main-nav ul {
@@ -195,30 +196,13 @@ textarea {
 /* Main-Container */
 .main-container {
   display: flex;
-  background-image: url('./img/signin_bg_img.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 634px;
   justify-content: center;
   align-content: center;
   width: 100%;
-  padding: 50px;
+  padding: 0px 0px;
 }
 
-/*flexbox items*/
-.main-box {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-around;
-  padding: 100px;
-}
-.main-box-1 {
-  flex: 1;
-  order: 1;
-  max-width: 50%;
-  text-align: left;
-  display: block;
-}
+/*Form-Signin-layout*/
 
 /*feature*/
 

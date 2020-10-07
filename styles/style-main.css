@@ -83,7 +83,7 @@ ul {
 }
 
 /* Input text for Seach Menu */
-input[type='text'],
+.input[type='text'],
 select,
 textarea {
   font-size: 16px;
