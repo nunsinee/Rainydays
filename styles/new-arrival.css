@@ -420,6 +420,10 @@ ul {
     display: none;
   }
 
+  .new-title2 {
+    max-width: 70%;
+  }
+
   .main-content a {
     left: 10px;
     font-size: 0.8rem;
