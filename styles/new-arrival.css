@@ -417,13 +417,7 @@ ul {
   }
 
   .new-title {
-    font-size: 1.2rem;
-    position: relative;
-    top: 60px;
-  }
-
-  .new-subtitle {
-    margin-left: 5px;
+    display: none;
   }
 
   .main-content a {
