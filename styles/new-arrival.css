@@ -113,16 +113,16 @@ ul {
 /*............Main-content New Arrivals....................*/
 
 .new-title {
-  display: inline-box;
+  display: inline-flex;
+  float: right;
   max-width: 100%;
   font-size: 1.2rem;
   font-weight: bolder;
-  position: relative;
-  top: 65px;
-  left: 900px;
+  margin-top: 30px;
   color: #0a3641;
-  z-index: -2;
+  z-index: -1;
 }
+
 .new-title2 {
   display: inline-flex;
   float: right;
@@ -380,13 +380,13 @@ ul {
   }
 
   .main-nav ul.main-menu li {
-    padding: 8px;
+    padding: 0.8px;
     border-bottom: #ccc solid 1px;
     font-size: 1rem;
   }
 
   .main-nav ul.main-menu li:last-child {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   .main-nav ul.search-menu {
@@ -406,11 +406,6 @@ ul {
   .main-content p {
     font-size: 1rem;
   }
-
-  .new-title {
-    top: 65px;
-    left: 500px;
-  }
 }
 
 /* ## Device= Most of the smart phones Mobile (Portrait)
@@ -422,9 +417,13 @@ ul {
   }
 
   .new-title {
-    top: 65px;
-    left: 345px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    top: 60px;
+  }
+
+  .new-subtitle {
+    margin-left: 5px;
   }
 
   .main-content a {
