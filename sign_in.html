@@ -2,144 +2,122 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Rainydays- Rain jackets online shop | Welcome</title>
-    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <title>Sign Up- Rain jackets online shop </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="Rainydays online shop homepage" />
     <meta name="keywords" content="rain jacket, rainydays brand," />
     <meta name="auther" content="Rainnydays" />
-    <link rel="stylesheet" href="./styles/style-formsignin.css" />
+    <link rel="stylesheet" href="styles/signin.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
       integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
   </head>
   <body>
-    <header class="container">
+  <!--Hamburger Menu-->
+  <div class="menu-btn">
+    <i class="fa fa-bars fa-2x"></i>
+  </div>
+
+
+    <div class="container">
       <!--Nav-->
       <nav class="main-nav">
-        <img src="images/rainydays_logo.png" alt="Rainnydays" class="logo" />
+        <a href="index.html"><img src="images/rainydays_logo.png" alt="Rainydays" class="logo"></a>
         <ul class="main-menu">
-          <li><a href="about.html">About</a></li>
-          <li><a href="about.html">Contact</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="men.html">Men</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
         </ul>
-        <ul class="main-menu">
-          <form action="#" method="POST" class="search">
-            <input type="text" placeholder="Search by color,Product name" />
-            <button type="submit" class="btn-search">Search</button>
-          </form>
-        </ul>
+        <!--Search Menu-->
+        <ul class="search-menu"><li><form action="#" method="get" target="blank">
+          <input type="search" id="site-search" name="search" placeholder="Search by color, Product name.." />
+          <button type="submit"  name="submit" class="btn-search">Search</button>
+        </li></ul>
 
+         <!--RightMenu-->
         <ul class="right-menu">
-          <li><a href="sign_in.html" class="main-munu">Sign-In</a></li>
-          <li>
-            <a href="favourit.html"
-              ><i class="fas fa-heart fa-2x fa-color-nav"></i
-            ></a>
-          </li>
-          <li>
-            <a href="mycart.html"
-              ><i class="fas fa-shopping-cart fa-2x fa-color-nav"></i
-            ></a>
-          </li>
+        <!--<li><a href="search.html" ><i class="fas fa-search  fa-color-nav"></i></a></li>-->
+        <li><a href="favourit.html" ><i class="fas fa-heart  fa-color-nav"></i></a></li>
+        <li><a href="mycart.html"><i class="fas fa-shopping-cart  fa-color-nav"></i ></a></li>
         </ul>
       </nav>
-    </header>
-    <!-- Main Container -->
-    <main class="container">
-      <section class="main-box">
-        <div class="main-box-1">
-          <h1>Welcome Back!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            voluptas.
-          </p>
+    </div>
+
+<!--Main-Content-->
+<div class="container">
+   <section class="main-content">
+        <div class="main-content-1">
+            <h1>Welcome Back!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptas. </p> 
+            <!--Form-->
+              <form action="action_page.php" method="get">
+                  <label for="username">User name</label>
+                  <input type="text" placeholder="Enter username" id="username" name="username" required/>
+                  <label for="password">Password</label>
+                  <input type="password" placeholder="Enter password" id="password" name="password" required/>
+                  <button type="submit" class="sending-btn"> Sign In </button>
+                  <h6><input type="checkbox" name="remember" check="checked"/>Remember me</h6>
+                  <a href="forget_password.html"><p>Forget your password?</p></a>  
+                  <a href="sign_up.html"><h5>Sign Up</h5></a> 
+              </form>
         </div>
-        <!--Form-->
-          <div class="main-box-form">
+    </section>
+  </div>
 
-          <form action="action_page.php" method="get">
-            
-              <label for="username"><h2>User name</h2></label>
-              <input
-                type="text"
-                placeholder="Enter username"
-                id="username"
-                name="username"
-                required
-              />
-              <label for="password"><h2>Password</h2></label>
-              <input
-                type="password"
-                placeholder="Enter password"
-                id="password"
-                name="password"
-                required
-              />
-              <button type="submit"> Sign In </button>
-              <label>
-                <input type="checkbox" name="remember" check="checked"/>Remember me
-              </label>
-             <br> <a href="forget_password.html"><p class="main-box-form-text-l">Forget your password?</p></a>  
-              <a href="sign_up.html"><p class="main-box-form-text-r">Sign Up</p></a> 
-          </form>
-          </div>   
-      </section>
-      <section class="mid-container">
-        <div class="mid-box">
-          <a href="sign_up.html" class="mid-box-1">
-            <h4 class="active">First time with us?</h4>
-          </a>
-          <a href="sign_in.html" class="mid-box-2">
-            <h4>Repeat Buying>></h4>
-          </a>
-          <a href="contact.html" class="mid-box-3">
-            <h4><i class="fas fa-comments fa-color-mid"></i>Need Help</h4>
-          </a>
-          <a href="delivery.html" class="mid-box-4">
-            <h4>
-              <i class="fas fa-truck-moving fa-color-mid"></i>Delivery
-              Information
-            </h4>
-          </a>
+      <!--BarMenu-->
+  <div class="container">
+     <section class="barmenu">
+        <div class="barmenu-inner">
+          <ul><li><a href="sign_up.html" class="current">First time with us?</a></li></ul>
+          <ul><li><a href="sign_in.html" >Repeat Buying<i class= "fas fa-chevron-right"></i><i class= "fas fa-chevron-right"></i></a></li></ul>
+          <ul><li><a href="contact.html" ><i class="fas fa-comments fa-color-mid"></i>Need Help</a></li></ul>
+          <ul><li><a href="delivery.html"><i class="fas fa-truck-moving fa-color-mid"></i>Delivery Information</li></a></ul>
+        </ul>
         </div>
-        </section>
-      </section>
-      <footer class="foot-container">
-        <section class="foot-box">
-          <div class="foot-box-1">
-            <h5>HELP & INFO</h5>
+    </section>    
+  </div>
+       
+  <!--Footer-->
+  <div class="container">
+      <footer class="footer">
+        <div class="footer-inner">
+            <ul>
+            <li><h5>HELP & INFO</h5></li>
+            <li><a href="contact.html">Help</a></li>
+            <li></li><a href="track_order.html">Track Order</a></li>
+          </ul>
 
-            <a href="contact.html">Help</a>
-            <a href="track.html">Track Order</a>
-          </div>
+          <ul>
+            <li><h5>RAINYDAYS</h5></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
 
-          <div class="foot-box-1">
-            <h5>RAINYDAYS</h5>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Track Order</a>
-          </div>
-          <div class="foot-box-1">
-            <h5>PAYMENT ACCEPTED BY</h5>
+          <ul>
+            <li><h5>PAYMENT ACCEPTED BY</h5></li>
             <i class="fab fa-cc-visa fa-2x fa-color"></i>
             <i class="fab fa-cc-mastercard fa-2x fa-color"></i>
             <i class="fab fa-cc-amex fa-2x fa-color"></i>
-            <i class="fab fa-cc-paypal fa-2x fa-color"></i>
-          </div>
-          <div class="foot-box-1">
-            <h5>SUBSCRIBE</h5>
-            <i class="fab fa-facebook-square fa-2x fa-color"></i>
-            <i class="fab fa-twitter-square fa-2x fa-color"></i>
-            <i class="fab fa-instagram-square fa-2x fa-color"></i>
-          </div>
-        </section>
-      </footer>
-      <div class="foot-container-copyright">
-        <p>Rainydays Copyright &copy;2020</p>
+            <i class="fab fa-cc-paypal fa-2x fa-color"></i></li>
+          </ul>
+
+          <ul>
+            <li><h5>FOLLOW US</h5></li>
+            <li><a href="https://www.facebook.com"></a> <i class="fab fa-facebook-square fa-2x fa-color"></i></a> 
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x fa-color"></i></a>
+           <a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x fa-color"></i></a></li>
+          </ul>
       </div>
-    </main>
-  </body>
+      <div class="footer-copyright">
+        Rainydays Copyright &copy;2020
+      </div>
+    </footer>
+  </div>
+    <script>
+      document.querySelector('.menu-btn').addEventListener ('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
+</body>
 </html>

@@ -164,27 +164,28 @@ ul {
 
 .main-content {
   max-width: 100%;
+  max-height: 100%;
   display: grid;
   margin: 0 auto;
   grid-gap: 20px;
-  grid-template-columns: 3fr 1fr 1fr;
-  background-image: url('./img/index_bg_img.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: column;
+  background-color: #e5e9ea;
   padding: 100px 50px 50px 50px;
   border: 1px solid #f4f8fa;
+  justify-content: space-between;
 }
 
+.main-content-1,
 .main-content-2,
 .main-content-3 {
-  padding-left: 50px;
+  max-width: 100%;
 }
 
 .main-content img {
-  max-width: 100%;
+  max-height: 250px;
   margin-bottom: 10px;
-  border-radius: 10%;
+  border-radius: 5px;
   border: 2px solid #909090;
   box-shadow: var(--shadow);
 }
@@ -200,69 +201,55 @@ ul {
   padding-bottom: 10px;
 }
 
-.main-content-1 p {
-  color: #000;
-  max-width: 100%;
-  margin-right: 60px;
-  text-align: left;
-}
-
 .main-content-2 p,
 .main-content-3 p {
   color: #000;
   max-width: 100%;
   text-align: left;
-  padding-right: 60px;
 }
 
-.main-content a {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: #000;
+.main-content-3 p {
   font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-.main-content a:hover {
-  cursor: pointer;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-/* New Arrival Button */
-.btn-new {
-  cursor: pointer;
-  display: inline-block;
+/* Form style for contact form */
+.main-content-3 input[type='text'],
+textarea,
+select {
+  font-size: 0.8rem;
+  max-width: 100%;
+  line-height: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-left: 20px;
   border: 1px solid #909090;
-  box-shadow: var(--shadow);
-  border-radius: 5px;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  color: #000;
-  background-color: #e1ad01;
-  text-align: center;
-  padding: 5px 10px;
-  margin-top: 50px;
+  padding-bottom: 10px;
+  text-align: justify;
 }
 
-.btn-new:hover {
-  cursor: pointer;
-  background-color: #000;
+.main-content-3 label::after {
+  content: '';
+  display: block;
+}
+
+.sending-btn {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
   color: #fff;
-}
-
-/* Button for men, for women */
-.btn-text {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center;
+  padding: 5px 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #025951;
+  border-radius: 4px;
 }
 
-.btn-text:hover {
+.sending-btn a:hover {
   cursor: pointer;
-  color: #025951;
+  color: #0a3641;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 /*............Bar Menu....................*/
@@ -401,7 +388,7 @@ ul {
   }
 
   .main-content {
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
