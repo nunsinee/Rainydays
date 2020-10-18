@@ -379,7 +379,7 @@ ul {
   }
 
   .main-nav ul.main-menu li {
-    padding: 10px;
+    padding: 8px;
     border-bottom: #ccc solid 1px;
     font-size: 1rem;
   }
@@ -413,8 +413,6 @@ ul {
 @media (max-width: 500px) {
   .main-content {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    grid-gap: 10px;
   }
 
   .main-content a {
