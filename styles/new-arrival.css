@@ -113,14 +113,15 @@ ul {
 /*............Main-content New Arrivals....................*/
 
 .new-title {
-  display: inline-flex;
-  float: right;
+  display: inline-box;
   max-width: 100%;
   font-size: 1.2rem;
   font-weight: bolder;
-  margin-top: 30px;
+  position: relative;
+  top: 65px;
+  left: 900px;
   color: #0a3641;
-  z-index: -1;
+  z-index: -2;
 }
 .new-title2 {
   display: inline-flex;
@@ -405,6 +406,11 @@ ul {
   .main-content p {
     font-size: 1rem;
   }
+
+  .new-title {
+    top: 65px;
+    left: 500px;
+  }
 }
 
 /* ## Device= Most of the smart phones Mobile (Portrait)
@@ -413,6 +419,12 @@ ul {
 @media (max-width: 500px) {
   .main-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new-title {
+    top: 65px;
+    left: 345px;
+    font-size: 1rem;
   }
 
   .main-content a {
