@@ -337,7 +337,6 @@ ul {
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding-left: 35px;
-  align-items: left;
   justify-content: center;
   color: #fff;
 }
@@ -357,8 +356,9 @@ ul {
 /* Media Queries for tablet and Large phone*/
 
 @media (max-width: 845px) {
-  .main-content {
-    grid-template-columns: repeat (2, 1fr);
+  .btn-text {
+    width: 95%;
+    font-size: 1.5rem;
   }
 }
 
