@@ -1,7 +1,6 @@
-/* Global Style including Desktop Vie
-## Screen =B/W 1025px to 1280px)*/
-
+/* Global Style including Desktop View for  ## Screen = max-width 1100px */
 /*Global Value*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,11 +8,14 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #fff;
   color: #000;
   font-size: 1rem;
   line-height: 1.5;
+  max-width: 1100px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 a {
@@ -26,9 +28,7 @@ ul {
 }
 
 .container {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 100%;
 }
 
 /*............Nav-Navigation....................*/
@@ -101,7 +101,7 @@ ul {
 .new-arrival {
   max-width: 100%;
   height: 500px;
-  background-image: url('./img/new-arrival-2020-large.jpg');
+  background-image: url("./img/new-arrival-2020-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -129,8 +129,10 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
-.main-nav ul.search-menu {
-  padding: 0px 80px 0px 0px;
+.search-menu {
+  padding: 0px 10px 60px 10px;
+  position: relative;
+  top: 60px;
 }
 
 /* Search top menu */
@@ -152,7 +154,7 @@ ul {
 }
 
 /* Input text for Seach Menu */
-.mid-menu input[type='search'] {
+.mid-menu input[type="search"] {
   font-size: 1.2rem;
   text-align: center;
   width: 100px;
@@ -170,13 +172,17 @@ ul {
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 2fr;
   flex-direction: column;
-  background-color: #e5e9ea;
+  background-image: url("./img/index_bg_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 100px 50px 50px 50px;
   border: 1px solid #f4f8fa;
   align-items: baseline;
   justify-content: space-between;
 }
 
+.main-content-1,
 .main-content-2 {
   margin-left: 20px;
 }
@@ -216,7 +222,7 @@ ul {
 }
 
 /* Form style for contact form */
-.main-content-3 input[type='text'],
+.main-content-3 input[type="text"],
 textarea,
 select {
   font-size: 0.8rem;
@@ -230,12 +236,12 @@ select {
 }
 
 .main-content-3 label::after {
-  content: '';
+  content: "";
   display: block;
 }
 
 .sending-btn {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1.2rem;
   color: #fff;
@@ -341,9 +347,30 @@ select {
   padding-right: 5px;
 }
 
-/* Media Queries for tablet and Large phone*/
+/* Media Queries for  ## Screen = max-width 845px */
 
-@media (max-width: 700px) {
+@media (max-width: 845px) {
+  .main-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-content-2 {
+    margin-left: 20px;
+  }
+  .main-content-1 img {
+    max-width: 90%;
+  }
+  .barmenu,
+  .main-content a,
+  .footer {
+    font-size: 1rem;
+    padding-top: 25px;
+  }
+  .barmenu {
+    padding: 25px 0;
+  }
+}
+/* Media Queries for  ## Screen = max-width 500px*/
+@media (max-width: 500px) {
   .menu-btn {
     display: block;
   }
@@ -385,34 +412,16 @@ select {
     border-bottom: 0;
   }
 
-  .main-nav ul.search-menu {
+  .search-menu {
     display: none;
   }
-
   .main-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
   }
 
   .main-content-3 {
-    margin-left: 0;
-  }
-
-  .main-content-1 img {
-    max-width: 70%;
-  }
-}
-
-/* ## Device= Most of the smart phones Mobile (Portrait)
-## Screen =B/W 320px to 479px)* */
-
-@media (max-width: 500px) {
-  .main-content {
-    grid-template-columns: 1fr;
-  }
-
-  .main-content-2 {
-    margin-left: 0;
-    margin-bottom: 2opx;
+    margin-left: 20px;
   }
 
   .barmenu-inner {
@@ -420,5 +429,6 @@ select {
   }
   .footer {
     font-size: 0.8rem;
+    padding-top: 15px;
   }
 }

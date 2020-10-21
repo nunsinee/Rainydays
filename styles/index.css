@@ -1,5 +1,4 @@
-/* Global Style including Desktop View
-## Screen =1100px*/
+/* Global Style including Desktop View for  ## Screen = max-width 1100px */
 
 /*Global Value*/
 * {
@@ -309,7 +308,7 @@ ul {
   background-color: #e5e9ea;
   color: #000;
   font-size: 1.2rem;
-  padding: 35px 0 0 0;
+  padding-top: 35px;
 }
 
 .footer-inner {
@@ -353,16 +352,21 @@ ul {
   padding-right: 5px;
 }
 
-/* Media Queries for tablet and Large phone*/
+/* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
-  .main-content a {
+  .barmenu,
+  .main-content a,
+  .footer {
     font-size: 1rem;
+    padding-top: 25px;
+  }
+  .barmenu {
+    padding: 25px 0;
   }
 }
 
-/* ## Device= Most of the smart phones Mobile (Portrait)
-## Screen =B/W 320px to 479px)* */
+/* Media Queries for  ## Screen = max-width 500px*/
 
 @media (max-width: 500px) {
   .menu-btn {
@@ -419,5 +423,6 @@ ul {
   }
   .footer {
     font-size: 0.8rem;
+    padding-top: 15px;
   }
 }

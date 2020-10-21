@@ -119,34 +119,32 @@ ul {
   max-height: 800px;
   display: grid;
   grid-gap: 20px;
+  margin: 0 auto;
   flex-direction: column;
   background-image: url(img/signin_bg_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 50px 50px 50px;
-  border: 1px solid #f4f8fa;
-  align-items: center;
-  align-self: center;
+  padding: 50px 50px 0 0;
 }
 
 .main-content-1 {
-  max-width: 50%;
+  max-width: 500px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr;
   background-color: #e5e9ea;
   border-radius: 5px;
   padding: 20px 10px;
-  margin: 50px 50px 100px 250px;
+  margin: 50px 50px 120px 250px;
   border: 1px solid #fff;
 }
 
 .main-content-1 p {
-  max-width: 100%;
   color: #000;
   text-align: left;
-  margin: 60px 0 30px 100px;
+  margin: 20px 0 30px 100px;
 }
 
 .main-content-1 a {
@@ -183,25 +181,23 @@ ul {
 }
 
 .main-content-1 h6 {
-  display: inline-block;
+  display: inline;
   max-width: 100%;
-  max-height: 20px;
   font-weight: normal;
   font-size: 1rem;
   position: relative;
-  top: 60px;
+  top: 50px;
   right: 200px;
   margin-bottom: 20px;
 }
 
 /* Form style for contact form */
 .main-content-1 input[type="text"],
-.main-content-1 input[type="password"],
-.main-content-1 input[type="email"] {
+.main-content-1 input[type="password"] {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  max-width: 100%;
+  max-width: 80%;
   background-color: #fff;
   border-radius: 4px;
   padding: 5px 20px;
@@ -210,7 +206,7 @@ ul {
 
 .main-content-1 label {
   display: inline;
-  max-width: 100%;
+  max-width: 80%;
   font-size: 1rem;
   font-weight: bold;
   padding: 20px 0 10px 0;
@@ -341,46 +337,8 @@ ul {
   .barmenu {
     padding: 25px 0;
   }
-
   .main-content-1 {
-    margin: 0 50px 0 180px;
-    align-self: center;
-  }
-
-  .main-content-1 p {
-    margin-left: 50px;
-    margin-top: 30px;
-  }
-
-  .main-content-1 h4 {
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 1rem;
-  }
-
-  .main-content-1 h5 {
-    left: 50px;
-    bottom: 20px;
-  }
-  .main-content-1 h6 {
-    position: relative;
-    top: 30px;
-    left: 50px;
-  }
-  .main-content-1 input[type="text"],
-  .main-content-1 input[type="password"],
-  .main-content-1 input[type="email"] {
-    max-width: 80%;
-    margin-left: 50px;
-  }
-
-  .main-content-1 label {
-    margin-left: 50px;
-  }
-
-  .sending-btn {
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 170px;
   }
 }
 
@@ -431,25 +389,21 @@ ul {
   .search-menu {
     display: none;
   }
-
+  .main-content-1 {
+    margin-left: 30px;
+    max-width: 80%;
+  }
   .barmenu-inner {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer {
     font-size: 0.8rem;
   }
-
   .main-content-1 {
-    margin: 0 20px 0 10px;
-    max-width: 350px;
-  }
-
-  .main-content-1 p {
-    margin-left: 50px;
-    margin-top: 30px;
+    border: 0px;
   }
   .main-content-1 h5 {
-    left: 50px;
-    bottom: 25px;
+    left: 100px;
+    bottom: 30px;
   }
 }

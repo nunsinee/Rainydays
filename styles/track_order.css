@@ -1,7 +1,10 @@
-/* Global Style including Desktop Vie
-## Screen =B/W 1025px to 1280px)*/
+/* Global Style including Desktop View for  ## Screen = max-width 1100px */
 
 /*Global Value*/
+:root {
+  --shadow: #909090;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,11 +12,13 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #fff;
   color: #000;
   font-size: 1rem;
   line-height: 1.5;
+  max-width: 1100px;
+  margin: auto;
 }
 
 a {
@@ -26,9 +31,7 @@ ul {
 }
 
 .container {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 100%;
 }
 
 /*............Nav-Navigation....................*/
@@ -100,8 +103,10 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
-.main-nav ul.search-menu {
-  padding: 0px 80px 0px 0px;
+.search-menu {
+  padding: 0px 10px 60px 10px;
+  position: relative;
+  top: 60px;
 }
 
 /* Search top menu */
@@ -126,8 +131,8 @@ ul {
 
 .main-content {
   max-width: 100%;
+  min-height: 600px;
   display: grid;
-  margin: 0 auto;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
   flex-direction: column;
@@ -168,7 +173,7 @@ ul {
 }
 
 /* Form style for tracking form */
-.main-content-1 input[type='text'] {
+.main-content-1 input[type="text"] {
   font-size: 1rem;
   max-height: 80px;
   border-radius: 4px;
@@ -179,12 +184,12 @@ ul {
 }
 
 .main-content-2 label::after {
-  content: '';
+  content: "";
   display: block;
 }
 
 .sending-btn {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1.2rem;
   color: #fff;
@@ -301,7 +306,7 @@ ul {
 }
 
 .footer-copyright {
-  width: 100%;
+  max-width: 100%;
   background-color: #0a3641;
   display: grid;
   grid-template-columns: 1fr;
@@ -324,9 +329,29 @@ ul {
   padding-right: 5px;
 }
 
-/* Media Queries for tablet and Large phone*/
+/* Media Queries for  ## Screen = max-width 845px */
 
-@media (max-width: 700px) {
+@media (max-width: 845px) {
+  .barmenu,
+  .footer {
+    font-size: 1rem;
+    padding-top: 25px;
+  }
+  .barmenu {
+    padding: 25px 0;
+  }
+  .main-content {
+    grid-template-columns: repeat (2, 1fr);
+  }
+  .main-content a {
+    left: 50px;
+    font-size: 1rem;
+    max-width: 70%;
+  }
+}
+/* Media Queries for  ## Screen = max-width 500px */
+
+@media (max-width: 500px) {
   .menu-btn {
     display: block;
   }
@@ -359,7 +384,7 @@ ul {
   }
 
   .main-nav ul.main-menu li {
-    padding: 10px;
+    padding: 8px;
     border-bottom: #ccc solid 1px;
     font-size: 1rem;
   }
@@ -368,42 +393,30 @@ ul {
     border-bottom: 0;
   }
 
-  .main-nav ul.search-menu {
+  .search-menu {
     display: none;
   }
 
   .main-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new-title {
+    display: none;
+  }
+
+  .main-content a {
+    left: 10px;
+    font-size: 0.8rem;
+  }
+
+  .main-content p {
+    text-align: left;
   }
 
   .main-content img {
-    display: none;
-  }
-}
-
-/* ## Device= Most of the smart phones Mobile (Portrait)
-## Screen =B/W 320px to 479px)* */
-
-@media (max-width: 500px) {
-  .main-content {
-    grid-template-columns: 1fr;
-  }
-
-  .main-content-1 {
     max-width: 90%;
-  }
-
-  .track-table {
-    max-width: 80%;
-  }
-
-  .track-btn {
-    max-width: 80%;
-    margin-left: 50px;
-  }
-
-  .main-content img {
-    display: none;
+    justify-content: space-between;
   }
 
   .barmenu-inner {

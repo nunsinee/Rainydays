@@ -1,7 +1,7 @@
-/* Global Style including Desktop Vie
-## Screen =B/W 1025px to 1280px)*/
+/* Global Style including Desktop View for  ## Screen = max-width 1100px */
 
 /*Global Value*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,11 +9,13 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #fff;
   color: #000;
   font-size: 1rem;
   line-height: 1.5;
+  max-width: 1100px;
+  margin: auto;
 }
 
 a {
@@ -27,8 +29,6 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1100px;
-  margin: auto;
 }
 
 /*............Nav-Navigation....................*/
@@ -79,8 +79,10 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
-.main-nav ul.search-menu {
-  padding: 0px 80px 0px 0px;
+.search-menu {
+  padding: 0px 10px 60px 10px;
+  position: relative;
+  top: 60px;
 }
 
 /* Search top menu */
@@ -102,7 +104,7 @@ ul {
 }
 
 /* Input text for Seach Menu */
-.mid-menu input[type='search'] {
+.mid-menu input[type="search"] {
   font-size: 1.2rem;
   text-align: center;
   width: 100px;
@@ -344,9 +346,30 @@ ul {
   padding-right: 5px;
 }
 
-/* Media Queries for tablet and Large phone*/
+/* Media Queries for  ## Screen = max-width 845px */
 
-@media (max-width: 700px) {
+@media (max-width: 845px) {
+  .barmenu,
+  .footer {
+    font-size: 1rem;
+    padding-top: 25px;
+  }
+  .barmenu {
+    padding: 25px 0;
+  }
+  .main-content {
+    grid-template-columns: repeat (2, 1fr);
+  }
+  .main-content a {
+    left: 50px;
+    font-size: 1rem;
+    max-width: 70%;
+  }
+}
+
+/* Media Queries for  ## Screen = max-width 500px */
+
+@media (max-width: 500px) {
   .menu-btn {
     display: block;
   }
@@ -388,33 +411,12 @@ ul {
     border-bottom: 0;
   }
 
-  .main-nav ul.search-menu {
+  .search-menu {
     display: none;
   }
-
-  .main-content {
-    grid-template-columns: repeat (2, 1fr);
-  }
-
-  .main-content a {
-    left: 30px;
-    font-size: 0.8rem;
-    max-width: 80%;
-  }
-
-  .main-content p {
-    font-size: 1rem;
-  }
-}
-
-/* ## Device= Most of the smart phones Mobile (Portrait)
-## Screen =B/W 320px to 479px)* */
-
-@media (max-width: 500px) {
   .main-content {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .main-content a {
     left: 10px;
     font-size: 0.8rem;
