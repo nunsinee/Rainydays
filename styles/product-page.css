@@ -551,4 +551,21 @@ ul {
     left: 150px;
     top: 250px;
   }
+
+  .best-sell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    max-height: 400px;
+  }
+
+  .best-list img {
+    min-width: 70%;
+  }
+
+  .main-content a {
+    font-size: 80%;
+    padding: 2px 5px;
+  }
 }
