@@ -478,12 +478,17 @@ ul {
   .footer {
     font-size: 0.8rem;
   }
-  /* addition changeing */
+  /* addition changing */
+
   .main-content-1 {
     max-width: 500px;
     max-height: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .main-content-2 {
+    max-width: 500px;
   }
 
   .pro-photo {
