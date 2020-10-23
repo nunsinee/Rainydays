@@ -1,10 +1,7 @@
-/* Global Style including Desktop View for  ## Screen = max-width 1100px */
-/*Global Value*/
-:root {
-  --bgmenuprofile: #025951; /* greenlight for menubar  */
-  --bg-lightgreen: #e5e9ea; /* greenlight for background in main-content-1  */
-}
+/* Global Style including Desktop Vie
+## Screen =B/W 1025px to 1280px)*/
 
+/*Global Value*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,8 +14,6 @@ body {
   color: #000;
   font-size: 1rem;
   line-height: 1.5;
-  max-width: 1100px;
-  margin: auto;
 }
 
 a {
@@ -30,20 +25,10 @@ ul {
   list-style: none;
 }
 
-/* set icon size*/
-.fa-color {
-  color: #707070;
-}
-.fa-color-nav {
-  color: #0a3641;
-}
-.fa-color-mid {
-  color: #fff;
-  padding-right: 5px;
-}
-
 .container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /*............Nav-Navigation....................*/
@@ -94,10 +79,8 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
-.search-menu {
-  padding: 0px 10px 60px 10px;
-  position: relative;
-  top: 60px;
+.main-nav ul.search-menu {
+  padding: 0px 80px 0px 0px;
 }
 
 /* Search top menu */
@@ -118,7 +101,16 @@ ul {
   color: #000;
 }
 
-/*............Main-content-title font....................*/
+/* Input text for Seach Menu */
+.mid-menu input[type="search"] {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+/*............Main-content New Arrivals....................*/
 
 .new-title {
   display: inline-flex;
@@ -155,7 +147,6 @@ ul {
   margin: 30px 0 0 30px;
   padding: 5px;
   background-color: #e1ad01;
-  border-bottom: 2px solid #e1ad01;
   color: #000;
   z-index: 1;
 }
@@ -173,22 +164,103 @@ ul {
   z-index: 2;
 }
 
-/*--Main-content2 Set for best seller-*/
+.main-content {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: #e5e9ea;
+  padding: 70px 50px 50px 50px;
+  border-top: 2px solid #e1ad01;
+  position: relative;
+}
+/*-----Show Product Images----*/
+.main-content-1 {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "image1 image2"
+    "image3 image4";
+}
+.image1 {
+  grid-template-areas: image1;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.image2 {
+  grid-template-areas: image2;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.image3 {
+  grid-template-areas: image3;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.image4 {
+  grid-template-areas: image4;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/*---------*/
 
 .main-content-2,
 .main-content-3 {
-  grid-gap: 10px;
-  max-width: 1100px;
-  padding: 50px 0;
-  justify-items: center;
-  justify-content: center;
-  background-color: var(--bg-lightgreen);
-  border-top: 3px solid #e1ad01;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 0px 50px;
+  justify-self: center;
+}
+
+/* checkbox flex*/
+.main-content-2-color,
+.main-content-3-spec {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  flex-direction: column;
+  padding: 0px 30px;
+  align-items: flex-start;
+}
+
+.main-content-2-size,
+.main-content-3-func {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  flex-direction: column;
+  padding: 0px 30px;
+  margin-top: 20px;
+}
+
+/* select number list*/
+.main-content-2-no,
+.main-content-3-fav {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
+/* Best Seller*/
+.main-content-5 {
+  max-width: 100%;
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
 }
 
 .main-content p {
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: bold;
   text-align: right;
   max-width: 100%;
 }
@@ -202,47 +274,27 @@ ul {
   color: #000;
 }
 
-.main-content-1 img,
-.main-content-2 img {
+.main-content img {
+  max-width: 90%;
   margin-bottom: 10px;
-  border-radius: 4px;
-  border: 2px solid #000;
-}
-.main-content-1 img {
-  max-width: 100%;
-}
-
-.main-content-2 img {
-  max-width: 80%;
+  border-radius: 10%;
+  border: 2px solid #909090;
+  box-shadow: var(--shadow);
 }
 
 /*.....Add to Cart Button..*/
 .main-content a {
   display: inline-block;
   background-color: #000;
-  max-width: 100%;
+  max-width: 45%;
   color: #fff;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
   padding: 2px 3px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.main-content-1 a {
-  display: inline-block;
-  background-color: #e1ad01;
-  max-width: 100%;
-  color: #000;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  padding: 2px 3px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.main-content-1 a {
-  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+  left: 110px;
 }
 
 .main-content a:hover {
@@ -250,16 +302,12 @@ ul {
   background-color: #fff;
   color: #000;
 }
-
 .info-text {
   display: flex;
   align-items: flex-end;
   max-width: 100%;
   font-size: 1rem;
   flex-direction: column;
-}
-.caption {
-  display: block;
 }
 
 /* New Arrival Button */
@@ -372,61 +420,21 @@ ul {
   color: #fff;
 }
 
-/* Media Queries for  ## Screen = max-width 845px */
-
-@media (max-width: 845px) {
-  .barmenu,
-  .footer {
-    font-size: 1rem;
-    padding-top: 25px;
-  }
-  .barmenu {
-    padding: 25px 0;
-  }
-  /* addition changeing */
-
-  .main-content-1 {
-    max-height: 950px;
-  }
-
-  .pro-photo {
-    min-width: 400px;
-    margin: 40px 10px;
-  }
-  .pro-photo img {
-    max-width: 80%;
-  }
-  .pro-typec {
-    position: relative;
-    bottom: 150px;
-  }
-
-  .pro-typec-list {
-    max-width: 120px;
-  }
-  .pro-typec img {
-    max-width: 80%;
-    max-height: 80%;
-  }
-  .checkmark {
-    height: 20px;
-    width: 20px;
-  }
-  .chk-container {
-    font-size: 0.8rem;
-  }
-  .pro-info {
-    max-width: 800px;
-    position: absolute;
-    left: 20px;
-    top: 950px;
-    border: 1px solid #fff;
-  }
+/*set icon size*/
+.fa-color {
+  color: #707070;
+}
+.fa-color-nav {
+  color: #0a3641;
+}
+.fa-color-mid {
+  color: #fff;
+  padding-right: 5px;
 }
 
-/* Media Queries for  ## Screen = max-width 500px */
+/* Media Queries for tablet and Large phone*/
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .menu-btn {
     display: block;
   }
@@ -459,7 +467,7 @@ ul {
   }
 
   .main-nav ul.main-menu li {
-    padding: 8px;
+    padding: 10px;
     border-bottom: #ccc solid 1px;
     font-size: 1rem;
   }
@@ -468,8 +476,50 @@ ul {
     border-bottom: 0;
   }
 
-  .search-menu {
+  .main-nav ul.search-menu {
     display: none;
+  }
+
+  .main-content {
+    grid-template-columns: repeat (2, 1fr);
+  }
+
+  .main-content a {
+    left: 30px;
+    font-size: 0.8rem;
+    max-width: 80%;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}
+
+/* ## Device= Most of the smart phones Mobile (Portrait)
+## Screen =B/W 320px to 479px)* */
+
+@media (max-width: 500px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+  }
+
+  .main-content a {
+    left: 10px;
+    font-size: 0.8rem;
+    max-width: 60%;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+    text-align: left;
+    max-width: 90%;
+  }
+
+  .main-content img {
+    max-width: 90%;
+    justify-content: space-between;
   }
 
   .barmenu-inner {
@@ -477,77 +527,5 @@ ul {
   }
   .footer {
     font-size: 0.8rem;
-  }
-  /* addition changeing */
-  .main-content-1 {
-    max-width: 500px;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pro-photo {
-    order: 1;
-    max-width: 80%;
-    display: grid;
-    grid-gap: 10px;
-  }
-  .photo-section {
-    max-width: 400px;
-    padding: 0px 10px;
-  }
-  .pro-typec {
-    order: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    top: 5px;
-    left: 70px;
-    max-width: 350px;
-  }
-
-  .pro-spec1 {
-    max-width: 400px;
-    order: 3;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 70px;
-  }
-  .pro-spec2 {
-    max-width: 400px;
-    order: 4;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 10px;
-    left: 70px;
-  }
-
-  .main-content h4 {
-    max-width: 5%;
-  }
-
-  .pro-fav {
-    order: 5;
-    max-width: 50px;
-  }
-
-  .pro-info {
-    order: 6;
-    max-width: 450px;
-    position: relative;
-    top: 10px;
-    padding: 5px 5px;
-    margin: 0 20px;
-  }
-  .main-content-1 a {
-    max-width: 100%;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    position: absolute;
-    left: 150px;
-    top: 250px;
   }
 }
