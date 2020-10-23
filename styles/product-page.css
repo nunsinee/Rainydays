@@ -383,9 +383,10 @@ ul {
   .barmenu {
     padding: 25px 0;
   }
-  /* addition changeing */
-
-  .main-content-1 {
+  /* addition changing */
+  .main-content-1,
+  .main-content-2 {
+    max-width: 845px;
     max-height: 950px;
   }
 
