@@ -384,10 +384,9 @@ ul {
     padding: 25px 0;
   }
   /* addition changing */
-  .main-content-1,
-  .main-content-2 {
-    max-width: 845px;
-    max-height: 950px;
+  .main-content-1 {
+    max-width: 100%;
+    max-height: 900px;
   }
 
   .pro-photo {
@@ -399,28 +398,28 @@ ul {
   }
   .pro-typec {
     position: relative;
-    bottom: 150px;
+    bottom: 200px;
   }
 
   .pro-typec-list {
-    max-width: 120px;
+    max-width: 100px;
   }
   .pro-typec img {
     max-width: 80%;
     max-height: 80%;
   }
   .checkmark {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
   }
   .chk-container {
     font-size: 0.8rem;
   }
   .pro-info {
-    max-width: 800px;
+    max-width: 700px;
     position: absolute;
     left: 20px;
-    top: 950px;
+    top: 900px;
     border: 1px solid #fff;
   }
 }
@@ -483,7 +482,6 @@ ul {
 
   .main-content-1,
   .main-content-2 {
-    max-width: 500px;
     max-height: 100%;
     display: flex;
     flex-direction: column;
