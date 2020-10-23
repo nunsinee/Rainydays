@@ -178,7 +178,7 @@ ul {
 .main-content-2,
 .main-content-3 {
   grid-gap: 10px;
-  max-width: 1100px;
+  max-width: 100%;
   padding: 50px 0;
   justify-items: center;
   justify-content: center;
@@ -361,7 +361,7 @@ ul {
 }
 
 .footer-copyright {
-  width: 100%;
+  max-width: 100%;
   background-color: #0a3641;
   display: grid;
   grid-template-columns: 1fr;
@@ -383,7 +383,7 @@ ul {
   .barmenu {
     padding: 25px 0;
   }
-  /* addition changing */
+
   .main-content-1 {
     max-width: 100%;
     max-height: 900px;
@@ -517,7 +517,7 @@ ul {
     left: 70px;
   }
   .pro-spec2 {
-    max-width: 400px;
+    max-width: 100%;
     order: 4;
     display: flex;
     flex-direction: row;
@@ -554,6 +554,7 @@ ul {
 
   .best-sell {
     display: flex;
+    max-width: 100%;
     flex-direction: row;
     justify-content: center;
     justify-self: center;
@@ -561,11 +562,13 @@ ul {
   }
 
   .best-list img {
-    min-width: 70%;
+    max-width: 70%;
   }
 
   .main-content a {
     font-size: 80%;
     padding: 2px 5px;
   }
+  .footer-copyright {
+    max-width: 500px;
 }
