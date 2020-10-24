@@ -209,7 +209,7 @@ ul {
   border: 2px solid #000;
 }
 .main-content-1 img {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .main-content-2 img {
@@ -236,10 +236,11 @@ ul {
   max-width: 100%;
   color: #000;
   line-height: 2rem;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
+  border: 1px solid #000;
 }
 
 .main-content-1 a:hover,
@@ -251,8 +252,6 @@ ul {
 
 .main-content-1 a {
   font-size: 1.2rem;
-  padding: 5px 5px;
-  border: 1px solid #000;
 }
 
 .info-text {
@@ -550,8 +549,8 @@ ul {
   }
   .main-content-1 a {
     max-width: 100%;
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 1em;
+    line-height: 1.2em;
     position: absolute;
     left: 150px;
     top: 250px;
