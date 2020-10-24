@@ -138,110 +138,74 @@ ul {
   background-color: #e5e9ea;
   border-radius: 5px;
   padding: 20px 10px;
-  margin: 50px 50px 100px 250px;
+  margin: 20px 50px 20px 250px;
   border: 1px solid #fff;
-}
-
-.main-content-1 p {
-  max-width: 100%;
-  color: #000;
-  text-align: left;
-  margin: 60px 0 30px 100px;
-}
-
-.main-content-1 a {
-  color: #025951;
-}
-
-.main-content-1 a:hover {
-  cursor: pointer;
-  color: #000;
 }
 
 .main-content h1 {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   color: #0a3641;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-}
-
-.main-content-1 h4 {
-  max-width: 100%;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: left;
-  margin: 50px 0 30px 100px;
-}
-.main-content-1 h5 {
-  max-width: 100%;
-  font-weight: bold;
-  font-size: 1rem;
-  position: relative;
-  left: 330px;
-  bottom: 55px;
-}
-
-.main-content-1 h6 {
-  display: inline-block;
-  max-width: 100%;
-  max-height: 20px;
-  font-weight: normal;
-  font-size: 1rem;
-  position: relative;
-  top: 60px;
-  right: 200px;
-  margin-bottom: 20px;
 }
 
 /* Form style for contact form */
+.main-content-1 form {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Full-width inputs */
 .main-content-1 input[type="text"],
-.main-content-1 input[type="password"],
-.main-content-1 input[type="email"] {
-  display: flex;
-  flex-direction: column;
+.main-content-1 input[type="password"] {
+  width:100%;
   font-size: 1rem;
-  max-width: 100%;
-  background-color: #fff;
+  padding:14px 20px;
+  margin:8px 0;
+  display:inline-block;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 5px 20px;
-  margin: 0 100px;
+  /* box-sizing: border-box; */
 }
 
-.main-content-1 label {
-  display: inline;
-  max-width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
-  margin-left: 100px;
-}
-
-.main-content-1 label::after {
-  content: "";
-  display: block;
-}
-
-.sending-btn {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  max-width: 70%;
+/* Set a style of Button */
+.main-content-1 button {
+  width: 100%;
   font-weight: bold;
   font-size: 1rem;
   color: #fff;
-  text-align: center;
-  padding: 10px 65px;
-  margin-top: 20px;
-  margin-left: 100px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none;
   background-color: #025951;
+  cursor: pointer;
   border-radius: 4px;
 }
-
-.sending-btn a:hover {
-  cursor: pointer;
+button:hover {
   color: #0a3641;
   background-color: #fff;
   text-decoration: none;
 }
+
+/* Cancel Button Style */
+.main-content-1 .cancel-btn {
+  width:auto;
+  padding:10px 18px;
+  color:#000;
+  background-color: #e1ad01;
+}
+
+/* Add padding  to container  */
+.form-container {
+  padding: 16px;
+}
+
+/* The forget Password text */
+span.psw {
+  float:right;
+  padding-top: 16px;
+}
+
 
 /*............Bar Menu....................*/
 
@@ -347,40 +311,9 @@ ul {
     align-self: center;
   }
 
-  .main-content-1 p {
-    margin-left: 50px;
-    margin-top: 30px;
-  }
-
-  .main-content-1 h4 {
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 1rem;
-  }
-
-  .main-content-1 h5 {
-    left: 50px;
-    bottom: 20px;
-  }
-  .main-content-1 h6 {
-    position: relative;
-    top: 30px;
-    left: 50px;
-  }
   .main-content-1 input[type="text"],
-  .main-content-1 input[type="password"],
-  .main-content-1 input[type="email"] {
-    max-width: 80%;
-    margin-left: 50px;
-  }
-
-  .main-content-1 label {
-    margin-left: 50px;
-  }
-
-  .sending-btn {
-    margin-left: 50px;
-    margin-top: 20px;
+  .main-content-1 input[type="password"] {
+    max-width: 100%;
   }
 }
 
@@ -444,12 +377,4 @@ ul {
     max-width: 350px;
   }
 
-  .main-content-1 p {
-    margin-left: 50px;
-    margin-top: 30px;
-  }
-  .main-content-1 h5 {
-    left: 50px;
-    bottom: 25px;
-  }
 }

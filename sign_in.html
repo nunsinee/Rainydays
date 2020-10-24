@@ -45,18 +45,26 @@
   <section class="main-content">
     <div class="main-content-1">
       <h1>Welcome Back!</h1>
-        <p>Lorem ipsum dolor  adipisicing elit. Debitis, voluptas. </p> 
-            <!--Form-->
-          <form action="action_page.php" method="get">
-            <label for="username">User name</label>
-            <input type="text" placeholder="Enter username" id="username" name="username" required/>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter password" id="password" name="password" required/>
-            <button type="submit" class="sending-btn"> Sign In </button>
-            <h6><input type="checkbox" name="remember" check="checked"/>Remember me</h6>
-            <a href="forget_password.html"><h4>Forget your password?</h4></a>
-            <a href="sign_up.html"><h5>Sign Up</h5></a> 
-          </form>
+        <p>Lorem ipsum dolor adipisicing elit. Debitis, </p>
+        <!--Sign In form-->
+        <form action="action_page.php" method="post">
+          <div class="form-container">
+            <label for="uname"><b>User name</b></label>
+            <input type="text" placeholder="Enter Username" id="uname" name="uname" required />
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" id="password" name="psw" required />
+            <button type="submit"> Sign In </button>
+            <label><input type="checkbox" name="remember" check="checked" />Remember me</label>
+          </div>
+          <div class="form-container">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <span class="psw">Forgot<a href="forgot-password.html">
+                <b>Password?</b>
+              </a></span><br>
+            <!-- <a href="sign_up.html" class="psw">Sign Up</a> -->
+          </div>
+            </form>
+        
       </div>
   </section>
 </div>
