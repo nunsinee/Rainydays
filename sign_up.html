@@ -46,20 +46,30 @@
 <div class="container">
   <section class="main-content">
     <div class="main-content-1">
+        <!--Sign In form-->
       <h1>First time with us?</h1>
-      <form action="action_page.php" method="get">
-        <label for="fname">Name</label>
+      <form action="action_page.php" method="post">
+        <div class="form-container">
+          <p>Please fill in this form to create your account </p>
+          <hr>
+      
+          <label for="fname"><b>Name</b></label>
         <input type="text" placeholder="Enter Name" id="fname" name="fname" required/>
-        <label for="email">E-mail*</label>
+        <label for="email"><b>E-mail*</b></label>
         <input type="email" placeholder="Enter your e-mail" id="email" name="email" required />
-        <label for="psw">Password*</label><input type="password" placeholder="Enter password" id="psw" name="psw" required/>
-        <label for="re-psw">Repeat Password</label>
+        <label for="psw"><b>Password*</b></label>
+        <input type="password" placeholder="Enter password" id="psw" name="psw" required />
+        <label for="re-psw"><b>Repeat Password</b></label>
         <input type="password" placeholder="Repeat password" id="re-psw" name="re-psw" required/>
-        <button type="submit" class="sending-btn"> Sign Up </button>
-        <h6><input type="checkbox" name="remember" check="checked"/>I accepted the terms<br> and conditions</h6>
-        <br><p>Already our member?</p>
-        <a href="sign_in.html"><h5>Sign In</h5></a> 
+        <label><input type="checkbox" name="remember" check="checked" /><b>Remember me</b></label>
+        <p>By creating an account you agree to our <a href="#"><b>Terms & Privacy.</b></a></p>
+        
+        <div class="clearfix"></div>
+        <button type="button" class="cancel-btn"> Cancel</button>
+        <button type="submit" class="signup-btn">Sign Up</button>
+        </div>
       </form>
+      <label>Already our member? <a href="sign_in.html"><b>Sign In</b></a></label>
     </div>
   </section>
 </div>

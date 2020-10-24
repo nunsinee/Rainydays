@@ -103,15 +103,6 @@ ul {
   color: #000;
 }
 
-/* Input text for Seach Menu */
-.mid-menu input[type="search"] {
-  font-size: 1.2rem;
-  text-align: center;
-  width: 100px;
-  border: 1px solid #808080;
-  border-radius: 4px;
-}
-
 /*............Main-content....................*/
 
 .main-content {
@@ -192,7 +183,7 @@ button:hover {
   width:auto;
   padding:10px 18px;
   color:#000;
-  background-color: #e1ad01;
+  background-color: #e6d06f;
 }
 
 /* Add padding  to container  */
@@ -311,10 +302,6 @@ span.psw {
     align-self: center;
   }
 
-  .main-content-1 input[type="text"],
-  .main-content-1 input[type="password"] {
-    max-width: 100%;
-  }
 }
 
 /* Media Queries for  ## Screen = max-width 500px */
