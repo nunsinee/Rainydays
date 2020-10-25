@@ -144,6 +144,7 @@ ul {
   order: 2;
   max-width: 100%;
   margin-left: 30px;
+
 }
 
 .main-content img {
@@ -177,7 +178,7 @@ ul {
   font-weight: normal;
   color: #025951;
   font-size: 1rem;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .main-content-1 h4 {
@@ -222,7 +223,7 @@ ul {
   grid-gap: 5px;
   margin: 20px 0px;
   padding: 10px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
 }
 
 .order-info h2 {
@@ -332,6 +333,10 @@ ul {
   text-decoration: none;
 }
 
+span.text-right {
+  float: right;
+}
+
 /*............Bar Menu....................*/
 
 .barmenu {
@@ -420,7 +425,7 @@ ul {
 }
 
 .card-ico {
-  max-height: 27px;
+  height: 27px;
   padding: 3px;
   border:1px solid #707070;
 }
@@ -435,10 +440,6 @@ ul {
   .main-content-2 {
     margin-left: 0px;
   }
-
-  .main-content-2 img {
-    width: 350px;
-  } 
   .check-out-btn {
     left:2px;
   }
@@ -452,17 +453,16 @@ ul {
   .barmenu {
     padding: 25px 0;
   }
-.order-info {
-    align-self: right;
-  }
 
-.check-out-btn {
-  max-width:20%;
-  left:140px;
-  padding: 2px;
-  bottom:40px;
-  
-  }
+  .order-info {
+  max-width: 100%;}
+
+  .check-out-btn {
+    max-width:20%;
+    left:140px;
+    padding: 2px;
+    bottom:40px;
+    }
 }
 
 
@@ -517,15 +517,15 @@ ul {
     padding-top: 20px;
   }
 
- .main-content img {
-    max-width:80%;
+  .main-content-1 img {
+    width:80%;
   }
+
   .check-out-btn {
   max-width:30%;
-  left:140px;
+  left:270px;
   padding: 2px;
-  bottom:40px;
-  
+  bottom:50px;
   }
 
   .barmenu-inner {
@@ -535,4 +535,7 @@ ul {
     font-size: 0.8rem;
     padding-top: 15px;
   }
+.card-ico{
+max-height: 27px;}
+
 }
