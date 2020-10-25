@@ -202,7 +202,7 @@ hr{
 
 /* Set a style of Button */
 .main-content-1 button, .main-content-2 button {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, serif;
   width: 100%;
   font-weight: bold;
   font-size: 1rem;
@@ -218,6 +218,14 @@ hr{
 .main-content-1 button:hover, .main-content-2 button:hover {
   color:#e1ad01;
   text-decoration: none;
+}
+
+.main-content-1 button a, .main-content-2 button a {
+  color:#fff;
+}
+
+.main-content-1 button a:hover, .main-content-2 button a:hover {
+  color:#e1ad01;
 }
 
 /* Sign-up Button Style */
