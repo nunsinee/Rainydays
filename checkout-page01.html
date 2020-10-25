@@ -29,7 +29,7 @@
                 <li><a href="men.html">Men</a></li>
             </ul>
             <!--Search Menu-->
-            <form action="#" method="get" target="blank" class="search-menu">
+            <form action="/action_page.php" method="post" target="blank" class="search-menu">
                 <input type="search" id="site-search" name="search" placeholder="Search by color, Product name.." />
                 <button type="submit" name="submit" class="btn-search">Search</button>
             </form>
@@ -45,7 +45,7 @@
         <section class="main-content">
             <div class="main-content-1">
                 <h1>Customer Information</h1>
-                <form action="action_page.php" method="post">
+                <form action="/action_page.php" method="post">
                     <div class="form-container">
                     <label for="email">Enter your email:</label><br>
                     <input type="email" id="email" name="email"><br>
@@ -72,8 +72,8 @@
                     <input type="country" placeholder="Country" id="country" name="country" required />
                     <label for="postcode">Post Code</label>
                     <input type="postcode" placeholder="Postal code" id="postcode" name="postcode" required />
-                    <label for="telephone">Telephone</label>
-                    <input type="telephone" placeholder="Telephone number" id="telephone" name="telephone" required />
+                    <label for="phone">Telephone</label>
+                    <input type="tel" placeholder="Telephone number" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}" required />
                     <!---just put this link to show how it work-->
                     <button type="submit"><a href="checkout-page02.html">Check Out</a> </button>
                     <label><input type="checkbox" name="remember" check="checked" />Save this information for next

@@ -171,7 +171,7 @@ ul {
 .main-content-1 input[type="email"],
 .main-content-2 input[type="text"],
 .main-content-2 input[type="password"],
-.main-content-2 input[type="email"],.main-content-2 input[type="address"],.main-content-2 input[type="city"],.main-content-2 input[type="postcode"],.main-content-2 input[type="country"],.main-content-2 input[type="telephone"] {
+.main-content-2 input[type="email"],.main-content-2 input[type="address"],.main-content-2 input[type="city"],.main-content-2 input[type="postcode"],.main-content-2 input[type="country"],.main-content-2 input[type="tel"] {
   width:100%;
   font-size: 1rem;
   padding:14px 20px;
