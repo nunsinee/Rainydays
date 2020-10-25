@@ -216,8 +216,7 @@ hr{
 }
 
 .main-content-1 button:hover, .main-content-2 button:hover {
-  color: #0a3641;
-  background-color: #fff;
+  color:#e1ad01;
   text-decoration: none;
 }
 
@@ -225,11 +224,17 @@ hr{
 .main-content-1 .signup-btn {
   padding:14px 20px;
   background-color:#025951;
+    color: #fff;
 }
 
 .main-content-1 .signup-btn a {
   padding:14px 20px;
   color: #fff;
+}
+
+.main-content-1 .signup-btn a:hover {
+  padding:14px 20px;
+  color: #e1ad01;
 }
 
 /* Add padding  to container  */
