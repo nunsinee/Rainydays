@@ -411,6 +411,11 @@ span.psw {
 .main-content-1 img {
   display:none;
   }
+
+.edit-btn {
+  position: relative;
+  right:120px;
+  }
 }
 
 
