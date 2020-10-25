@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #0a3641;
   text-decoration: none;
 }
 
@@ -109,63 +109,6 @@ ul {
   color: #000;
 }
 
-/* Input text for Seach Menu */
-.mid-menu input[type="search"] {
-  font-size: 1.2rem;
-  text-align: center;
-  width: 100px;
-  border: 1px solid #808080;
-  border-radius: 4px;
-}
- /* Form style for Filling Adress Information form */
-.input[type="text"],
-.input[type="password"],
-.input[type="email"] {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  max-width: 100%;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 5px 20px;
-  margin: 0 100px;
-}
-
-.main-content label {
-  display: inline-block;
-  max-width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
-  margin-left: 10px;
-}
-
-.main-content label::after {
-  content: "";
-  display: block;
-}
-
-.sending-btn {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  max-width: 70%;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #fff;
-  text-align: center;
-  padding: 10px 65px;
-  margin-top: 20px;
-  margin-left: 100px;
-  background-color: #025951;
-  border-radius: 4px;
-}
-
-.sending-btn a:hover {
-  cursor: pointer;
-  color: #0a3641;
-  background-color: #fff;
-  text-decoration: none;
-}
-
 /*............Main-content....................*/
 
 .main-content {
@@ -194,16 +137,12 @@ ul {
   margin-left: 30px;
 }
 
-.main-content img {
-  max-height: 250px;
-  margin: 20px 0px;
+.main-content-1 img {
+  max-width:200px;
+  margin: 50px 0 0 100px;
   border-radius: 4px;
+  /* border: 1px solid #909090; */
   box-shadow: var(--shadow);
-}
-
-.main-content-2 img {
-  max-height: 100%;
-
 }
 
 
@@ -222,168 +161,130 @@ ul {
   padding-left: 2px;
 }
 
-.order-details h2 {
-  margin: 0 2px;
-  border: 1 solid #000;
+ /* Form style for Filling Adress Information form */
+
+.main-content-2 form {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.main-content h3 {
-  font-weight: normal;
-  color: #025951;
+/* Full-width inputs */
+.main-content-1 input[type="email"],
+.main-content-2 input[type="text"],
+.main-content-2 input[type="password"],
+.main-content-2 input[type="email"],.main-content-2 input[type="address"],.main-content-2 input[type="city"],.main-content-2 input[type="postcode"],.main-content-2 input[type="country"],.main-content-2 input[type="telephone"] {
+  width:100%;
   font-size: 1rem;
-  padding-left: 10px;
-}
-
-.main-content-1 h4 {
-  font-weight: bold;
-  color: #000;
-  font-size: 0.8rem;
-}
-/* Delete button */
-.delete-btn {
-  color: #000;
-  font-size: 1rem;
-  text-decoration: underline;
-  text-align: right;
-  padding: 5px 5px;
-  margin-top: 20px;
-}
-.delete-btn a:hover {
-  color: #e1ad01;
-  text-decoration: underline;
-}
-
-/* my cart item style */
-.order {
-  display: grid;
-  min-width: 100%;
-  background-color: var(--bg-white);
-  grid-gap: 5px;
+  padding:14px 20px;
+  margin:8px 0;
+  display:inline-block;
   border: 1px solid #ccc;
-  margin: 20px 0px;
-  background-color: #fff;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat (4, 1fr);
-  justify-content: space-between;
-  align-items: left;
-  grid-template-areas: " order-photo order-details";
+  border-radius: 4px;
+  /* box-sizing: border-box; */
 }
 
-.order-info {
-  display: flex;
-  max-width: 100%;
-  background-color: var(--bg-white);
-  grid-gap: 5px;
-  margin: 20px 0px;
-  padding: 10px;
-  border: 1px solid #ccc;
+.main-content-2 input[type="text"]:focus, .main-content-2 input[type="password"]:focus {
+  background-color: #ddd;
+  outline:none;
 }
 
-.order-info h2 {
-  max-width: 100%
+hr{
+  border:1px solid #ccc;
+  margin-bottom: 25px;
 }
 
-.order-info {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
+/* Float cancel and signup buttons and add an equal width  */
+.cancel-btn, .signup-btn {
+  float: left;
+  width: 50%;
 }
 
-.order-photo {
-  grid-area: grid-photo;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  max-width: 100%;
-  padding: 10px 20px;
-  margin-top: 20px;
-}
 
-.pic-order {
-  max-width: 100%;
-  position: relative;
-  left: 5px;
-}
 
-.order-details {
-  max-width: 100%;
-  grid-area: grid-details;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  margin: 20px 0 20px 10px;
-}
-
-.order-list {
-  max-width: 100%;
-  max-height: 30px;
-  display: flex;
-  flex-direction: column;
-  line-height: 3rem;
-  padding: 10px 0 10 20px;
-  justify-items: left;
+/* Set a style of Button */
+.main-content-1 button, .main-content-2 button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  font-weight: bold;
   font-size: 1rem;
-  font-size: bold;
-}
-.order-details > .order-quant {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  line-height: 3rem;
-  justify-self: right;
-}
-
-.order-details.order-total {
-  margin-left: 10px;
-}
-
-/* Check-Out Menu */
-.check-out-btn{
-  max-width:40%;
-  color:#fff;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  padding:5px 10px;
-  display: inline-block;
-  position: relative;
-  border:3px solid #fff;
-  background-color: #025951;
-  border:1px solid #fff;
-  left:220px;
-  bottom:40px;
-}
-
-.check-out-btn a {
-  color:#fff;
-}
-
-.check-out-btn a:hover{
-  cursor: pointer;
-  color:#e1ad01;
-}
-
-/* submit button in contact form */
-.sending-btn {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 1.2rem;
   color: #fff;
-  text-align: center;
-  padding: 5px 50px;
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border:none;
   background-color: #025951;
+  cursor: pointer;
   border-radius: 4px;
 }
 
-.sending-btn a:hover {
-  cursor: pointer;
+.main-content-1 button:hover, .main-content-2 button:hover {
   color: #0a3641;
   background-color: #fff;
   text-decoration: none;
+}
+
+/* Sign-up Button Style */
+.main-content-1 .signup-btn {
+  padding:14px 20px;
+  background-color:#025951;
+}
+
+.main-content-1 .signup-btn a {
+  padding:14px 20px;
+  color: #fff;
+}
+
+/* Add padding  to container  */
+.form-container {
+  padding: 16px;
+}
+
+/* Clear float */
+.clearfix::after {
+ content:"";
+ clear:both;
+ display:table; 
+}
+
+/* The forget Password text */
+span.psw {
+  float:right;
+  padding-top: 16px;
+}
+
+
+/*............Bar Menu....................*/
+
+.barmenu {
+  background-color: #0a3641;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 35px 0;
+}
+
+.barmenu-inner {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding-left: 35px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.barmenu li {
+  line-height: 2rem;
+}
+
+.barmenu a {
+  color: #fff;
+}
+
+.barmenu a:hover {
+  color: #e1ad01;
+}
+
+.barmenu .current {
+  text-decoration: underline;
+  color: #e1ad01;
 }
 
 /*............Bar Menu....................*/
@@ -483,9 +384,9 @@ ul {
     margin-left: 0px;
   }
 
-  .check-out-btn {
+  /* .check-out-btn {
     left:2px;
-  }
+  } */
 
   .barmenu,
   .main-content a,
@@ -496,16 +397,8 @@ ul {
   .barmenu {
     padding: 25px 0;
   }
-.order-info {
-    align-self: right;
-  }
-
-.check-out-btn {
-  max-width:20%;
-  left:140px;
-  padding: 2px;
-  bottom:40px;
-  
+.main-content-1 img {
+  display:none;
   }
 }
 

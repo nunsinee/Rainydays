@@ -419,6 +419,13 @@ ul {
   padding-right: 5px;
 }
 
+.card-ico {
+  max-height: 27px;
+  padding: 3px;
+  border:1px solid #707070;
+}
+
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
