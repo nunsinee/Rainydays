@@ -198,8 +198,8 @@ ul {
 .main-content img {
   max-width: 100%;
   margin-bottom: 10px;
-  border-radius: 10%;
-  border: 2px solid #909090;
+  border-radius: 5px;
+  border: 2px solid #000;
   box-shadow: var(--shadow);
 }
 
