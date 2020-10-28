@@ -160,6 +160,7 @@
 .pro-cart {
 	max-width: 100%;
 	margin: 20px 10px 20px 10px;
+	position: absolute;
 }
 
 /* best seller */

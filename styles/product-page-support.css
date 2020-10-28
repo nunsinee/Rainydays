@@ -448,7 +448,7 @@ ul {
 	}
 }
 
-/* Media Queries for  ## Screen = max-width 375px AND max-width 500px */
+/* Media Queries for  ## Screen = max-width 500px */
 
 @media (max-width: 500px) {
 	.menu-btn {
@@ -504,7 +504,7 @@ ul {
 	}
 	/* addition changing */
 	.main-content-1 {
-		height: 650px;
+		height: 600px;
 	}
 
 	.pro-spec2 {
@@ -518,28 +518,30 @@ ul {
 	.pro-photo {
 		grid-area: pro-photo;
 		min-width: 300px;
+		min-width: 250px;
 		padding: 2px 2px;
 		margin: 20px 0px 0px 30px;
 	}
 
 	.pro-spec1 {
-		width: 70px;
-		margin-right: 40px;
+		min-width: 100px;
+		max-height: 600px;
+		padding: 0 2px 10px 0px;
+		margin-right: 20px;
 	}
 
 	.pro-cart {
 		width: 150px;
 		margin: 0px;
 		position: absolute;
-		left: 180px;
-		top: 700px;
+		left: 220px;
+		top: 680px;
 		padding: 20px;
 	}
 
 	.pro-typec {
 		position: relative;
 		bottom: 120px;
-		left: 5px;
 	}
 
 	.photo-section-01,
@@ -564,8 +566,8 @@ ul {
 	}
 	.main-content-2 a {
 		font-size: 0.8rem;
-		line-height: 0.8rem;
-		padding: 3px 2px;
+		line-height: 1rem;
+		padding: 5px 1px;
 	}
 
 	.checkmark {
@@ -583,70 +585,5 @@ ul {
 		color: #000;
 		text-align: left;
 		font-style: normal;
-	}
-
-	.new-title {
-		font-size: 0.8rem;
-		max-width: 100%;
-		margin-top: 45px;
-	}
-}
-
-/* Media Queries for  ## Screen = max-width 375px  */
-
-@media (max-width: 375px) {
-	body {
-		font-size: 0.8rem;
-	}
-
-	.main-content-1 {
-		display: flex;
-		flex-direction: column;
-		max-width: 374px;
-		height: 900px;
-	}
-
-	.pro-photo {
-		grid-area: pro-photo;
-		width: 300px;
-		padding: 0px;
-		margin: 50px 0 10px 30px;
-	}
-
-	.photo-section-01,
-	.photo-section-02,
-	.photo-section-03,
-	.photo-section-04 {
-		width: 130px;
-	}
-
-	.pro-cart {
-		width: 150px;
-		margin: 0px;
-		position: absolute;
-		left: 230px;
-		top: 900px;
-		padding: 0;
-	}
-	.pro-spec1 {
-		min-width: 200px;
-		padding: 0px;
-		margin: 90px 10px 5px 60px;
-		display: flex;
-		flex: 1;
-		flex-direction: row;
-		margin-right: 0px;
-	}
-
-	.pro-typec {
-		position: absolute;
-		top: 600px;
-		left: 70px;
-	}
-
-	.pro-color,
-	.pro-size,
-	.pro-quant {
-		padding: 0px 25px;
 	}
 }
