@@ -425,6 +425,23 @@ ul {
 		top: 850px;
 		border: 1px solid #fff;
 	}
+
+	.pro-cart {
+		margin: 0px;
+		position: relative;
+		left: 120px;
+		bottom: 150px;
+	}
+
+	.caption {
+		display: inline-block;
+	}
+
+	.main-content-1 a {
+		font-size: 1rem;
+		padding: 0px 5px;
+	}
+
 	.main-content-2 a {
 		font-size: 1rem;
 		padding: 0px 5px;
@@ -486,52 +503,73 @@ ul {
 		font-size: 0.8rem;
 	}
 	/* addition changing */
-	/*_________________*/
-
 	.main-content-1 {
-		width: 500px;
-		min-height: 1000px;
-		grid-template-areas:
-			"pro-spec2 pro-spec2 pro-spec1"
-			"pro-typec pro-photo pro-photo"
-			"pro-info pro-info pro-cart";
+		height: 600px;
 	}
 
-	.photo-section {
-		max-width: 300px;
-		display: grid;
-		grid-gap: 10px;
-		padding: 20px 10px 0px 20px;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"photo-section-01"
-			"photo-section-02"
-			"photo-section-03"
-			"photo-section-04";
+	.pro-spec2 {
+		display: none;
 	}
 
-	.pro-photo img {
-		max-width: 50%;
-		border-radius: 4px;
-		margin: 0 10px 20px 50px;
+	.pro-info {
+		display: none;
 	}
 
-	/* /--------------------// */
-	.pro-typec {
+	.pro-photo {
+		grid-area: pro-photo;
+		min-width: 300px;
+		min-width: 250px;
+		padding: 2px 2px;
+		margin: 20px 0px 0px 30px;
+	}
+
+	.pro-spec1 {
+		min-width: 100px;
+		max-height: 600px;
+		padding: 0 2px 10px 0px;
+		margin-right: 20px;
+	}
+
+	.pro-cart {
+		width: 150px;
+		margin: 0px;
 		position: absolute;
-		left: 200px;
-		top: 800px;
+		left: 220px;
+		top: 680px;
+		padding: 20px;
+	}
+
+	.pro-typec {
+		position: relative;
+		bottom: 120px;
+	}
+
+	.photo-section-01,
+	.photo-section-02,
+	.photo-section-03,
+	.photo-section-04 {
+		width: 120px;
 	}
 
 	.pro-typec-list {
-		width: 80px;
-		text-align: left;
+		width: 70px;
 	}
 
-	.pro-typec img {
-		max-width: 70%;
-		max-height: 70%;
+	.caption {
+		display: inline-block;
 	}
+
+	.main-content-1 a {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		padding: 5px 5px;
+	}
+	.main-content-2 a {
+		font-size: 0.8rem;
+		line-height: 1rem;
+		padding: 5px 1px;
+	}
+
 	.checkmark {
 		height: 25px;
 		width: 25px;
@@ -540,44 +578,6 @@ ul {
 		font-size: 0.8rem;
 		width: 50px;
 		padding-right: 10px;
-	}
-
-	.pro-info {
-		display: none;
-	}
-
-	.pro-spec2 {
-		padding: 40px 20px 10px 40px;
-		max-height: 600px;
-	}
-
-	.pro-spec1 {
-		max-width: 180px;
-		padding: 50px 20px 0 140px;
-		max-height: 600px;
-	}
-
-	.pro-cart {
-		max-width: 80%;
-		margin: 10px;
-		position: absolute;
-		right: 50px;
-		top: 700px;
-	}
-
-	.pro-color,
-	.pro-size,
-	.pro-quant {
-		max-width: 30%;
-		display: flex;
-		flex-direction: column;
-		justify-items: left;
-		padding: 5px 5px 5px 0px;
-	}
-
-	.main-content-2 a {
-		font-size: 1rem;
-		padding: 0px 5px;
 	}
 
 	.main-content-1 .pro-info p {
