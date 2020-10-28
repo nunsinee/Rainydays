@@ -450,7 +450,16 @@ ul {
 	}
 }
 
-/* Media Queries for  Mobile screen device size 375px*/
+/* Media Queries for  Mobile screen device size 414px, Iphone 6/7/8 plus*/
+
+@media (max-width: 414px) {
+	.new-subtitle,
+	.new-subtitle-2 {
+		margin: 30px 0 0 0;
+	}
+}
+
+/* Media Queries for  Mobile screen device size 375px Iphone 6/7/8 11OS*/
 
 @media (max-width: 375px) {
 	.main-content {
