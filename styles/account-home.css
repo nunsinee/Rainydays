@@ -17,7 +17,7 @@ body {
 	margin: auto;
 }
 
-h2 {
+h1 {
 	color: #025951;
 	font-size: 1.1rem;
 }
@@ -226,20 +226,20 @@ ul {
 	color: #c7d0d3;
 }
 
-.main-right h3 {
+.main-right h2 {
 	color: #000;
 	font-weight: bold;
 	font-size: 1rem;
 	padding: 20px;
 }
 
-.main-right h2 {
+.main-right h1 {
 	color: #025951;
 	font-size: 1.1rem;
 	margin: 10px;
 }
 
-.main-top h3 {
+.main-top h2 {
 	color: #000;
 	font-weight: bold;
 	font-size: 0.9rem;
@@ -280,7 +280,6 @@ ul {
 
 .search-topright {
 	order: 2;
-	/* width: 700px; */
 	display: flex;
 	max-width: 700px;
 	flex-direction: column;
@@ -418,12 +417,16 @@ ul {
 
 @media (max-width: 845px) {
 	.main-content {
-		grid-template-rows: 1fr 2fr;
-		height: 600px;
+		height: 650px;
 	}
 
-	.main-top form {
-		width: 400px;
+	.main-top input[type="search"] {
+		width: 50%;
+		margin-left: 80px;
+	}
+
+	.member-topleft {
+		width: 300px;
 	}
 
 	.barmenu,
@@ -485,7 +488,7 @@ ul {
 
 	.main-content {
 		grid-template-rows: 1fr;
-		min-height: 600px;
+		max-height: 500px;
 	}
 
 	.main-left ul {
@@ -494,7 +497,6 @@ ul {
 	}
 
 	.main-top {
-		/* max-width: 500px; */
 		grid-template-columns: 1fr;
 	}
 
@@ -502,11 +504,11 @@ ul {
 		width: 300px;
 	}
 
-	.main-right h3 {
+	.main-right h2 {
 		font-size: 0.8rem;
 	}
 
-	.main-right h2 {
+	.main-right h1 {
 		font-size: 1rem;
 	}
 
@@ -532,5 +534,14 @@ ul {
 	.footer {
 		font-size: 0.8rem;
 		padding-top: 15px;
+	}
+}
+
+/* Media Queries for  ## Screen = max-width 375px */
+
+@media (max-width: 375px) {
+	.main-content {
+		padding: 50px 25px;
+		height: 450px;
 	}
 }

@@ -455,3 +455,19 @@ ul {
 		font-size: 0.8rem;
 	}
 }
+
+/* Media Queries for  ## Screen = max-width 375 */
+
+@media (max-width: 375px) {
+	.new-title {
+		font-size: 0.8rem;
+		margin-top: 30px;
+	}
+
+	.main-content p {
+		font-size: 0.9rem;
+		text-align: center;
+		width: 90%;
+		line-height: 1rem;
+	}
+}

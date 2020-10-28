@@ -46,7 +46,7 @@
 	max-width: 100%;
 }
 
-/* product 4 photos */
+/* Product  show 4 photos */
 .pro-photo {
 	grid-area: pro-photo;
 	min-width: 550px;
@@ -163,7 +163,7 @@
 	position: absolute;
 }
 
-/* best seller */
+/* Best seller layout */
 
 .best-sell {
 	display: flex;

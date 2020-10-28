@@ -17,7 +17,7 @@ body {
 	margin: auto;
 }
 
-h2 {
+h1 {
 	color: #025951;
 	font-size: 1.1rem;
 }
@@ -136,7 +136,7 @@ ul {
 /* Main-Profile layout  */
 .main-content {
 	max-width: 100%;
-	min-height: 550px;
+	max-height: 750px;
 	display: grid;
 	margin: 0 auto;
 	grid-gap: 20px;
@@ -203,23 +203,23 @@ ul {
 	border-radius: 4px;
 	border: 1px solid #000;
 	max-width: 100%;
-	margin:20px 30px 5px 30px;
+	margin: 20px 30px 5px 30px;
 }
 
-.main-right h3 {
+.main-right h1 {
 	color: #000;
 	font-weight: bold;
 	font-size: 1rem;
 	padding: 20px;
 }
 
-.main-right h2 {
+.main-right h1 {
 	color: #025951;
 	font-size: 1.1rem;
 	margin: 10px;
 }
 
-.main-top h3 {
+.main-top h1 {
 	color: #000;
 	font-weight: bold;
 	font-size: 0.9rem;
@@ -238,18 +238,18 @@ ul {
 }
 
 .main-right span {
-	float:right;
+	float: right;
 }
 
 /* Layout for Photo */
 .profav {
-	display:grid;
-	max-width:100%;
+	display: grid;
+	max-width: 100%;
 	max-height: 600px;
-	grid-template-columns:repeat (3,1fr);
-	max-width:100%;
-	grid-gap:5px;
-	justify-content:space-between;
+	grid-template-columns: repeat (3, 1fr);
+	max-width: 100%;
+	grid-gap: 5px;
+	justify-content: space-between;
 	justify-items: center;
 }
 
@@ -259,19 +259,19 @@ ul {
 } */
 
 .profav-list {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
 }
 
-.profav-caption{
+.profav-caption {
 	text-align: left;
-	max-width:100%;
-	display:flex;
+	max-width: 100%;
+	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	max-height: 100px;
-	margin:10px 30px 5px 30px;
+	margin: 10px 30px 5px 30px;
 }
 
 /* Profile-layout :Top left and Top right areas */
@@ -431,61 +431,60 @@ ul {
 /*.....Add to Cart Button..*/
 
 .profav-btn {
-  display: inline-block;
-  background-color: #000;
+	display: inline;
+	background-color: #000;
 	max-width: 100%;
-	line-height: 1.5rem;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 2px 3px;
-  border-radius: 4px;
-	text-align: center;
-	margin-left:30px;
-}
-
-.profav-btn a:hover {
-  cursor: pointer;
-  background-color:#e1ad01;
-  color: #000;
-}
-
-.remove-btn {
-	color:#000;
-	display: inline-block;
-  background-color: #e1ad01;
-	max-width: 100%;
-	line-height: 1.5rem;
-  color: #fff;
-  font-size: 1rem;
-  padding: 2px 3px;
-  border-radius: 4px;
+	color: #fff;
+	font-size: 0.9rem;
+	padding: 2px 3px;
+	border-radius: 4px;
 	text-align: center;
 	margin: 0px 20px;
 }
 
+.profav-btn a:hover {
+	cursor: pointer;
+	background-color: #e1ad01;
+	color: #000;
+}
 
-
+.remove-btn {
+	color: #000;
+	display: inline;
+	background-color: #e1ad01;
+	max-width: 100%;
+	line-height: 1rem;
+	color: #fff;
+	padding: 2px 3px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0px 20px;
+}
 
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
 	.main-content {
-		grid-template-rows: 1fr 2fr;
-		height: 900px;
+		height: 420px;
 	}
 
 	.main-top form {
 		width: 400px;
 	}
 
-	.main-right img {
-	max-width: 80%;
+	.main-area {
+		height: 200px;
 	}
 
-	.remove-btn, .profav-btn {
-		font-size:1rem;
+	.main-right img {
+		max-width: 80%;
+	}
+
+	.remove-btn,
+	.profav-btn {
+		font-size: 1rem;
 		margin: 5px;
-		padding:0px 2px;
+		padding: 0px 2px;
 	}
 
 	.barmenu,
@@ -547,7 +546,7 @@ ul {
 
 	.main-content {
 		grid-template-rows: 1fr;
-		height: auto;
+		height: 1100px;
 	}
 
 	.main-right {
@@ -563,14 +562,17 @@ ul {
 		width: 300px;
 	}
 
-	.profav {
-		max-height: 100%;
-		grid-template-columns:repeat (2,1fr);
+	.main-area {
+		height: 500px;
 	}
 
-	.main-top img {
-		max-width: 50%;
-		/* margin:20px 30px 5px 30px; */
+	.profav-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-content img {
+		width: 50%;
 	}
 
 	.main-top input[type="search"] {
@@ -588,13 +590,6 @@ ul {
 		padding: 5px;
 	}
 
-	.btn-news {
-		max-width: 80%;
-		margin: 10px;
-		font-size: 0.5rem;
-		padding: 10px;
-	}
-
 	.barmenu-inner {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -602,5 +597,46 @@ ul {
 	.footer {
 		font-size: 0.8rem;
 		padding-top: 15px;
+	}
+}
+
+/* Media Queries for  ## Screen = max-width 375px */
+
+@media (max-width: 375px) {
+	.main-content {
+		padding: 50px 25px;
+		height: 600px;
+	}
+
+	.main-area {
+		height: 380px;
+	}
+	m .member-topleft {
+		height: 100px;
+	}
+
+	.profav-list {
+		height: 100px;
+		margin: 0px;
+	}
+	.main-right img {
+		width: 50%;
+	}
+
+	.main-right {
+		height: 320px;
+	}
+
+	.profav-btn,
+	.remove-btn {
+		display: none;
+	}
+
+	h2 {
+		font-size: 0.9rem;
+	}
+
+	.main-content img {
+		width: 40%;
 	}
 }
