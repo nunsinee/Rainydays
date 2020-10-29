@@ -1,7 +1,6 @@
-/*------check box style for product pages---------
-Reference : www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+/*------check box style for product pages---------*/
 
-/* The container */
+/* Box container */
 .chk-container {
 	display: block;
 	width: 100%;
@@ -16,7 +15,7 @@ Reference : www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbo
 	user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+/* Hideding box */
 .chk-container input {
 	position: absolute;
 	opacity: 0;
@@ -25,7 +24,7 @@ Reference : www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbo
 	width: 0;
 }
 
-/* Create a custom checkbox */
+/* Size of checkbox */
 .checkmark {
 	position: absolute;
 	top: 0;
@@ -36,29 +35,25 @@ Reference : www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbo
 	border: 1px solid #909090;
 }
 
-/* On mouse-over, add a white background color */
 .chk-container:hover input ~ .checkmark {
 	background-color: #fff;
 }
 
-/* When the checkbox is checked, add a black background */
 .chk-container input:checked ~ .checkmark {
 	background-color: #000;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* hidden when not checked */
 .checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
-/* Show the checkmark when checked */
 .chk-container input:checked ~ .checkmark:after {
 	display: block;
 }
 
-/* Style the checkmark/indicator */
 .chk-container .checkmark:after {
 	left: 9px;
 	top: 5px;

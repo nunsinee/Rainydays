@@ -30,7 +30,7 @@ ul {
 	list-style: none;
 }
 
-/* set icon size*/
+/*.......set icon size.......*/
 .fa-color {
 	color: #707070;
 }
@@ -265,7 +265,7 @@ ul {
 	display: block;
 }
 
-/* New Arrival Button */
+/* ...........New Arrival Button....... */
 .btn-new {
 	cursor: pointer;
 	display: inline-block;
@@ -400,8 +400,9 @@ ul {
 		max-width: 70%;
 	}
 	.pro-typec {
-		position: relative;
-		bottom: 120px;
+		position: absolute;
+		top: 650px;
+		left: 50px;
 	}
 
 	.pro-typec-list {
@@ -422,15 +423,15 @@ ul {
 		max-width: 700px;
 		position: absolute;
 		left: 20px;
-		top: 850px;
+		top: 800px;
 		border: 1px solid #fff;
 	}
 
 	.pro-cart {
 		margin: 0px;
-		position: relative;
-		left: 120px;
-		bottom: 150px;
+		position: absolute;
+		right: 110px;
+		bottom: 120px;
 	}
 
 	.caption {
@@ -502,151 +503,147 @@ ul {
 	.footer {
 		font-size: 0.8rem;
 	}
-	/* addition changing */
 	.main-content-1 {
-		height: 650px;
+		display: flex;
+		width: 500px;
+		min-height: 2000;
+		padding: 0px;
+		flex-direction: column;
+	}
+
+	.pro-photo {
+		width: 460px;
+		margin: 2px;
+		padding: 5px;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
+	.photo-section {
+		display: flex;
+		align-items: center;
+		padding: 0px;
+		grid-gap: 0px;
+		margin-top: 40px;
+	}
+
+	.pro-spec1 {
+		display: flex;
+		width: 300px;
+		flex-direction: row;
+		padding: 10px 10px 10px 60px;
+		margin-top: 90px;
+		height: auto;
 	}
 
 	.pro-spec2 {
-		display: none;
+		display: flex;
+		width: 300px;
+		flex-direction: row;
+		padding: 5px 10px 10px 60px;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.pro-typec {
+		position: absolute;
+		top: 320px;
+		left: 50px;
 	}
 
 	.pro-info {
 		display: none;
 	}
 
-	.pro-photo {
-		grid-area: pro-photo;
-		min-width: 300px;
-		padding: 2px 2px;
-		margin: 20px 0px 0px 30px;
-	}
-
-	.pro-spec1 {
-		width: 70px;
-		margin-right: 40px;
+	.new-title {
+		display: inline;
+		font-size: 1rem;
+		margin-top: 40px;
 	}
 
 	.pro-cart {
 		width: 150px;
-		margin: 0px;
 		position: absolute;
-		left: 180px;
-		top: 700px;
-		padding: 20px;
+		right: 30px;
+		top: 730px;
 	}
 
-	.pro-typec {
-		position: relative;
-		bottom: 120px;
-		left: 5px;
-	}
-
-	.photo-section-01,
-	.photo-section-02,
-	.photo-section-03,
-	.photo-section-04 {
-		width: 120px;
-	}
-
-	.pro-typec-list {
-		width: 70px;
-	}
-
-	.caption {
+	.main-content-2 .best-list {
+		max-width: 90%;
 		display: inline-block;
-	}
-
-	.main-content-1 a {
-		font-size: 1rem;
-		line-height: 1.5rem;
-		padding: 5px 5px;
-	}
-	.main-content-2 a {
-		font-size: 0.8rem;
-		line-height: 0.8rem;
-		padding: 3px 2px;
-	}
-
-	.checkmark {
-		height: 25px;
-		width: 25px;
-	}
-	.chk-container {
-		font-size: 0.8rem;
-		width: 50px;
-		padding-right: 10px;
-	}
-
-	.main-content-1 .pro-info p {
-		font-size: 0.8;
-		color: #000;
-		text-align: left;
-		font-style: normal;
-	}
-
-	.new-title {
-		font-size: 0.8rem;
-		max-width: 100%;
-		margin-top: 45px;
+		padding: 0 10px;
+		text-align: center;
 	}
 }
 
 /* Media Queries for  ## Screen = max-width 375px  */
 
 @media (max-width: 375px) {
-	body {
-		font-size: 0.8rem;
-	}
-
 	.main-content-1 {
 		display: flex;
 		flex-direction: column;
-		max-width: 374px;
-		height: 900px;
+		width: 375px;
 	}
 
 	.pro-photo {
-		grid-area: pro-photo;
-		width: 300px;
-		padding: 0px;
-		margin: 50px 0 10px 30px;
+		display: none;
 	}
 
-	.photo-section-01,
+	.photo-section {
+		max-width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.photo-section-02,
 	.photo-section-03,
 	.photo-section-04 {
-		width: 130px;
+		display: none;
+	}
+
+	.pro-spec1 {
+		width: 300px;
+		padding: 5px 0px 20px 60px;
+		margin-top: 120px;
+	}
+
+	.pro-spec2 {
+		width: 250px;
+		flex-direction: row;
+		padding: 5px 0px 20px 60px;
+	}
+
+	/* .photo-section {
+		width: 250px;
+	} */
+
+	.pro-fav {
+		position: absolute;
+		right: 160px;
+		top: 750px;
 	}
 
 	.pro-cart {
-		width: 150px;
-		margin: 0px;
 		position: absolute;
-		left: 230px;
-		top: 900px;
-		padding: 0;
-	}
-	.pro-spec1 {
-		min-width: 200px;
-		padding: 0px;
-		margin: 90px 10px 5px 60px;
-		display: flex;
-		flex: 1;
-		flex-direction: row;
-		margin-right: 0px;
+		width: 120px;
+		right: 200px;
+		top: 720px;
 	}
 
 	.pro-typec {
 		position: absolute;
-		top: 600px;
-		left: 70px;
+		top: 210px;
+		left: 30px;
 	}
 
-	.pro-color,
-	.pro-size,
-	.pro-quant {
-		padding: 0px 25px;
+	.main-content-2 a {
+		max-width: 100%;
+		font-size: 0.6rem;
+	}
+
+	.new-title {
+		font-size: 0.8rem;
+		margin-top: 45px;
 	}
 }
