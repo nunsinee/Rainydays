@@ -194,12 +194,6 @@ ul {
 	/* box-sizing: border-box; */
 }
 
-.main-content-2 input[type="text"]:focus,
-.main-content-2 input[type="address"]:focus {
-	background-color: #e1ad01;
-	outline: none;
-}
-
 hr {
 	border: 1px solid #ccc;
 	margin-bottom: 25px;
@@ -394,9 +388,11 @@ span.psw {
 .fa-color {
 	color: #707070;
 }
+
 .fa-color-nav {
 	color: #0a3641;
 }
+
 .fa-color-mid {
 	color: #fff;
 	padding-right: 5px;
