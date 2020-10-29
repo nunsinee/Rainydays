@@ -430,8 +430,8 @@ ul {
 	.pro-cart {
 		margin: 0px;
 		position: absolute;
-		right: 110px;
-		bottom: 120px;
+		left: 630px;
+		bottom: 60px;
 	}
 
 	.caption {
@@ -565,8 +565,14 @@ ul {
 	.pro-cart {
 		width: 150px;
 		position: absolute;
-		right: 30px;
-		top: 730px;
+		left: 330px;
+		bottom: 40px;
+	}
+
+	.pro-fav {
+		position: absolute;
+		right: 5px;
+		top: 540px;
 	}
 
 	.main-content-2 .best-list {
@@ -577,13 +583,13 @@ ul {
 	}
 }
 
-/* Media Queries for  ## Screen = max-width 375px  */
+/* Media Queries for  ## Screen = max-width 414px  */
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 	.main-content-1 {
 		display: flex;
 		flex-direction: column;
-		width: 375px;
+		width: 414px;
 	}
 
 	.pro-photo {
@@ -614,21 +620,17 @@ ul {
 		padding: 5px 0px 20px 60px;
 	}
 
-	/* .photo-section {
-		width: 250px;
-	} */
-
 	.pro-fav {
 		position: absolute;
-		right: 160px;
-		top: 750px;
+		right: 195px;
+		top: 680px;
 	}
 
 	.pro-cart {
 		position: absolute;
 		width: 120px;
-		right: 200px;
-		top: 720px;
+		left: 60px;
+		top: 750px;
 	}
 
 	.pro-typec {
@@ -645,5 +647,32 @@ ul {
 	.new-title {
 		font-size: 0.8rem;
 		margin-top: 45px;
+	}
+}
+
+/* Media Queries for  ## Screen = max-width 375px  */
+
+@media (max-width: 375px) {
+	.pro-cart {
+		position: absolute;
+		width: 120px;
+		right: 195px;
+		top: 750px;
+	}
+
+	.pro-typec {
+		position: absolute;
+		top: 210px;
+		left: 30px;
+	}
+	.pro-spec2 {
+		width: 330px;
+		padding-left: 30px;
+		margin: 0 20px 0 30px;
+	}
+	.pro-fav {
+		position: absolute;
+		right: 160px;
+		top: 680px;
 	}
 }
