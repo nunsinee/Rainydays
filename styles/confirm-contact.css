@@ -153,6 +153,13 @@ ul {
 	text-align: center;
 }
 
+.main-content-1 h2 {
+	font-size: 1.2rem;
+	position: absolute;
+	left: 870px;
+	top: 670px;
+}
+
 /*............Bar Menu....................*/
 
 .barmenu {
@@ -261,6 +268,13 @@ ul {
 		font-size: 1.2rem;
 	}
 
+	.main-content-1 h2 {
+		font-size: 1.2rem;
+		position: absolute;
+		left: 380px;
+		top: 550px;
+	}
+
 	.main-content-1 img {
 		margin-left: 60px;
 	}
@@ -327,8 +341,26 @@ ul {
 	}
 
 	.main-content-1 h1,
-	h2,
 	p {
 		text-align: center;
+	}
+
+	.main-content-1 h2 {
+		position: absolute;
+		left: 120px;
+		top: 530px;
+	}
+}
+/* Media Queries for  ## Screen = max-width 375px */
+
+@media (max-width: 375px) {
+	.main-content-1 h1,
+	h2 {
+		font-size: 1rem;
+	}
+
+	.main-content-1 img {
+		position: relative;
+		right: 20px;
 	}
 }
