@@ -439,9 +439,9 @@ ul {
 	}
 }
 
-/* Media Queries for  Mobile screen device 375px*/
+/* Media Queries for  Mobile screen device 414px*/
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 	.main-content {
 		padding: 30px 30px;
 	}
