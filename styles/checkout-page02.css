@@ -490,3 +490,34 @@ span.psw {
 		padding-top: 15px;
 	}
 }
+
+/* Media Queries for  ## Screen = max-width 414px*/
+@media (max-width: 414px) {
+	body {
+		font-size: 0.9rem;
+	}
+
+	.main-content-2 h1 {
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+	}
+
+	table {
+		width: 330px;
+	}
+}
+
+/* Media Queries for  ## Screen = max-width 375px*/
+@media (max-width: 375px) {
+	.main-content-2 h1 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	body {
+		font-size: 0.9rem;
+	}
+	table {
+		width: 280px;
+	}
+}
