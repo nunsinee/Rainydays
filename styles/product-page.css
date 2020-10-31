@@ -405,6 +405,12 @@ ul {
 		left: 50px;
 	}
 
+	.pro-fav {
+		position: absolute;
+		right: 50px;
+		top: 570px;
+	}
+
 	.pro-typec-list {
 		max-width: 100px;
 	}
@@ -566,7 +572,7 @@ ul {
 		width: 150px;
 		position: absolute;
 		left: 330px;
-		bottom: 90px;
+		bottom: 100px;
 	}
 
 	.pro-fav {
@@ -657,7 +663,7 @@ ul {
 		position: absolute;
 		width: 120px;
 		right: 195px;
-		top: 750px;
+		top: 730px;
 	}
 
 	.pro-typec {
