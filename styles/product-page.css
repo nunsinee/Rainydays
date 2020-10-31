@@ -449,7 +449,7 @@ ul {
 	}
 }
 
-/* Media Queries for  ## Screen = max-width 375px AND max-width 500px */
+/* Media Queries for  ## Screen =max-width 500px */
 
 @media (max-width: 500px) {
 	.menu-btn {
@@ -566,7 +566,7 @@ ul {
 		width: 150px;
 		position: absolute;
 		left: 330px;
-		bottom: 40px;
+		bottom: 90px;
 	}
 
 	.pro-fav {
