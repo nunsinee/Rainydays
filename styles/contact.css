@@ -165,11 +165,10 @@ ul {
 
 .main-content {
 	max-width: 100%;
-	max-height: 100%;
 	display: grid;
 	margin: 0 auto;
 	grid-gap: 20px;
-	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-columns: 1fr 2fr;
 	flex-direction: column;
 	background-image: url("./img/index_bg_img.jpg");
 	background-repeat: no-repeat;
@@ -186,15 +185,11 @@ ul {
 	margin-left: 20px;
 }
 
-.main-content-3 {
-	margin-left: 60px;
-}
-
 .main-content img {
 	max-height: 250px;
-	margin-bottom: 10px;
+	margin: 10px 0px;
 	border-radius: 4px;
-	border: 2px solid #909090;
+	/* border: 1px solid #909090; */
 	box-shadow: var(--shadow);
 }
 
@@ -209,63 +204,106 @@ ul {
 	padding-bottom: 10px;
 }
 
-.main-content-2 p,
-.main-content-3 p {
-	color: #000;
-	max-width: 100%;
-	text-align: left;
-}
-
-.main-content-3 p {
+.main-content-2 p {
 	font-weight: bold;
 }
 
 /* Form style for contact form */
-.main-content-3 form {
+
+.main-content-2 form {
+	width: 100%;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 10px 50px 10px 0px;
+	padding: 50px 70px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background-color: rgba(170, 211, 214, 0.39);
+}
+
+.main-content-2 label {
+	width: 100%;
+}
+
+.main-content-2 textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.main-content-2 label,
+.main-content-2 input,
+.main-content-2 textarea {
+	display: block;
+	font-size: 1.1rem;
+	padding: 5px 5px;
+	margin: 5px 0px 0px 8px;
+	border-radius: 3px;
+}
+
+.main-content-2 input[name="text"],
+.main-content-2 input[name="subject"],
+.main-content-2 input[name="email"] {
+	width: 50%;
+	margin: 2px 5px;
+	padding-left: 5px;
+	border: 1px solid #4ba894e7;
+}
+.main-content-2 textarea {
+	border: 1px solid #4ba894e7;
+}
+
+.form-error {
+	display: none;
+	font-size: 1rem;
+	margin: 0px 0 25px 15px;
+	color: #dd0606;
+}
+
+.message {
+	background: rgb(2, 65, 61);
+	padding: 1em;
+	color: #ffffff;
+	margin-bottom: 1em;
+}
+
+.main-content-2 h1 {
+	width: 100%;
+	padding: 5px 0px;
+	margin: 0px 20px;
+	font-size: 1.2rem;
 }
 
 /* Full-width inputs-Contact form */
-.main-content-3 input[type="text"],
-.main-content-3 input[type="country"],
-.main-content-3 input[type="email"],
-.main-content-3 textarea,
-.main-content-3 select {
-	width: 100%;
-	font-size: 1rem;
-	padding: 14px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	/* box-sizing: border-box; */
-}
 
 /* Set a style of Button */
-.main-content-3 button {
+.main-content-2 button {
 	font-family: "Georgia", Times New Roman, Times, serif;
-	width: 100%;
+	width: 100px;
 	font-weight: bold;
-	font-size: 1rem;
-	color: #fff;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	background-color: #025951;
+	font-size: 1.2rem;
+	color: #022420;
+	padding: 8px 20px;
+	margin: 20px 0 2px 20px;
+	background-color: rgb(11, 156, 71);
+	border: #025951 1px solid;
 	cursor: pointer;
 	border-radius: 4px;
+	transition: all 0.5s;
 }
 
-.main-content-3 button a {
+button:hover {
 	color: #fff;
-	background-color: #025951;
+	background-color: #064437e7;
 	text-decoration: none;
 }
 
-.main-content-3 button a:hover {
-	color: #e1ad01;
-	background-color: #025951;
-	text-decoration: none;
+.hidden {
+	display: none;
+}
+
+.thank-you {
+	padding: 40px;
+	font: size 32px;
+	text-align: center;
 }
 
 /*............Bar Menu....................*/
@@ -355,6 +393,15 @@ ul {
 	padding-right: 5px;
 }
 
+/*
+background-image:linear-gradient(
+	to right,
+	rgb(0,114,600) 0%,
+	rgb(4, 109,91) 100%);
+
+
+*/
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
@@ -378,6 +425,7 @@ ul {
 		padding: 25px 0;
 	}
 }
+
 /* Media Queries for  ## Screen = max-width 500px*/
 @media (max-width: 500px) {
 	.menu-btn {
