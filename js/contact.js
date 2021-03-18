@@ -5,7 +5,7 @@ const email = document.querySelector("#email");
 const textArea = document.querySelector("#textArea");
 const message = document.querySelector("#message");
 
-//1.if all the input  pass validation enable the button
+//1.if all the input  pass validation
 function validateForm(event) {
 	event.preventDefault();
 	if (checkLength(contactName.value, 0) === true) {

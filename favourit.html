@@ -40,6 +40,7 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="women.html">Women</a></li>
           <li><a href="men.html">Men</a></li>
+          <li><a href="newarrival.html">Collections</a></li>
         </ul>
         <!--Search Menu-->
         <form action="#" method="get" target="blank" class="search-menu">
@@ -51,7 +52,7 @@
         <!--RightMenu-->
         <ul class="right-menu">
           <li><a href="favourit.html"><i class="fas fa-heart  fa-color-nav"></i></a></li>
-          <li><a href="cart.html"><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
+          <li class="cart"><a href="cart.html"><span>0</span><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -63,30 +64,26 @@
         <div class="main-content-1">
           <img src="images/new-products/fav-anna-women-341x341-blue.jpg" alt="anna parka blue-woman play with snow">
           <p><i class="fas fa-heart fa-color-fav2"></i>Anna Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <a class ="add-cart cart1" href="#">Add to Cart</a>
+        <input type="hidden" value="1200">
         </div>
         <div class="main-content-2">
           <img src="images/new-products/fav-emme-women-341x341-black.jpg" alt="Emma parka black women jacket">
           <p><i class="fas fa-heart fa-color-fav2"></i>Emma Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <a class ="add-cart cart2" href="#">Add to Cart</a>
+          <input type="hidden" value="1200">
         </div>
         <div class="main-content-3">
           <img src="images/new-products/fav-sofia-women-341x341-yellow.jpg" alt="Sofia thelma jacket in yellow color">
           <p><i class="fas fa-heart fa-color-fav2"></i>Sofia Thelma 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <a class ="add-cart cart3" href="#">Add to Cart</a>
+          <input type="hidden" value="1200">
         </div>
         <div class="main-content-4">
           <img src="images/new-products/fav-rosy-women-341x341-green.jpg" alt="Rosy parka jacket in green color">
           <p><i class="fas fa-heart fa-color-fav2"></i>Rosy Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <a class ="add-cart cart4" href="#">Add to Cart</a>
+          <input type="hidden" value="1200">
         </div>
       </section>
     </div>
@@ -152,6 +149,8 @@
       </footer>
     </div>
     <script src="js/hambergermenu.js"></script>
+    <script src="js/addcart.js"></script>
+    <script src="js/linktoproductpage.js"></script>
   </body>
 
 </html>

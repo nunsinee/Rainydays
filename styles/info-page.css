@@ -72,6 +72,25 @@ ul {
 	margin-left: 20px;
 }
 
+.main-nav ul li a:hover {
+	/* border-bottom: 1px solid #0a3641; */
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 10px;
+	border: rgb(199, 236, 231);
+	cursor: pointer;
+	transition: all 0.8s;
+}
+
+.main-nav .current {
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 9px;
+	border: whitesmoke 1px solid;
+}
+
 /* Hamburger Menu */
 .menu-btn {
 	cursor: pointer;
@@ -83,6 +102,15 @@ ul {
 }
 
 /*............Search menu on Navigation....................*/
+form .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
 
 .search-menu {
 	padding: 0px 10px 60px 10px;
@@ -90,7 +118,6 @@ ul {
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -98,23 +125,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
-}
-
-.btn-search a:hover {
-	color: #000;
-}
-
-/* Input text for Seach Menu */
-.mid-menu input[type="search"] {
-	font-size: 1.2rem;
-	text-align: center;
-	width: 100px;
-	border: 1px solid #808080;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
 	border-radius: 4px;
+}
+
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -205,7 +226,15 @@ ul {
 	text-decoration: none;
 }
 
-/* New Arrival Button */
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
+/* New Arrival Button
 .btn-new {
 	cursor: pointer;
 	display: inline-block;
@@ -225,9 +254,9 @@ ul {
 	cursor: pointer;
 	background-color: #000;
 	color: #fff;
-}
+} */
 
-/* Button for men, for women */
+/* Button for men, for women
 .btn-text {
 	width: 100%;
 	font-size: 2rem;
@@ -238,7 +267,7 @@ ul {
 .btn-text:hover {
 	cursor: pointer;
 	color: #025951;
-}
+} */
 
 /*............Bar Menu....................*/
 
@@ -329,6 +358,41 @@ ul {
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
+	.main-content-1 p {
+		color: #000;
+		max-width: 100%;
+		text-align: left;
+		margin: 20px 0px;
+		padding: 0 10px;
+	}
+
+	.main-content-1 h1 {
+		padding-left: 20px;
+	}
+
+	.positioned-left {
+		max-width: 100%;
+		margin-right: 20px;
+		float: none;
+	}
+
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+
+	input[id="site-search"] {
+		max-width: 80px;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
+	}
+
+	.main-nav ul.right-menu {
+		display: none;
+	}
+
 	.barmenu,
 	.main-content a,
 	.footer {
@@ -347,6 +411,20 @@ ul {
 /* Media Queries for  ## Screen = max-width 500px*/
 
 @media (max-width: 500px) {
+	.main-content {
+		max-width: 100%;
+		padding: 30px 10px;
+	}
+	.main-content-1 h1 {
+		margin: 0px;
+	}
+
+	.main-content-1 p {
+		max-width: 100%;
+		color: #000;
+		margin: 20px 0px;
+	}
+
 	.menu-btn {
 		display: block;
 	}
@@ -366,10 +444,10 @@ ul {
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 100%;
+		height: 40%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
-		padding: 30px;
+		padding: 10px;
 		transform: translateX(-500px);
 		transition: transform 0.5s ease-in-out;
 	}
@@ -395,10 +473,6 @@ ul {
 	.main-content-1 img {
 		max-width: 80%;
 	}
-	/* .positioned-left {
-    display: none;
-  } */
-
 	.barmenu-inner {
 		grid-template-columns: repeat(2, 1fr);
 	}

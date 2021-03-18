@@ -50,11 +50,18 @@ ul {
 }
 
 .main-nav ul li a {
-	padding-bottom: 2px;
+	padding-bottom: 0px;
 }
 
 .main-nav ul li a:hover {
-	border-bottom: 1px solid #0a3641;
+	/* border-bottom: 1px solid #0a3641; */
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 10px;
+	border: rgb(199, 236, 231);
+	cursor: pointer;
+	transition: all 0.8s;
 }
 
 .main-nav .logo {
@@ -64,6 +71,14 @@ ul {
 .main-nav ul.main-menu {
 	flex: 1;
 	margin-left: 20px;
+}
+
+.main-nav .current {
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 9px;
+	border: whitesmoke 1px solid;
 }
 
 /* Hamburger Menu */
@@ -211,27 +226,29 @@ ul {
 /* Form style for contact form */
 
 .main-content-2 form {
-	width: 100%;
+	max-width: 100%;
+	max-height: 1000px;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	margin: 10px 50px 10px 0px;
-	padding: 50px 70px;
+	margin: 10px 30px 100px 0px;
+	padding: 50px 50px 100px 50px;
 	border: 1px solid #fff;
 	border-radius: 10px;
 	background-color: rgba(170, 211, 214, 0.39);
 }
 
 .main-content-2 label {
-	width: 100%;
+	max-width: 100%;
 }
 
 .main-content-2 textarea {
-	width: 100%;
+	max-width: 100%;
 	height: 100px;
 }
 
 .main-content-2 label,
 .main-content-2 input,
 .main-content-2 textarea {
+	width: 100%;
 	display: block;
 	font-size: 1.1rem;
 	padding: 5px 5px;
@@ -242,7 +259,7 @@ ul {
 .main-content-2 input[name="text"],
 .main-content-2 input[name="subject"],
 .main-content-2 input[name="email"] {
-	width: 50%;
+	width: 100%;
 	margin: 2px 5px;
 	padding-left: 5px;
 	border: 1px solid #4ba894e7;
@@ -259,9 +276,10 @@ ul {
 }
 
 .message {
-	background: rgb(2, 65, 61);
-	padding: 1em;
-	color: #ffffff;
+	background: rgb(253, 235, 75);
+	padding: 0.2em;
+	border: #fff solid 3px;
+	color: green;
 	margin-bottom: 1em;
 }
 
@@ -272,22 +290,37 @@ ul {
 	font-size: 1.2rem;
 }
 
-/* Full-width inputs-Contact form */
+/***hightligt with contact form*/
+
+.main-content-2 label {
+	cursor: pointer;
+}
+
+.main-content-2 label:focus-within {
+	color: darkgreen;
+}
+
+.main-content-2 input:hover,
+.main-content-2 textarea:hover {
+	border-color: darkseagreen;
+	border-width: 1px;
+}
 
 /* Set a style of Button */
 .main-content-2 button {
 	font-family: "Georgia", Times New Roman, Times, serif;
-	width: 100px;
+	max-width: 120px;
 	font-weight: bold;
 	font-size: 1.2rem;
 	color: #022420;
 	padding: 8px 20px;
-	margin: 20px 0 2px 20px;
-	background-color: rgb(11, 156, 71);
-	border: #025951 1px solid;
+	margin: 10px 0 2px 20px;
+	background-color: rgb(97, 212, 145);
+	border: #fff 1px solid;
 	cursor: pointer;
 	border-radius: 4px;
 	transition: all 0.5s;
+	float: right;
 }
 
 button:hover {
@@ -393,28 +426,26 @@ button:hover {
 	padding-right: 5px;
 }
 
-/*
-background-image:linear-gradient(
-	to right,
-	rgb(0,114,600) 0%,
-	rgb(4, 109,91) 100%);
-
-
-*/
-
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
 	.main-content {
-		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 50px;
 	}
+
+	.main-content-1,
 	.main-content-2 {
-		margin-left: 20px;
+		margin: 0 0 0 10px;
 	}
+
 	.main-content-1 img {
-		max-width: 90%;
-		margin-left: 40px;
+		max-width: 30%;
+		margin-left: 0px;
 	}
+
 	.barmenu,
 	.main-content a,
 	.footer {
@@ -424,10 +455,142 @@ background-image:linear-gradient(
 	.barmenu {
 		padding: 25px 0;
 	}
+
+	.main-content-2 form {
+		max-width: 90%;
+		margin: 0px;
+		padding: 20px 0 50px 15px;
+		font-size: 1rem;
+	}
+
+	.main-content-2 label {
+		max-width: 80%;
+	}
+
+	.main-content-2 textarea {
+		max-width: 80%;
+		height: 100px;
+	}
+
+	.main-content-2 label,
+	.main-content-2 input,
+	.main-content-2 textarea {
+		max-width: 90%;
+		font-size: 0.9rem;
+	}
+
+	.main-content-2 input[name="text"],
+	.main-content-2 input[name="subject"],
+	.main-content-2 input[name="email"] {
+		max-width: 75%;
+	}
+	.main-content-2 textarea {
+		border: 1px solid #4ba894e7;
+	}
+	.main-content-2 button {
+		max-width: 100px;
+		font-size: 1rem;
+		margin-bottom: 20px;
+	}
+	.search-menu {
+		display: none;
+	}
+	.barmenu-inner {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.footer {
+		font-size: 0.8rem;
+		padding-top: 15px;
+	}
 }
 
 /* Media Queries for  ## Screen = max-width 500px*/
 @media (max-width: 500px) {
+	.main-content {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 10px;
+	}
+	.main-content-1,
+	.main-content-2 {
+		margin: 0 0 0 10px;
+	}
+
+	.main-content-2 {
+		margin-top: 30px;
+	}
+
+	.main-content-2 form {
+		max-width: 100%;
+		margin: 0px;
+		padding: 0 0 100px 10px;
+		font-size: 0.8rem;
+	}
+
+	.main-content-2 label {
+		max-width: 100%;
+	}
+
+	.main-content-2 textarea {
+		max-width: 90%;
+		height: 80px;
+		font-size: 0.9rem;
+		margin: 10px 0 20px 0px;
+	}
+
+	.main-content-2 label,
+	.main-content-2 input {
+		max-width: 100%;
+		font-size: 0.9rem;
+		padding-left: 0;
+		margin: 10px 0 20px 10px;
+	}
+
+	.main-content-2 input[name="text"],
+	.main-content-2 input[name="subject"],
+	.main-content-2 input[name="email"] {
+		max-width: 85%;
+	}
+	.main-content-2 textarea {
+		border: 1px solid #4ba894e7;
+	}
+
+	.form-error {
+		display: none;
+		font-size: 0.8rem;
+		margin: 0px 0 5px 15px;
+		color: #dd0606;
+	}
+
+	.message {
+		padding: 0.2em;
+		margin-bottom: 1em;
+	}
+
+	.main-content-2 button {
+		max-width: 100px;
+		font-size: 1rem;
+		padding: 5px 10px;
+		margin: 0px 0 0px 20px;
+		float: left;
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+
+	button:hover {
+		color: #fff;
+		background-color: #064437e7;
+		text-decoration: none;
+	}
+
+	.main-content-2 h1 {
+		max-width: 90%;
+		padding: 5px 0px;
+		margin: 0px 10px;
+		font-size: 1rem;
+	}
+
 	.menu-btn {
 		display: block;
 	}
@@ -437,7 +600,12 @@ background-image:linear-gradient(
 	}
 
 	.main-nav ul.right-menu {
-		margin-right: 70px;
+		display: none;
+	}
+
+	.main-nav .current {
+		margin: 0;
+		padding: 60px 10px 0 10px;
 	}
 
 	.main-nav ul.main-menu {
@@ -447,12 +615,13 @@ background-image:linear-gradient(
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 100%;
+		height: 40%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
-		padding: 30px;
+		padding: 10px;
 		transform: translateX(-500px);
 		transition: transform 0.5s ease-in-out;
+		z-index: 100;
 	}
 
 	.main-nav ul.main-menu.show {
@@ -471,10 +640,6 @@ background-image:linear-gradient(
 
 	.search-menu {
 		display: none;
-	}
-	.main-content {
-		grid-template-columns: 1fr;
-		padding-top: 20px;
 	}
 
 	.main-content-1 img {

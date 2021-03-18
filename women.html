@@ -38,8 +38,9 @@
         <ul class="main-menu">
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="women.html">Women</a></li>
+          <li class="current"><a href="women.html">Women</a></li>
           <li><a href="men.html">Men</a></li>
+          <li><a href="newarrival.html">Collections</a></li>
         </ul>
         <!--Search Menu-->
         <form action="#" method="get" target="blank" class="search-menu">
@@ -49,9 +50,10 @@
         </form>
 
         <!--RightMenu-->
+        <div class="overlay"></div>
         <ul class="right-menu">
           <li><a href="favourit.html"><i class="fas fa-heart  fa-color-nav"></i></a></li>
-          <li><a href="cart.html"><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
+          <li class="cart"><a href="cart.html"><span>0</span><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -62,64 +64,57 @@
       <h2 class="new-subtitle">New collection for Women</h2>
       <section class="main-content">
         <div class="main-content-1">
-          <img src="images/new-products/new-colect-w-blue-anna.jpg" alt="Anna parka black-woman play with snow">
+          <img src="images/new-products/annaparka.jpg" alt="Anna parka black-woman play with snow" class="product-links">
           <p>Anna Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+					<a class ="add-cart cart1" href="#">Add to Cart</a>
+					<input type="hidden" value="1200">
         </div>
         <div class="main-content-2">
-          <img src="images/new-products/new-colect-w-black-emma.jpg" alt="emma parka black-woman play with snow">
-          <p>Emma Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <img src="images/new-products/emmaparka.jpg"class="product-links" alt="emma parka black-woman play with snow">
+          <p>Emma Parka 1,400NOK</p>
+					<a class ="add-cart cart2" href="#">Add to Cart</a>
+					<input type="hidden" value="1400">
         </div>
         <div class="main-content-3">
-          <img src="images/new-products/new-colect-w-yellow-jennie.jpg" alt="emma parka black-woman play with snow">
+          <img src="images/new-products/jennieparka.jpg" class="product-links " alt="jennie parka black-woman play with snow">
           <p>Jennie Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <a class ="add-cart cart3" href="#">Add to Cart</a>
+					<input type="hidden" value="1200">         
         </div>
         <div class="main-content-4">
-          <img src="images/new-products/new-colect-w-green_rosy.jpg" alt="emma parka black-woman play with snow">
-          <p>Rosy Parka 1,200NOK</p>
-          <a href="product.html">
-            <p>Add to Cart</p>
-          </a>
+          <img src="images/new-products/rosyparka.jpg" class="product-links" alt="rosy parka black-woman play with snow">
+          <p>Rosy Parka 1,400NOK</p>
+					<a class ="add-cart cart4" href="#">Add to Cart</a>
+					<input type="hidden" value="1400">            
       </section>
     </div>
     <!--Best Seller-->
     <h2 class="new-subtitle">Best Seller</h2>
     <section class="main-content">
       <div class="main-content-1">
-        <img src="images/new-products/new-colect-w-blue-anna.jpg" alt="Anna parka black-woman play with snow">
+        <img src="images/new-products/annaparka.jpg" class="product-links" alt="Anna parka black-woman play with snow">
         <p>Anna Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+					<a class ="add-cart cart5" href="#">Add to Cart</a>
+					<input type="hidden" value="1200">            
       </div>
       <div class="main-content-2">
-        <img src="images/new-products/new-colect-w-black-emma.jpg" alt="emma parka black-woman play with snow">
+        <img src="images/new-products/emmaparka.jpg" class="product-links" alt="emma parka black-woman play with snow">
         <p>Emma Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+					<a class ="add-cart cart6" href="#">Add to Cart</a>
+					<input type="hidden" value="1200"> 
       </div>
-      <div class="main-content-3">
-        <img src="images/new-products/new-colect-w-yellow-jennie.jpg" alt="emma parka black-woman play with snow">
+      <div class="main-content-7">
+        <img src="images/new-products/jennieparka.jpg" class="product-links" alt="jenie parka black-woman play with snow">
         <p>Jennie Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+ 					<a class ="add-cart cart7" href="#">Add to Cart</a>
+					<input type="hidden" value="1200"> 
+        
       </div>
       <div class="main-content-4">
-        <img src="images/new-products/new-colect-w-green_rosy.jpg" alt="emma parka black-woman play with snow">
+        <img src="images/new-products/rosyparka.jpg" class="product-links" alt="rosy parka black-woman play with snow">
         <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart8" href="#">Add to Cart</a>
+        <input type="hidden" value="1200"> 
       </div>
     </section>
 
@@ -128,32 +123,28 @@
     <h2 class="new-subtitle-2">Collection</h2>
     <section class="main-content">
       <div class="main-content-1">
-        <img src="images/new-products/new-w-anna-sm270.jpg" alt="Anna parka black-woman play with snow">
+        <img src="images/new-products/annaparka.jpg"  class="product-links" alt="Anna parka black-woman play with snow">
         <p>Anna Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart9" href="#">Add to Cart</a>
+        <input type="hidden" value="1200"> 
       </div>
       <div class="main-content-2">
-        <img src="images/new-products/new-w-anna-sm270.jpg" alt="Anna parka black-woman play with snow">
+        <img src="images/new-products/annaparka.jpg" class="product-links" alt="Anna parka black-woman play with snow">
         <p>Emma Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart10" href="#">Add to Cart</a>
+        <input type="hidden" value="1200"> 
       </div>
       <div class="main-content-3">
-        <img src="images/new-products/new-w-anna-sm270.jpg" alt="Anna parka black-woman play with snow">
+        <img src="images/new-products/annaparka.jpg" class="product-links" alt="Anna parka black-woman play with snow">
         <p>Jennie Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart11" href="#">Add to Cart</a>
+        <input type="hidden" value="1200"> 
       </div>
       <div class="main-content-4">
-        <img src="images/new-products/new-w-anna-sm270.jpg" alt="Anna parka black-woman play with snow">
+        <img src="images/new-products/annaparka.jpg" class="product-links" alt="Anna parka black-woman play with snow">
         <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart12" href="#">Add to Cart</a>
+        <input type="hidden" value="1200"> 
       </div>
     </section>
     </div>
@@ -220,6 +211,8 @@
       </footer>
     </div>
     <script src="js/hambergermenu.js"></script>
+    <script src="js/addcart.js"></script>
+    <script src="js/linktoproductpage.js"></script>
   </body>
 
 </html>

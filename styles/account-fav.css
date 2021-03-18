@@ -71,6 +71,24 @@ ul {
 	margin-left: 20px;
 }
 
+.main-nav ul li a:hover {
+	/* border-bottom: 1px solid #0a3641; */
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 10px;
+	border: rgb(199, 236, 231);
+	cursor: pointer;
+	transition: all 0.8s;
+}
+
+.main-nav .current {
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 9px;
+	border: whitesmoke 1px solid;
+}
 /* Hamburger Menu */
 .menu-btn {
 	cursor: pointer;
@@ -511,6 +529,11 @@ ul {
 		margin-right: 70px;
 	}
 
+	.main-nav .current {
+		margin: 0;
+		padding: 60px 10px 0 10px;
+	}
+
 	.main-nav ul.main-menu {
 		display: block;
 		position: absolute;
@@ -518,12 +541,13 @@ ul {
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 100%;
+		height: 30%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
-		padding: 30px;
+		padding: 10px;
 		transform: translateX(-500px);
 		transition: transform 0.5s ease-in-out;
+		z-index: 100;
 	}
 
 	.main-nav ul.main-menu.show {

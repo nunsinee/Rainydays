@@ -66,6 +66,25 @@ ul {
 	margin-left: 20px;
 }
 
+.main-nav ul li a:hover {
+	/* border-bottom: 1px solid #0a3641; */
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 10px;
+	border: rgb(199, 236, 231);
+	cursor: pointer;
+	transition: all 0.6s;
+}
+
+.main-nav .current {
+	background-color: rgb(199, 236, 231);
+	margin: 55px 0 0 0;
+	padding: 5px 10px 0 10px;
+	border-radius: 9px;
+	border: whitesmoke 1px solid;
+}
+
 /* Hamburger Menu */
 .menu-btn {
 	cursor: pointer;
@@ -78,13 +97,22 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
+form .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
+
 .search-menu {
 	padding: 0px 10px 60px 10px;
 	position: relative;
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -92,23 +120,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
-}
-
-.btn-search a:hover {
-	color: #000;
-}
-
-/* Input text for Seach Menu */
-.mid-menu input[type="search"] {
-	font-size: 1.2rem;
-	text-align: center;
-	width: 100px;
-	border: 1px solid #808080;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
 	border-radius: 4px;
+}
+
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content New Arrivals....................*/
@@ -134,8 +156,15 @@ ul {
 	margin-top: 40px;
 	padding-right: 10px;
 	color: #000;
-	background-color: #f3f1d7;
+	background-color: #c6ebe6;
 	z-index: -1;
+	transition: all 0.5s;
+}
+
+.new-title2:hover {
+	color: #000;
+	background-color: #e1ad01;
+	border-color: 2px solid #ffff;
 }
 
 .new-subtitle {
@@ -203,6 +232,14 @@ ul {
 	box-shadow: var(--shadow);
 }
 
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
 /*.....Add to Cart Button..*/
 .main-content a {
 	display: inline-block;
@@ -222,6 +259,16 @@ ul {
 	cursor: pointer;
 	background-color: #fff;
 	color: #000;
+}
+
+.product-links {
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.product-links:hover {
+	opacity: 0.4;
 }
 
 /* New Arrival Button */
@@ -349,6 +396,19 @@ ul {
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+
+	input[id="site-search"] {
+		max-width: 80px;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
+	}
+
 	.barmenu,
 	.footer {
 		font-size: 1rem;
@@ -382,6 +442,11 @@ ul {
 		margin-right: 70px;
 	}
 
+	.main-nav .current {
+		margin: 0;
+		padding: 60px 10px 0 10px;
+	}
+
 	.main-nav ul.main-menu {
 		display: block;
 		position: absolute;
@@ -389,12 +454,13 @@ ul {
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 100%;
+		height: 40%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
-		padding: 30px;
+		padding: 10px;
 		transform: translateX(-500px);
 		transition: transform 0.5s ease-in-out;
+		z-index: 100;
 	}
 
 	.main-nav ul.main-menu.show {
@@ -488,5 +554,9 @@ ul {
 	.main-content img {
 		max-width: 80%;
 		margin-bottom: 20px;
+	}
+
+	.right-menu {
+		margin-right: 0px;
 	}
 }

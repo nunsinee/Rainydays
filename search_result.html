@@ -40,17 +40,19 @@
           <li><a href="contact.html">Contact</a></li>
           <li><a href="women.html">Women</a></li>
           <li><a href="men.html">Men</a></li>
+          <li class="current"><a href="newarrival.html">Collections</a></li>
         </ul>
         <!--Search Menu-->
         <form action="#" method="get" target="blank" class="search-menu">
           <input type="search" id="site-search" name="q" aria-label="Search by color, Product name.."
-            placeholder="Search by color, Product name.."><a href="search_result.html">Search</a></button>
+            placeholder="Search by color, Product name.." />
+          <button class="btn-search"><a href="search_result.html">Search</a></button>
         </form>
 
         <!--RightMenu-->
         <ul class="right-menu">
           <li><a href="favourit.html"><i class="fas fa-heart  fa-color-nav"></i></a></li>
-          <li><a href="cart.html"><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
+          <li class="cart"><a href="cart.html"><span>0</span><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -74,34 +76,28 @@
     <h2 class="new-subtitle">Search Result</h2>
     <div class="main-content">
       <div class="main-result-1">
-        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" alt="Rosy parka jacket in green color">
+        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
         <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
-      </div>
-
-      <div class="main-result-1">
-        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" alt="Rosy parka jacket in green color">
-        <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
-      </div>
-
-      <div class="main-result-1">
-        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" alt="Rosy parka jacket in green color">
-        <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart1" href="#">Add to Cart</a>
+        <input type="hidden" value="1200">
       </div>
       <div class="main-result-1">
-        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" alt="Rosy parka jacket in green color">
+        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
         <p>Rosy Parka 1,200NOK</p>
-        <a href="product.html">
-          <p>Add to Cart</p>
-        </a>
+        <a class ="add-cart cart1" href="#">Add to Cart</a>
+        <input type="hidden" value="1200">
+      </div>
+      <div class="main-result-1">
+        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+        <p>Rosy Parka 1,200NOK</p>
+        <a class ="add-cart cart1" href="#">Add to Cart</a>
+        <input type="hidden" value="1200">
+      </div>
+      <div class="main-result-1">
+        <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+        <p>Rosy Parka 1,200NOK</p>
+        <a class ="add-cart cart1" href="#">Add to Cart</a>
+        <input type="hidden" value="1200">
       </div>
 
     </div>
@@ -170,6 +166,8 @@
       </footer>
     </div>
     <script src="js/hambergermenu.js"></script>
+    <script src="js/cart-additems.js"></script>
+    <script src="js/linktoproductpage.js"></script>
   </body>
 
 </html>
