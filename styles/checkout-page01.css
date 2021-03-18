@@ -217,8 +217,8 @@ input[id="site-search"]:focus-within {
 .main-content-2 input[type="country"] {
 	width: 100%;
 	font-size: 1rem;
-	padding: 14px 20px;
-	margin: 2px 0;
+	padding: 10px 20px;
+	margin-bottom: 20px;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
