@@ -411,6 +411,27 @@ span {
 /* Media Queries for  ## Screen = max-width 500px */
 
 @media (max-width: 500px) {
+	.main-nav .current {
+		margin: 0;
+		padding: 60px 10px 0 10px;
+	}
+
+	.main-nav ul.main-menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #e5e9ea;
+		width: 50%;
+		height: 40%;
+		border-right: #ccc 1px solid;
+		opacity: 0.9;
+		padding: 10px;
+		transform: translateX(-500px);
+		transition: transform 0.5s ease-in-out;
+		z-index: 100;
+	}
+
 	.menu-btn {
 		display: block;
 	}

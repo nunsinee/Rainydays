@@ -108,11 +108,12 @@ ul {
 	color: #000;
 	background-color: #e1ad01;
 	text-align: left;
-	transition: all 0.5s;
+	transition: all 0.5s ease-in-out;
+	opacity: 0.9;
 }
 
 .btn-news:hover {
-	opacity: 0.9;
+	opacity: 1;
 	background-color: #000;
 	color: #fff;
 }
@@ -148,13 +149,22 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
+form .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
+
 .search-menu {
 	padding: 0px 10px 60px 10px;
 	position: relative;
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -162,23 +172,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
-}
-
-.btn-search a:hover {
-	color: #000;
-}
-
-/* Input text for Seach Menu */
-.mid-menu input[type="search"] {
-	font-size: 1.2rem;
-	text-align: center;
-	width: 100px;
-	border: 1px solid #808080;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
 	border-radius: 4px;
+}
+
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -265,12 +269,14 @@ ul {
 	text-align: center;
 	padding: 5px 10px;
 	margin-top: 50px;
+	transition: all 0.5s;
+	opacity: 0.8;
 }
 
 .btn-new:hover {
-	cursor: pointer;
 	background-color: #000;
 	color: #fff;
+	opacity: 1;
 }
 
 /* Button for men, for women */
