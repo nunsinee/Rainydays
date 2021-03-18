@@ -377,6 +377,16 @@ span {
 	color: #e9802a;
 }
 
+.product-links {
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.product-links:hover {
+	opacity: 0.4;
+}
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
