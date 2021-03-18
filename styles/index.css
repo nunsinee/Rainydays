@@ -383,6 +383,23 @@ input[id="site-search"]:focus-within {
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+
+	input[id="site-search"] {
+		max-width: 80px;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
+	}
+
+	.main-nav ul.right-menu {
+		display: none;
+	}
+
 	.barmenu,
 	.main-content a,
 	.footer {
@@ -406,7 +423,7 @@ input[id="site-search"]:focus-within {
 	}
 
 	.main-nav ul.right-menu {
-		margin-right: 70px;
+		display: none;
 	}
 
 	.main-nav .current {
@@ -476,5 +493,11 @@ input[id="site-search"]:focus-within {
 	.main-content-1 p {
 		max-width: 300px;
 		margin-right: 10px;
+	}
+	.btn-news {
+		font-size: 1rem;
+	}
+	.main-nav ul.right-menu {
+		display: none;
 	}
 }

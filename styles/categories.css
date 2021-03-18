@@ -398,6 +398,22 @@ span {
 		font-size: 0.8rem;
 	}
 
+	.main-nav ul.right-menu {
+		margin-right: 40px;
+	}
+
+	.main-nav {
+		width: 100%;
+		font-size: 1rem;
+	}
+	.search-menu {
+		display: none;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
+	}
+
 	.barmenu,
 	.footer {
 		font-size: 1rem;
