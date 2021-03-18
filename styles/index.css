@@ -74,11 +74,11 @@ ul {
 	border-radius: 10px;
 	border: rgb(199, 236, 231);
 	cursor: pointer;
-	transition: all 0.6s;
+	transition: all 0.8s;
 }
 
 .main-nav .current {
-	background-color: #c6ebe6;
+	background-color: rgb(199, 236, 231);
 	margin: 55px 0 0 0;
 	padding: 5px 10px 0 10px;
 	border-radius: 9px;
@@ -97,7 +97,6 @@ ul {
 
 /* New Arrival Button */
 .btn-news {
-	max-width: 100%;
 	cursor: pointer;
 	display: inline-block;
 	border: 1px solid #000;
@@ -117,7 +116,6 @@ ul {
 	background-color: #000;
 	color: #fff;
 }
-
 /*............News....................*/
 .new-arrival {
 	max-width: 100%;
@@ -134,7 +132,6 @@ ul {
 	padding-bottom: 50px;
 	border-bottom: 5px solid #000;
 	margin-top: 10px;
-	display: none;
 }
 
 .new-arrival h2,
@@ -149,147 +146,7 @@ ul {
 	text-align: center;
 }
 
-/** new arrival Hover**/
-.figure {
-	position: relative;
-	display: inline-block;
-	max-width: 100%;
-}
-.figure img {
-	max-width: 100%;
-}
-
-h3 {
-	color: #000;
-	font-size: 2rem;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 45%;
-	opacity: 0;
-	text-align: center;
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	transition: all ease 0.8s;
-}
-
-h4 {
-	color: #000;
-	font-size: 1.5rem;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 65%;
-	opacity: 0;
-	text-align: center;
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
-	transition: all ease 0.8s;
-}
-
-.figure:hover h3,
-.figure:hover h4 {
-	opacity: 1;
-}
-.figure .span1:before {
-	content: "";
-	position: absolute;
-	top: 5%;
-	left: 0;
-	right: 0;
-	width: 90%;
-	height: 2px;
-	background-color: transparent;
-	margin: 0 auto;
-}
-
-.figure .span1:after {
-	content: "";
-	position: absolute;
-	top: 5%;
-	right: 5%;
-	width: 2px;
-	height: 90%;
-	background-color: transparent;
-	margin: 0 auto;
-}
-
-.figure .span2:before {
-	content: "";
-	position: absolute;
-	bottom: 5%;
-	left: 0;
-	right: 0;
-	width: 90%;
-	height: 2px;
-	background-color: transparent;
-	margin: 0 auto;
-}
-
-.figure .span2:after {
-	content: "";
-	position: absolute;
-	top: 5%;
-	left: 5%;
-	width: 2px;
-	height: 90%;
-	background-color: transparent;
-	margin: 0 auto;
-}
-
-/*animation on hover*/
-.figure:hover .span1:before {
-	animation: border-top 0.3s linear;
-	transform-origin: left;
-	background-color: #fff;
-}
-@keyframes border-top {
-	0% {
-		transform: scaleX(0);
-	}
-}
-.figure:hover .span1:after {
-	animation: border-right 0.6s linear;
-	transform-origin: top;
-	background-color: #fff;
-}
-@keyframes border-right {
-	0%,
-	50% {
-		transform: scaleY(0);
-	}
-}
-.figure:hover .span2:before {
-	animation: border-bottom 0.9s linear;
-	transform-origin: right; /*Right to Left*/
-	background-color: #fff;
-}
-@keyframes border-bottom {
-	0%,
-	75% {
-		transform: scaleX(0);
-	}
-}
-.figure:hover .span2:after {
-	animation: border-left 1.2s linear;
-	transform-origin: bottom;
-	background-color: #fff;
-}
-@keyframes border-left {
-	0%,
-	80% {
-		transform: scaleY(0);
-	}
-}
-
 /*............Search menu on Navigation....................*/
-form .search-menu {
-	max-width: 100%;
-}
-
-input[id="site-search"] {
-	border-color: #c6ebe6;
-	max-height: 100%;
-	padding: 5px;
-}
 
 .search-menu {
 	padding: 0px 10px 60px 10px;
@@ -297,6 +154,7 @@ input[id="site-search"] {
 	top: 60px;
 }
 
+/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -304,17 +162,23 @@ input[id="site-search"] {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
-	transition: all 0.5s;
 }
 
-.btn-search:hover {
-	background-color: #c6ebe6;
-	padding: 5px;
+.btn-search a {
+	color: #0a3641;
+}
+
+.btn-search a:hover {
+	color: #000;
+}
+
+/* Input text for Seach Menu */
+.mid-menu input[type="search"] {
+	font-size: 1.2rem;
+	text-align: center;
+	width: 100px;
+	border: 1px solid #808080;
 	border-radius: 4px;
-}
-
-input[id="site-search"]:focus-within {
-	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -401,7 +265,6 @@ input[id="site-search"]:focus-within {
 	text-align: center;
 	padding: 5px 10px;
 	margin-top: 50px;
-	font-size: 1.2rem;
 }
 
 .btn-new:hover {
@@ -514,22 +377,6 @@ input[id="site-search"]:focus-within {
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
-	.main-nav {
-		font-size: 0.8rem;
-	}
-
-	input[id="site-search"] {
-		max-width: 80px;
-	}
-
-	.btn-search {
-		font-size: 0.8rem;
-	}
-
-	.main-nav ul.right-menu {
-		display: none;
-	}
-
 	.barmenu,
 	.main-content a,
 	.footer {
@@ -538,20 +385,6 @@ input[id="site-search"]:focus-within {
 	}
 	.barmenu {
 		padding: 25px 0;
-	}
-	h3 {
-		font-size: 1.5rem;
-		top: 30%;
-	}
-
-	h4.btn-new {
-		font-size: 1.2rem;
-	}
-
-	.btn-news {
-		max-width: 100%;
-		font-size: 0.8rem;
-		padding: 2px 5px;
 	}
 }
 
@@ -582,7 +415,7 @@ input[id="site-search"]:focus-within {
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 45%;
+		height: 30%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
 		padding: 10px;
@@ -618,21 +451,6 @@ input[id="site-search"]:focus-within {
 		margin-right: 10px;
 	}
 
-	h3 {
-		font-size: 1rem;
-		top: 30%;
-	}
-
-	h4.btn-new {
-		font-size: 0.8rem;
-	}
-
-	.btn-news {
-		max-width: 100%;
-		font-size: 0.8rem;
-		padding: 2px 5px;
-	}
-
 	.barmenu-inner {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -652,20 +470,5 @@ input[id="site-search"]:focus-within {
 	.main-content-1 p {
 		max-width: 300px;
 		margin-right: 10px;
-	}
-
-	h3 {
-		font-size: 1rem;
-		top: 30%;
-	}
-
-	h4.btn-new {
-		font-size: 0.8rem;
-	}
-
-	.btn-news {
-		max-width: 100%;
-		font-size: 0.8rem;
-		padding: 2px 5px;
 	}
 }
