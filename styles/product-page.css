@@ -284,6 +284,13 @@ button:hover {
 	color: #fff;
 }
 
+/*button for procart*/
+#addcart-procart {
+	max-width: 100%;
+	font-size: 1.5rem;
+	padding: 5px 10px;
+}
+
 .main-content-1 a {
 	font-size: 1.2rem;
 }
@@ -465,8 +472,8 @@ span {
 
 	.pro-fav {
 		position: absolute;
-		right: 50px;
-		top: 570px;
+		right: 40px;
+		top: 720px;
 	}
 
 	.pro-typec-list {
@@ -494,8 +501,7 @@ span {
 	.pro-cart {
 		margin: 0px;
 		position: absolute;
-		left: 630px;
-		bottom: 60px;
+		left: 570px;
 	}
 
 	.main-content-1 a {
@@ -506,6 +512,11 @@ span {
 	.main-content-2 a {
 		font-size: 1rem;
 		padding: 0px 5px;
+	}
+
+	#addcart-procart {
+		font-size: 1.2rem;
+		padding: 8px 14px;
 	}
 }
 
@@ -648,6 +659,10 @@ span {
 		padding: 0 10px;
 		text-align: center;
 	}
+	#addcart-procart {
+		font-size: 1rem;
+		padding: 10px 14px;
+	}
 }
 
 /* Media Queries for  ## Screen = max-width 414px  */
@@ -748,6 +763,10 @@ span {
 		left: 30px;
 	}
 
+	.pro-func {
+		padding: 20px 0px 10px 30px;
+	}
+
 	.main-content-2 a {
 		max-width: 100%;
 		font-size: 0.6rem;
@@ -756,6 +775,11 @@ span {
 	.new-title {
 		font-size: 0.8rem;
 		margin-top: 45px;
+	}
+
+	#addcart-procart {
+		font-size: 1rem;
+		padding: 10px 14px;
 	}
 }
 
@@ -831,6 +855,10 @@ span {
 		position: absolute;
 		right: 160px;
 		top: 680px;
+	}
+	#addcart-procart {
+		font-size: 1rem;
+		padding: 10px 14px;
 	}
 }
 
@@ -925,5 +953,10 @@ span {
 		font-size: 0.7rem;
 		margin: 50px 0 0 30px;
 		padding: 5px;
+	}
+
+	#addcart-procart {
+		font-size: 1rem;
+		padding: 8px 10px;
 	}
 }
