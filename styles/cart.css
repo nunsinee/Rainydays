@@ -713,9 +713,9 @@ span.text-right {
 		max-width: 20%;
 	}
 
-	.main-content-1 h2,
-	.main-content-1 h3,
-	.main-content-1 h4 {
+	.main-content-2 h2,
+	.main-content-2 h3,
+	.main-content-2 h4 {
 		font-weight: normal;
 		font-size: 1rem;
 	}
@@ -730,6 +730,15 @@ span.text-right {
 	.main-content-1 {
 		max-width: 100%;
 		padding: 10px 0px;
+	}
+
+	.main-content img {
+		max-width: 250px;
+		margin: 10px 0 0 10px;
+	}
+
+	.main-content h1 {
+		padding: 20px 0 0 10px;
 	}
 
 	.menu-btn {
@@ -857,14 +866,14 @@ span.text-right {
 		width: 100%;
 	}
 
-	.main-content-1 img {
-		max-width: 30%;
+	.main-content-2 img {
+		max-width: 25%;
 	}
 
-	.main-content-1 h1,
-	.main-content-1 h2,
-	.main-content-1 h3,
-	.main-content-1 h4 {
+	.main-content-2 h1,
+	.main-content-2 h2,
+	.main-content-2 h3,
+	.main-content-2 h4 {
 		font-weight: normal;
 		font-size: 0.7rem;
 	}
@@ -874,10 +883,10 @@ span.text-right {
 	}
 
 	.check-out-btn {
-		max-width: 50%;
+		max-width: 100%;
 		position: relative;
 		left: -20px;
-		padding: 2px;
+		padding: 3px 10px;
 		bottom: 15px;
 		margin-top: 0;
 	}
