@@ -266,6 +266,7 @@ input[id="site-search"]:focus-within {
 	padding-left: 5px;
 	border: 1px solid #4ba894e7;
 }
+
 .main-content-2 textarea {
 	border: 1px solid #4ba894e7;
 }
@@ -273,7 +274,7 @@ input[id="site-search"]:focus-within {
 .form-error {
 	display: none;
 	font-size: 1rem;
-	padding: 0 0 40px 0;
+	padding: 0 0 30px 15px;
 	margin: 0;
 	color: #dd0606;
 	box-sizing: border-box;
@@ -574,6 +575,7 @@ span {
 	.main-content-2 input[name="email"] {
 		max-width: 85%;
 	}
+
 	.main-content-2 textarea {
 		border: 1px solid #4ba894e7;
 	}
@@ -676,5 +678,27 @@ span {
 	.footer {
 		font-size: 0.8rem;
 		padding-top: 15px;
+	}
+	.form-error {
+		font-size: 0.8rem;
+		padding: 0 0 10px 15px;
+		margin: 0;
+	}
+	.main-content-2 label,
+	.main-content-2 input,
+	.main-content-2 textarea {
+		font-size: 1rem;
+		padding: 10px 0px 10px 10px;
+		margin: 10px 0px 0px 8px;
+		border-radius: 3px;
+	}
+
+	.main-content-2 input[name="text"],
+	.main-content-2 input[name="subject"],
+	.main-content-2 input[name="email"] {
+		width: 100%;
+		margin: 2px 5px;
+		padding-left: 10px;
+		border: 1px solid #4ba894e7;
 	}
 }
