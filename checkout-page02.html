@@ -10,7 +10,6 @@
         <meta name="keywords" content="rain jacket, rainydays brand, women rain jacket, men jacket" />
         <meta name="auther" content="Rainnydays" />
         <link rel="stylesheet" href="styles/checkout-page02.css" />
-        <link rel="stylesheet" href="styles/summary-table.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
             integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
             crossorigin="anonymous" />
@@ -55,8 +54,8 @@
                 <!--RightMenu-->
                 <ul class="right-menu">
                     <li><a href="favourit.html"><i class="fas fa-heart  fa-color-nav"></i></a></li>
-                    <li><a href="cart.html"><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
-                </ul>
+                    <li class="cart"><a href="cart.html"><span>0</span><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
+                  </ul>
             </nav>
         </div>
         <!--Main-Content-->
@@ -64,50 +63,16 @@
             <section class="main-content">
                 <div class="main-content-1">
                     <h4>Order Summary</h4>
-                    <table>
-                        <tbody class="th-font">
-                            <tr>
-                                <th scope="row">
-                                    1.Jennie Parka <br>Color:Yellow, Size:S
-                                </th>
-                                <td>Qty.: 1</td>
-                                <td><span class="text-right">1,200 NOK</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    2.Kenvin Parka<br>Color: Green, Size:XL
-                                </th>
-                                <td>Qty.: 1</td>
-                                <td><span class="text-right">1,200 NOK</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <b>SUBTOTAL</b>
-                                </th>
-                                <td><span></span></td>
-                                <td><span class="text-right">2,400 NOK</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <b>DELIVERY</b>
-                                </th>
-                                <td><span></span></td>
-                                <td><span class="text-right">0.00 NOK</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <b>DISCOUNT</b>
-                                </th>
-                                <td><span></span></td>
-                                <td><span class="text-right">0.00 NOK</span></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><b>TOTAL</b></th>
-                                <td></td>
-                                <td><span class="text-right">2,400 NOK</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="container-products">
+                        <div class="product-header">
+                            <h6 class="product">PRODUCT<h6>
+                            <h6 class="price">PRICE</h6>
+                            <h6 class="quantity">QUANTITY</h6>
+                            <h6 class="total">TOTAL</h6>
+                        </div>
+                    </div>
+                    <div class="products"></div>
+                    <br>
                     <div><a href="cart.html"><i class="edit-btn"><strong>Edit Your Order</strong></i></a></div>
                 </div>
 
@@ -115,33 +80,35 @@
                 <div class="main-content-2">
                     <h1>Payment Method</h1>
                     <img src="images/process-3-show-w400px.png" alt="cart in secound step for check out ">
-
+                    <h6>Accepted with:</h6>
+                    <div class="card-icons">
+                        <img src="images/icons/visa-w41.png" alt="visa card" class="card-icon">
+                        <img src="images/icons/amex-w41.png" alt="amex card" class="card-icon">
+                        <img src="images/icons/mastercard-w41.png" alt="master card" class="card-icon">
+                    </div>
                     <!--Form Here-->
-                    <!-- <div class="pay-box"> -->
-                    <form action="#" method="post">
-                        <label for="fname">Accepted With</label>
-                        <span>
-                            <img src="images/icons/visa-w41.png" alt="visa card" class="card-icon">
-                            <img src="images/icons/amex-w41.png" alt="amex card" class="card-icon">
-                            <img src="images/icons/mastercard-w41.png" alt="master card" class="card-icon">
-                        </span>
-                        <hr>
-                        <label for="ccnum"><b>CARD NUMBER</b></label>
-                        <input type="text" name="ccnumber" id="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
-                        <label for="cname"><b>CARD HOLDER NAME</b></label>
-                        <input type="text" name="cardname" id="cname" placeholder="Nunsinee Viken">
-                        <label for="expdate"><b>EXPIRATION DATE</b></label>
-                        <input type="text" name="expdate" id="expdate" placeholder="xx/xxxx">
-
-                        <div class="row">
-                            <div class="col-50">
-                                <label for="cvv"><b>CVV*</b></label>
-                                <input type="text" name="cvv" id="cvv" placeholder="xxx">
+                    <div class="form-container">
+                        <div id="message"></div>
+                        <form id="confirmPay">
+                            <div>
+                                <label>cardName Holder Name: *required <input type="text" id="cardName" placeholder="Nunsinee Viken"></label>
+                                <div class="form-error" id="cardNameError">Please corect your name on card</div>
                             </div>
-                        </div>
-                        <button type="submit" value="Continue checkout"><a href="checkout-page03.html">Check
-                                Out</a></button>
-                    </form>
+                            <div>
+                                <label>Card Number: *required <input type="text" id="cardNum" placeholder="xxxx-xxxx-xxxx-xxxx"></label>
+                                <div class="form-error" id="cardNumError">Please enter your 16 digit credit card numbers</div>
+                            </div>
+                            <div>
+                                <label>Expiration Date: *required <input type="text" id="expDate" placeholder="xx/xx"></label>
+                                <div class="form-error" id="expDateError">Please enter corect..</div>
+                            </div>
+                            <div>
+                                <label>Security Code: *required <input type="text" id="secureNum" placeholder="xxx"></label>
+                                <div class="form-error" id="secureNumError">Must be 3 digits</div>
+                            </div>
+                            <button>Confirm Payment</button>                           
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
@@ -212,6 +179,8 @@
             </footer>
         </div>
         <script src="js/hambergermenu.js"></script>
+        <script src="js/checkout-payment02.js"></script>
+        <script src="js/addcart2.js"></script>
     </body>
 
 </html>
