@@ -438,7 +438,7 @@ input[id="site-search"]:focus-within {
 		left: 0;
 		background-color: #e5e9ea;
 		width: 50%;
-		height: 30%;
+		height: 40%;
 		border-right: #ccc 1px solid;
 		opacity: 0.9;
 		padding: 10px;
