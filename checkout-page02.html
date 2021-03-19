@@ -91,20 +91,20 @@
                         <div id="message"></div>
                         <form id="confirmPay">
                             <div>
-                                <label>cardName Holder Name: *required <input type="text" id="cardName" placeholder="Nunsinee Viken"></label>
+                                <label>Card Holder Name: *required <input type="text" id="cardName" placeholder="Nunsinee Viken"></label>
                                 <div class="form-error" id="cardNameError">Please corect your name on card</div>
                             </div>
                             <div>
-                                <label>Card Number: *required <input type="text" id="cardNum" placeholder="xxxx-xxxx-xxxx-xxxx"></label>
-                                <div class="form-error" id="cardNumError">Please enter your 16 digit credit card numbers</div>
+                                <label>Card Number: *required <input type="text" id="cardNum" placeholder="1234567890123"></label>
+                                <div class="form-error" id="cardNumError">Please enter valid card number 13 digit credit card numbers</div>
                             </div>
                             <div>
                                 <label>Expiration Date: *required <input type="text" id="expDate" placeholder="xx/xx"></label>
-                                <div class="form-error" id="expDateError">Please enter corect..</div>
+                                <div class="form-error" id="expDateError">Please enter your card´s expired date </div>
                             </div>
                             <div>
-                                <label>Security Code: *required <input type="text" id="secureNum" placeholder="xxx"></label>
-                                <div class="form-error" id="secureNumError">Must be 3 digits</div>
+                                <label>Security Code: *required <input type="text" id="secureNum" placeholder="xxx or xxxx"></label>
+                                <div class="form-error" id="secureNumError">Must be 3 digits or 4 digits</div>
                             </div>
                             <button>Confirm Payment</button>                           
                         </form>

@@ -7,83 +7,56 @@ const message = document.querySelector("#message");
 
 //1.1 if all the input  pass validation
 
-contactName.addEventListener("input", () => {
-	if (checkLength(contactName.value, 0) === true) {
-		contactNameError.style.display = "none";
+cardName.addEventListener("input", () => {
+	if (checkLength(cardName.value, 0) === true) {
+		cardNameError.style.display = "none";
 	} else {
-		contactNameError.style.display = "block";
+		cardNameError.style.display = "block";
 	}
 });
 
-address.addEventListener("input", () => {
-	if (checkLength(address.value, 9) === true) {
-		addressError.style.display = "none";
+cardNumber.addEventListener("input", () => {
+	if (checkLength(cardNumber.value, 12) === true) {
+		cardNum.style.display = "none";
 	} else {
-		addressError.style.display = "block";
+		cardNumError.style.display = "block";
 	}
 });
 
-city.addEventListener("input", () => {
-	if (checkLength(city.value, 1) === true) {
-		cityError.style.display = "none";
+expiredDate.addEventListener("input", () => {
+	if (validateExpDate(expiredDate.value) === true) {
+		expDateError.style.display = "none";
 	} else {
-		cityError.style.display = "block";
+		expDateError.style.display = "block";
 	}
 });
 
-country.addEventListener("input", () => {
-	if (checkLength(country.value, 1) === true) {
-		countryError.style.display = "none";
+secureNumber.addEventListener("input", () => {
+	if (validateSecureNumber(secureNumber.value) === true) {
+		secureNumError.style.display = "none";
 	} else {
-		countryError.style.display = "block";
+		secureNumError.style.display = "block";
 	}
 });
 
-email.addEventListener("input", () => {
-	if (validateEmail(email.value) === true) {
-		emailError.style.display = "none";
-	} else {
-		emailError.style.display = "block";
-	}
-});
-
-postcode.addEventListener("input", () => {
-	if (validatePostcode(postcode.value) === true) {
-		postcodeError.style.display = "none";
-	} else {
-		postcodeError.style.display = "block";
-	}
-});
-
-phoneNumber.addEventListener("input", () => {
-	if (validatePhoneNumber(phoneNumber.value) === true) {
-		phoneNumberError.style.display = "none";
-	} else {
-		phoneNumberError.style.display = "block";
-	}
-});
-
-confirmForm.addEventListener("submit", submitForm);
+pay.addEventListener("submit", submitForm);
 
 //2.1 if all the inputs  pass validation
 
 function submitForm(event) {
 	event.preventDefault();
 	if (
-		checkLength(contactName.value, 0) &&
-		checkLength(address.value, 9) &&
-		checkLength(city.value, 1) &&
-		checkLength(country.value, 1) &&
-		validatePostcode(postcode.value) &&
-		validatePhoneNumber(phoneNumber.value) &&
-		validateEmail(email.value)
+		checkLength(cardName.value, 0) &&
+		checkLength(cardNumber.value, 12) &&
+		validateExpDate(expiredDate.value) &&
+		validateSecureNumber(secureNumber.value)
 	) {
 		//display the message when the form has been submitted
 		location.href =
-			"https://rainnydays-nunsinee.netlify.app/checkout-page02.html";
-		confirmForm.reset();
+			"https://rainnydays-nunsinee.netlify.app/checkout-page03.html";
+		pay.reset();
 	} else {
-		messageTwo.innerHTML = "";
+		message.innerHTML = "";
 	}
 }
 
@@ -97,24 +70,36 @@ function checkLength(value, len) {
 	}
 }
 
-//check validate phone number
-function validatePhoneNumber(phoneNumber) {
-	const phoneRegex = /^\+?([0-9]{2})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{5})$/;
-	const patternMatches = phoneRegex.test(phoneNumber);
-	return patternMatches;
-}
-
 //check validate expire date of card
 function validateExpDate(expDate) {
-	const postcodeRegex = /^[0-9]{4}$/;
-	const patternMatches = postcodeRegex.test(postcode);
+	const expDateRegex = /^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/;
+	const patternMatches = expDateRegex.test(expDate);
 	return patternMatches;
 }
 
 //check validate card number
 
-function validate_creditcardnumber(cardNum) {
-	var re16digit = /^\d{16}$/;
-	const patternMatches = re16digit.test(cardNum);
+// function validateCreditcardNumber(cardNumber) {
+// 	const re16digit = /^\d{16}$/;
+// 	const patternMatches = re16digit.test(cardNumber);
+// 	return patternMatches;
+// }
+
+// function ValidateCreditCardNumber(cardNumber) {
+// 	const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+// 	const mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
+// 	const amexpRegEx = /^(?:3[47][0-9]{13})$/;
+// 	const patternMatches =
+// 		visaRegEx.test(cardNumber) ||
+// 		mastercardRegEx.test(cardNumber) ||
+// 		amexpRegEx.test(cardNumber);
+// 	return patternMatches;
+// }
+
+// easy validate secure code on card 3 or 4 digits /^[0-9]{3,4}$/
+
+function validateSecureNumber(secureNumber) {
+	const secureNumRegex = /^[0-9]{3,4}$/;
+	const patternMatches = secureNumRegex.test(secureNumber);
 	return patternMatches;
 }
