@@ -5,39 +5,35 @@ const email = document.querySelector("#email");
 const textArea = document.querySelector("#textArea");
 const message = document.querySelector("#message");
 
-//if all the input  pass validation
-contactName.addEventListener("input", () => {
+//1.if all the input  pass validation
+function validateForm(event) {
+	event.preventDefault();
 	if (checkLength(contactName.value, 0) === true) {
 		contactNameError.style.display = "none";
 	} else {
 		contactNameError.style.display = "block";
 	}
-});
 
-subject.addEventListener("input", () => {
 	if (checkLength(subject.value, 9) === true) {
 		subjectError.style.display = "none";
 	} else {
 		subjectError.style.display = "block";
 	}
-});
 
-email.addEventListener("input", () => {
 	if (validateEmail(email.value) === true) {
 		emailError.style.display = "none";
 	} else {
 		emailError.style.display = "block";
 	}
-});
-
-textArea.addEventListener("input", () => {
 	if (checkLength(textArea.value, 19) === true) {
 		textAreaError.style.display = "none";
 	} else {
 		textAreaError.style.display = "block";
 	}
-});
+}
 
+// event listener when submit form
+form.addEventListener("submit", validateForm);
 form.addEventListener("submit", submitForm);
 
 //2.function to run when the form is submitted
