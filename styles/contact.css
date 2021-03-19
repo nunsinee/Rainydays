@@ -377,6 +377,14 @@ button:hover {
 	color: #e1ad01;
 }
 
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
 /*............Footer....................*/
 
 .footer {
@@ -446,6 +454,14 @@ button:hover {
 	.main-content-1 img {
 		max-width: 30%;
 		margin-left: 0px;
+	}
+
+	.main-nav {
+		width: 100%;
+		font-size: 0.9rem;
+	}
+	.main-nav ul.right-menu {
+		margin-right: 70px;
 	}
 
 	.barmenu,
@@ -601,10 +617,6 @@ button:hover {
 
 	.menu-btn :hover {
 		opacity: 0.5;
-	}
-
-	.main-nav ul.right-menu {
-		display: none;
 	}
 
 	.main-nav .current {
