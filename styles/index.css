@@ -255,6 +255,14 @@ input[id="site-search"]:focus-within {
 	text-decoration: none;
 }
 
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
 /* New Arrival Button */
 .btn-new {
 	cursor: pointer;
@@ -387,6 +395,12 @@ input[id="site-search"]:focus-within {
 		width: 100%;
 		font-size: 0.8rem;
 	}
+	.main-nav ul.right-menu {
+		margin-right: 70px;
+	}
+	.search-menu {
+		display: none;
+	}
 
 	input[id="site-search"] {
 		max-width: 80px;
@@ -394,10 +408,6 @@ input[id="site-search"]:focus-within {
 
 	.btn-search {
 		font-size: 0.8rem;
-	}
-
-	.main-nav ul.right-menu {
-		display: none;
 	}
 
 	.barmenu,
@@ -419,6 +429,14 @@ input[id="site-search"]:focus-within {
 /* Media Queries for  ## Screen = max-width 500px*/
 
 @media (max-width: 500px) {
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+	.main-nav ul.right-menu {
+		margin-right: 70px;
+	}
+
 	.main-content {
 		padding: 50px 50px 50px 60px;
 		grid-template-columns: 1fr;
@@ -430,10 +448,6 @@ input[id="site-search"]:focus-within {
 
 	.menu-btn :hover {
 		opacity: 0.5;
-	}
-
-	.main-nav ul.right-menu {
-		display: none;
 	}
 
 	.main-nav .current {
@@ -496,6 +510,17 @@ input[id="site-search"]:focus-within {
 /* Media Queries for  ## Screen = max-width 375px*/
 
 @media (max-width: 375px) {
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+	.main-nav ul.right-menu {
+		margin-right: 70px;
+	}
+	.search-menu {
+		display: none;
+	}
+
 	.main-content {
 		padding: 50px 20px 50px 50px;
 		grid-template-columns: 1fr;
@@ -511,8 +536,5 @@ input[id="site-search"]:focus-within {
 	}
 	.btn-news {
 		font-size: 1rem;
-	}
-	.main-nav ul.right-menu {
-		display: none;
 	}
 }

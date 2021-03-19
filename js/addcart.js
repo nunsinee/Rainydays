@@ -228,47 +228,7 @@ function deleteButtons() {
 	}
 }
 
-//Not finished yet
-function manageQuantity() {
-	let decreaseButtons = document.querySelectorAll("#decrease");
-	let increaseButtons = document.querySelectorAll("#increase");
-	let currentQuantity = 0;
-	let currentProduct = "";
-
-	let cartItems = localStorage.getItem("productsInCart");
-	cartItems = JSON.parse(cartItems);
-	//console.log(cartItems);
-
-	//Decrease quantity
-	for (let i = 0; i < decreaseButtons.length; i++) {
-		decreaseButtons[i].addEventListener("click", () => {
-			currentQuantity = decreaseButtons[i].parentElement.querySelector("div")
-				.textContent;
-
-			currentProduct = decreaseButtons[
-				i
-			].parentElement.previousElementSibling.previousElementSibling
-				.querySelector("h2")
-				.textContent.toLowerCase()
-				.replace(/ /g, "")
-				.trim();
-
-			console.log(currentProduct);
-			cartItems[currentProduct].inCart -= 1;
-			localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-			displayCart;
-		});
-	}
-
-	//Increase quantity
-	for (let i = 0; i < increaseButtons.length; i++) {
-		increaseButtons[i].addEventListener("click", () => {
-			currentQuantity = increaseButtons[i].parentElement.querySelector("div")
-				.textContent;
-			//console.log(currentQuantity);
-		});
-	}
-}
+//Not finished # function manageQuantity
 
 onloadCartNumbers();
 displayCart();
