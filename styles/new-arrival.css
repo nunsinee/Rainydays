@@ -400,13 +400,11 @@ span {
 		width: 100%;
 		font-size: 0.8rem;
 	}
-
-	input[id="site-search"] {
-		max-width: 80px;
+	.main-nav ul.right-menu {
+		margin-right: 70px;
 	}
-
-	.btn-search {
-		font-size: 0.8rem;
+	.search-menu {
+		display: none;
 	}
 
 	.barmenu,
