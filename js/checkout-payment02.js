@@ -52,8 +52,7 @@ function submitForm(event) {
 		validateSecureNumber(secureNumber.value)
 	) {
 		//display the message when the form has been submitted
-		location.href =
-			"https://rainnydays-nunsinee.netlify.app/checkout-page03.html";
+		location.href = "checkout-page03.html";
 		pay.reset();
 	} else {
 		message.innerHTML = "";

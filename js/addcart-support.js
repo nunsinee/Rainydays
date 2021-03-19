@@ -89,10 +89,11 @@ let products = [
 
 // click event on add to cart button
 for (let i = 0; i < carts.length; i++) {
-	carts[i].addEventListener("click", () => {
+	carts[i].addEventListener("click", (e) => {
+		e.preventDefault(e);
 		carts[i].innerHTML = "Already added";
-		carts[i].style.color = "green";
-		carts[i].style.backgroundColor = "yellow";
+		carts[i].style.color = "black";
+		carts[i].style.backgroundColor = "white";
 		cartNumberItems(products[i]);
 		totalCost(products[i]);
 	});
@@ -110,17 +111,12 @@ function onloadCartNumbers() {
 
 //show how many items on cart icon use localStorage
 
-function cartNumberItems(product, action) {
+function cartNumberItems(product) {
 	let productNumbers = localStorage.getItem("cartNumberItems");
+
+	// change from string to number
 	productNumbers = parseInt(productNumbers);
-
-	let cartItems = localStorage.getItem("productsInCart");
-	cartItems = JSON.parse(cartItems);
-
-	if (action == "decrease") {
-		localStorage.setItem("cartNumberItems", productNumbers - 1);
-		itemNo.textContent = productNumbers - 1;
-	} else if (productNumbers) {
+	if (productNumbers) {
 		localStorage.setItem("cartNumberItems", productNumbers + 1);
 		itemNo.textContent = productNumbers + 1;
 	} else {
@@ -153,29 +149,16 @@ function setItems(product) {
 }
 
 // Total price in the cart
-function totalCost(product, action) {
+function totalCost(product) {
 	let cartCost = localStorage.getItem("totalCost");
-	if (action == "decrease") {
-		cartCost = parseInt(cartCost);
-		localStorage.setItem("totalCost", cartCost - product.price);
-	} else if (cartCost != null) {
+
+	if (cartCost != null) {
 		cartCost = parseInt(cartCost);
 		localStorage.setItem("totalCost", cartCost + product.price);
 	} else {
 		localStorage.setItem("totalCost", product.price);
 	}
 }
-
-// 	if (action == "decrease") {
-// 		cartCost = parseInt(cartCost);
-// 		localStorage.setItem("totalCost", cartCost - product.price);
-// 	} else if (cartCost != null) {
-// 		cartCost = parseInt(cartCost);
-// 		localStorage.setItem("totalCost", cartCost + product.price);
-// 	} else {
-// 		localStorage.setItem("totalCost", product.price);
-// 	}
-// }
 
 // display cart
 function displayCart() {
@@ -245,67 +228,7 @@ function deleteButtons() {
 	}
 }
 
-//Not finished yet
-function manageQuantity() {
-	let decreaseButtons = document.querySelectorAll("#decrease");
-	let increaseButtons = document.querySelectorAll("#increase");
-	let currentQuantity = 0;
-	let currentProduct = "";
-
-	let cartItems = localStorage.getItem("productsInCart");
-
-	cartItems = JSON.parse(cartItems);
-
-	//Decrease quantity- - -
-	for (let i = 0; i < decreaseButtons.length; i++) {
-		decreaseButtons[i].addEventListener("click", () => {
-			currentQuantity = decreaseButtons[i].parentElement.querySelector("div")
-				.textContent;
-			console.log(currentQuantity);
-
-			currentProduct = decreaseButtons[
-				i
-			].parentElement.previousElementSibling.previousElementSibling
-				.querySelector("h2")
-				.textContent.toLowerCase()
-				.replace(/ /g, "")
-				.trim();
-			console.log(currentProduct);
-
-			if (cartItems[currentProduct].inCart > 1) {
-				cartItems[currentProduct].inCart -= 1;
-				cartNumberItems(cartItems[currentProduct], "decrease");
-				totalCost(cartItems[currentProduct], "decrease");
-				localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-				displayCart();
-			}
-		});
-	}
-
-	//Increase quantity + + +
-	for (let i = 0; i < increaseButtons.length; i++) {
-		increaseButtons[i].addEventListener("click", () => {
-			currentQuantity = increaseButtons[i].parentElement.querySelector("div")
-				.textContent;
-			console.log(currentQuantity);
-
-			currentProduct = increaseButtons[
-				i
-			].parentElement.previousElementSibling.previousElementSibling
-				.querySelector("h2")
-				.textContent.toLowerCase()
-				.replace(/ /g, "")
-				.trim();
-			console.log(currentProduct);
-
-			cartItems[currentProduct].inCart += 1;
-			cartNumberItems(cartItems[currentProduct]);
-			totalCost(cartItems[currentProduct]);
-			localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-			displayCart();
-		});
-	}
-}
+//Not finished # function manageQuantity
 
 onloadCartNumbers();
 displayCart();

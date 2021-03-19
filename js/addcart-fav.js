@@ -25,66 +25,6 @@ let products = [
 		price: 1400,
 		inCart: 0,
 	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Emma Parka ",
-		tag: "emmaparka",
-		price: 1400,
-		inCart: 0,
-	},
-	{
-		proName: "Jennie Parka ",
-		tag: "jennieparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Rosy Parka ",
-		tag: "rosyparka",
-		price: 1400,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Kenvin Parka ",
-		tag: "Kenvinparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
 ];
 
 // click event on add to cart button
@@ -110,12 +50,17 @@ function onloadCartNumbers() {
 
 //show how many items on cart icon use localStorage
 
-function cartNumberItems(product) {
+function cartNumberItems(product, action) {
 	let productNumbers = localStorage.getItem("cartNumberItems");
-
-	// change from string to number
 	productNumbers = parseInt(productNumbers);
-	if (productNumbers) {
+
+	let cartItems = localStorage.getItem("productsInCart");
+	cartItems = JSON.parse(cartItems);
+
+	if (action == "decrease") {
+		localStorage.setItem("cartNumberItems", productNumbers - 1);
+		itemNo.textContent = productNumbers - 1;
+	} else if (productNumbers) {
 		localStorage.setItem("cartNumberItems", productNumbers + 1);
 		itemNo.textContent = productNumbers + 1;
 	} else {
@@ -148,16 +93,29 @@ function setItems(product) {
 }
 
 // Total price in the cart
-function totalCost(product) {
+function totalCost(product, action) {
 	let cartCost = localStorage.getItem("totalCost");
-
-	if (cartCost != null) {
+	if (action == "decrease") {
+		cartCost = parseInt(cartCost);
+		localStorage.setItem("totalCost", cartCost - product.price);
+	} else if (cartCost != null) {
 		cartCost = parseInt(cartCost);
 		localStorage.setItem("totalCost", cartCost + product.price);
 	} else {
 		localStorage.setItem("totalCost", product.price);
 	}
 }
+
+// 	if (action == "decrease") {
+// 		cartCost = parseInt(cartCost);
+// 		localStorage.setItem("totalCost", cartCost - product.price);
+// 	} else if (cartCost != null) {
+// 		cartCost = parseInt(cartCost);
+// 		localStorage.setItem("totalCost", cartCost + product.price);
+// 	} else {
+// 		localStorage.setItem("totalCost", product.price);
+// 	}
+// }
 
 // display cart
 function displayCart() {
@@ -235,14 +193,15 @@ function manageQuantity() {
 	let currentProduct = "";
 
 	let cartItems = localStorage.getItem("productsInCart");
+
 	cartItems = JSON.parse(cartItems);
-	//console.log(cartItems);
 
 	//Decrease quantity- - -
 	for (let i = 0; i < decreaseButtons.length; i++) {
 		decreaseButtons[i].addEventListener("click", () => {
 			currentQuantity = decreaseButtons[i].parentElement.querySelector("div")
 				.textContent;
+			console.log(currentQuantity);
 
 			currentProduct = decreaseButtons[
 				i
@@ -251,11 +210,15 @@ function manageQuantity() {
 				.textContent.toLowerCase()
 				.replace(/ /g, "")
 				.trim();
-
 			console.log(currentProduct);
-			cartItems[currentProduct].inCart -= 1;
-			localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-			displayCart;
+
+			if (cartItems[currentProduct].inCart > 1) {
+				cartItems[currentProduct].inCart -= 1;
+				cartNumberItems(cartItems[currentProduct], "decrease");
+				totalCost(cartItems[currentProduct], "decrease");
+				localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+				displayCart();
+			}
 		});
 	}
 
@@ -264,7 +227,22 @@ function manageQuantity() {
 		increaseButtons[i].addEventListener("click", () => {
 			currentQuantity = increaseButtons[i].parentElement.querySelector("div")
 				.textContent;
-			//console.log(currentQuantity);
+			console.log(currentQuantity);
+
+			currentProduct = increaseButtons[
+				i
+			].parentElement.previousElementSibling.previousElementSibling
+				.querySelector("h2")
+				.textContent.toLowerCase()
+				.replace(/ /g, "")
+				.trim();
+			console.log(currentProduct);
+
+			cartItems[currentProduct].inCart += 1;
+			cartNumberItems(cartItems[currentProduct]);
+			totalCost(cartItems[currentProduct]);
+			localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+			displayCart();
 		});
 	}
 }

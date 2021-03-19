@@ -82,8 +82,7 @@ function submitForm(event) {
 		validateEmail(email.value)
 	) {
 		//display the message when the form has been submitted
-		location.href =
-			"https://rainnydays-nunsinee.netlify.app/checkout-page02.html";
+		location.href = "checkout-page02.html";
 		confirmForm.reset();
 	} else {
 		messageTwo.innerHTML = "";

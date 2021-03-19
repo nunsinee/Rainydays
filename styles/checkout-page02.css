@@ -188,6 +188,13 @@ input[id="site-search"]:focus-within {
 	font-size: 1.5rem;
 }
 
+.main-content h2 {
+	font-weight: bold;
+	color: #000;
+	font-size: 0.9rem;
+	padding: 2px 5px;
+}
+
 /* Form style for Filling Adress Information form */
 
 .main-content-2 form {
@@ -714,13 +721,10 @@ span {
 		font-size: 0.9rem;
 	}
 
-	.main-content-2 h1 {
-		font-size: 1.4rem;
-		margin-bottom: 10px;
-	}
-
-	table {
-		width: 330px;
+	.main-content-2 h2,
+	h3 {
+		font-size: 0.8rem;
+		font-weight: normal;
 	}
 }
 
@@ -734,7 +738,9 @@ span {
 	body {
 		font-size: 0.9rem;
 	}
-	table {
-		width: 280px;
+
+	.main-content-1 h6 {
+		font-size: 1rem;
+		margin-bottom: 10px;
 	}
 }

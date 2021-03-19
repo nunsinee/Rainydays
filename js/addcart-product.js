@@ -2,15 +2,15 @@ let carts = document.querySelectorAll(".add-cart");
 let itemNo = document.querySelector(".cart span");
 let products = [
 	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
+		proName: "Jennie Parka ",
+		tag: "jennieparka",
 		price: 1200,
 		inCart: 0,
 	},
 	{
-		proName: "Emma Parka ",
-		tag: "emmaparka",
-		price: 1400,
+		proName: "Anna Parka ",
+		tag: "annaparka",
+		price: 1200,
 		inCart: 0,
 	},
 	{
@@ -20,26 +20,8 @@ let products = [
 		inCart: 0,
 	},
 	{
-		proName: "Rosy Parka ",
-		tag: "rosyparka",
-		price: 1400,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
 		proName: "Emma Parka ",
 		tag: "emmaparka",
-		price: 1400,
-		inCart: 0,
-	},
-	{
-		proName: "Jennie Parka ",
-		tag: "jennieparka",
 		price: 1200,
 		inCart: 0,
 	},
@@ -47,42 +29,6 @@ let products = [
 		proName: "Rosy Parka ",
 		tag: "rosyparka",
 		price: 1400,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Kenvin Parka ",
-		tag: "Kenvinparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
 		inCart: 0,
 	},
 ];
@@ -165,17 +111,6 @@ function totalCost(product, action) {
 		localStorage.setItem("totalCost", product.price);
 	}
 }
-
-// 	if (action == "decrease") {
-// 		cartCost = parseInt(cartCost);
-// 		localStorage.setItem("totalCost", cartCost - product.price);
-// 	} else if (cartCost != null) {
-// 		cartCost = parseInt(cartCost);
-// 		localStorage.setItem("totalCost", cartCost + product.price);
-// 	} else {
-// 		localStorage.setItem("totalCost", product.price);
-// 	}
-// }
 
 // display cart
 function displayCart() {
