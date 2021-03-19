@@ -404,16 +404,26 @@ input[id="site-search"]:focus-within {
 	.main-content a,
 	.footer {
 		font-size: 1rem;
-		padding-top: 25px;
 	}
+
 	.barmenu {
 		padding: 25px 0;
+	}
+
+	.btn-text {
+		font-size: 1.5rem;
+		padding: 10px 0 0 0;
 	}
 }
 
 /* Media Queries for  ## Screen = max-width 500px*/
 
 @media (max-width: 500px) {
+	.main-content {
+		padding: 50px 50px 50px 60px;
+		grid-template-columns: 1fr;
+	}
+
 	.menu-btn {
 		display: block;
 	}
@@ -465,13 +475,13 @@ input[id="site-search"]:focus-within {
 		display: none;
 	}
 
-	.main-content {
-		grid-template-columns: 1fr;
-	}
-
 	.main-content-1 p {
 		max-width: 400px;
 		margin-right: 10px;
+	}
+
+	.main-content img {
+		max-width: 70%;
 	}
 
 	.barmenu-inner {
@@ -486,8 +496,13 @@ input[id="site-search"]:focus-within {
 /* Media Queries for  ## Screen = max-width 375px*/
 
 @media (max-width: 375px) {
+	.main-content {
+		padding: 50px 20px 50px 50px;
+		grid-template-columns: 1fr;
+	}
+
 	.main-content img {
-		max-width: 90%;
+		max-width: 70%;
 	}
 
 	.main-content-1 p {
