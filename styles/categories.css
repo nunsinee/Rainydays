@@ -438,7 +438,6 @@ span {
 	.menu-btn {
 		display: block;
 	}
-
 	.menu-btn :hover {
 		opacity: 0.5;
 	}
