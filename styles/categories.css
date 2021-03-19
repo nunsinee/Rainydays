@@ -452,11 +452,6 @@ span {
 		padding: 60px 10px 0 10px;
 	}
 
-	.main-nav .current {
-		margin: 0;
-		padding: 60px 10px 0 10px;
-	}
-
 	.main-nav ul.main-menu {
 		display: block;
 		position: absolute;
@@ -517,6 +512,10 @@ span {
 /* Media Queries for  Mobile screen device 414px*/
 
 @media (max-width: 414px) {
+	.menu-btn {
+		display: block;
+	}
+
 	.main-content {
 		padding: 30px 30px;
 	}
@@ -544,6 +543,10 @@ span {
 }
 
 @media (max-width: 320px) {
+	.menu-btn {
+		display: block;
+	}
+
 	.main-nav .logo {
 		width: 160px;
 	}
