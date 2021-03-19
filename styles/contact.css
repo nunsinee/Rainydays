@@ -688,7 +688,7 @@ span {
 	.main-content-2 input,
 	.main-content-2 textarea {
 		font-size: 1rem;
-		padding: 10px 0px 10px 10px;
+		padding: 0px 0px 10px 10px;
 		margin: 10px 0px 0px 8px;
 		border-radius: 3px;
 	}
