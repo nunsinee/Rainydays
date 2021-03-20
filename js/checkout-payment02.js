@@ -62,6 +62,7 @@ function submitForm(event) {
 	) {
 		//display the message when the form has been submitted
 		location.href = "checkout-page03.html";
+		message.innerHTML = `<div class="message"> Thank for your payment </div>`;
 		pay.reset();
 	} else {
 		message.innerHTML = "";
