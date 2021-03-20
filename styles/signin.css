@@ -97,6 +97,15 @@ ul {
 }
 
 /*............Search menu on Navigation....................*/
+form .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
 
 .search-menu {
 	padding: 0px 10px 60px 10px;
@@ -104,7 +113,6 @@ ul {
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -112,14 +120,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
+	border-radius: 4px;
 }
 
-.btn-search a:hover {
-	color: #000;
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -168,9 +179,19 @@ ul {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Full-width inputs */
-.main-content-1 input[type="text"],
-.main-content-1 input[type="password"] {
+/* Form*/
+
+input[type="submit"] {
+	max-width: 100%;
+	background-color: #e1ad01;
+	padding: 8px 20px;
+	font-size: 1.2rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
 	width: 100%;
 	font-size: 1rem;
 	padding: 14px 20px;
@@ -178,7 +199,11 @@ ul {
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	/* box-sizing: border-box; */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	outline: 0;
 }
 
 /* Set a style of Button */
@@ -311,6 +336,14 @@ span.psw {
 .fa-color-mid {
 	color: #fff;
 	padding-right: 5px;
+}
+
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
 }
 
 /* Media Queries for  ## Screen = max-width 845px */

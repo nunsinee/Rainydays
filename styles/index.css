@@ -217,10 +217,16 @@ input[id="site-search"]:focus-within {
 .main-content h1 {
 	font-weight: bold;
 	color: #0a3641;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
-.main-content h2 {
+.main-content-1 h1 {
+	font-weight: bold;
+	color: #0a3641;
+	font-size: 1.8rem;
+}
+
+.main-content-1 h2 {
 	font-weight: normal;
 	padding-bottom: 10px;
 }

@@ -98,13 +98,22 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
+*............Search menu on Navigation....................*/ form .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
+
 .search-menu {
 	padding: 0px 10px 60px 10px;
 	position: relative;
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -112,14 +121,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
+	border-radius: 4px;
 }
 
-.btn-search a:hover {
-	color: #000;
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -175,6 +187,25 @@ ul {
 	text-align: center;
 }
 
+/* Sign up */
+
+.form-error {
+	display: none;
+	font-size: 1rem;
+	padding: 0 0 30px 15px;
+	margin: 0;
+	color: #dd0606;
+	box-sizing: border-box;
+}
+
+.message {
+	background: rgb(253, 235, 75);
+	padding: 0.2em;
+	border: #fff solid 3px;
+	color: green;
+	margin-bottom: 1em;
+}
+
 /* Form style for contact form */
 .main-content-1 form {
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -205,17 +236,10 @@ hr {
 	margin-bottom: 25px;
 }
 
-/* Float cancel and signup buttons and add an equal width  */
-.cancel-btn,
-.signup-btn {
-	float: left;
-	width: 50%;
-}
-
 /* Set a style of Button */
-.main-content-1 button {
+button {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	width: 100%;
+	max-width: 100%;
 	font-weight: bold;
 	font-size: 1rem;
 	color: #fff;
@@ -227,17 +251,10 @@ hr {
 	border-radius: 4px;
 }
 
-.main-content-1 button:hover {
+button:hover {
 	color: #0a3641;
 	background-color: #fff;
 	text-decoration: none;
-}
-
-/* Cancel Button Style */
-.main-content-1 .cancel-btn {
-	padding: 14px 20px;
-	background-color: #e6d06f;
-	color: #000;
 }
 
 /* Add padding  to container  */
@@ -345,6 +362,14 @@ span.psw {
 	padding-right: 5px;
 }
 
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
@@ -433,6 +458,10 @@ span.psw {
 	}
 	.footer {
 		font-size: 0.8rem;
+	}
+
+	.main-content {
+		padding: 100px 30px 50px 30px;
 	}
 
 	.main-content-1 {

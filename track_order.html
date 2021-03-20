@@ -75,9 +75,9 @@
 							><i class="fas fa-heart fa-color-nav"></i
 						></a>
 					</li>
-					<li>
+					<li class="cart">
 						<a href="cart.html"
-							><i class="fas fa-shopping-cart fa-color-nav"></i
+							><span>0</span> <i class="fas fa-shopping-cart fa-color-nav"></i
 						></a>
 					</li>
 				</ul>
@@ -94,34 +94,18 @@
 						adipisci possimus illum sunt animi illo suscipit, dolores esse quasi
 						aliquam!
 					</p>
-					<table
-						width="360"
-						cellpadding="10"
-						cellspacing="5"
-						class="track-table"
-					>
-						<tr>
-							<th class="table-title">
-								<label for="track_code">Track your order here</label>
-							</th>
-						</tr>
-						<tr>
-							<td>
-								<form action="/action_page.php">
-									<input
-										type="text"
-										placeholder="Enter your order number.."
-										id="track_code"
-										name="track_code"
-										required
-									/>
-									<button type="submit" value="submit" class="track-btn">
-										<a href="track_result.html">Submit</a>
-									</button>
-								</form>
-							</td>
-						</tr>
-					</table>
+					<form action="/action_page.php">
+						<input
+							type="text"
+							placeholder="Enter your order number.."
+							id="track_code"
+							name="track_code"
+							required
+						/>
+						<button type="submit" value="submit" class="track-btn">
+							<a href="track_result.html">Submit</a>
+						</button>
+					</form>
 				</div>
 				<div class="main-content-2">
 					<img src="images/tracking.jpg" alt="sending postbox" />
@@ -211,5 +195,6 @@
 			</footer>
 		</div>
 		<script src="js/hambergermenu.js"></script>
+		<script src="js/addcart.js"></script>
 	</body>
 </html>

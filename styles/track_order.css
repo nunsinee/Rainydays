@@ -122,13 +122,22 @@ ul {
 
 /*............Search menu on Navigation....................*/
 
+orm .search-menu {
+	max-width: 100%;
+}
+
+input[id="site-search"] {
+	border-color: #c6ebe6;
+	max-height: 100%;
+	padding: 5px;
+}
+
 .search-menu {
 	padding: 0px 10px 60px 10px;
 	position: relative;
 	top: 60px;
 }
 
-/* Search top menu */
 .btn-search {
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -136,14 +145,17 @@ ul {
 	border: none;
 	background-color: #fff;
 	padding-left: 2px;
+	transition: all 0.5s;
 }
 
-.btn-search a {
-	color: #0a3641;
+.btn-search:hover {
+	background-color: #c6ebe6;
+	padding: 5px;
+	border-radius: 4px;
 }
 
-.btn-search a:hover {
-	color: #000;
+input[id="site-search"]:focus-within {
+	border-color: rgb(208, 247, 208);
 }
 
 /*............Main-content....................*/
@@ -235,14 +247,8 @@ ul {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #fff;
-}
-
-.table-title {
-	font-size: 1.2rem;
-	color: #707070;
-	max-width: 100%;
-	font-weight: bold;
-	border-bottom: 1px solid #909090;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Track button */
@@ -358,9 +364,66 @@ ul {
 	padding-right: 5px;
 }
 
+/* span on cart items*/
+span {
+	position: relative;
+	bottom: 18px;
+	float: right;
+	color: #e9802a;
+}
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
+	.main-nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+	.menu-btn :hover {
+		opacity: 0.5;
+	}
+
+	.search-menu {
+		display: none;
+	}
+
+	.main-nav ul.right-menu {
+		margin-right: 70px;
+	}
+
+	input[id="site-search"] {
+		max-width: 100%;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
+	}
+
+	.barmenu,
+	.footer {
+		font-size: 0.8rem;
+		padding-top: 25px;
+	}
+
+	.barmenu {
+		padding: 10px 0;
+	}
+
+	.main-content {
+		grid-template-columns: repeat (2, 1fr);
+		height: 500px;
+	}
+
+	.main-content a {
+		left: 55px;
+		font-size: 1rem;
+		max-width: 100%;
+	}
+
+	.main-content p {
+		font-size: 0.9rem;
+	}
+
 	.barmenu,
 	.footer {
 		font-size: 1rem;
@@ -376,6 +439,11 @@ ul {
 		left: 50px;
 		font-size: 1rem;
 		max-width: 70%;
+	}
+	form {
+		padding: 50px 20px;
+		display: flex;
+		flex-direction: column;
 	}
 }
 /* Media Queries for  ## Screen = max-width 500px */
@@ -428,10 +496,6 @@ ul {
 		border-bottom: 0;
 	}
 
-	.search-menu {
-		display: none;
-	}
-
 	.main-content {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -465,20 +529,26 @@ ul {
 
 @media (max-width: 375px) {
 	.track-btn {
-		margin-left: 100px;
+		margin-left: 20px;
 		margin-top: 20px;
 	}
 
-	.track-table {
-		max-width: 40%;
+	.main-content {
+		padding: 50px 0px 20px 30px;
+		margin-bottom: 20px;
+		min-height: auto;
+	}
+
+	.main-content h1 {
+		font-size: 1.2rem;
 	}
 
 	.main-content-1,
 	.main-content-2 {
-		max-width: 60%;
+		max-width: 100%;
 	}
 	.main-content-1 input[type="text"] {
-		padding: 5px 20px 0px 40px;
-		margin: 0px 20px;
+		padding: 10px 20px 0px 20px;
+		margin: 20px 0 0 0px;
 	}
 }

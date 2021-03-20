@@ -425,6 +425,39 @@ span {
 		margin: 20px 0px;
 	}
 
+	.main-nav {
+		font-size: 0.8rem;
+	}
+
+	.main-nav ul.right-menu {
+		display: block;
+	}
+
+	.main-nav ul {
+		display: flex;
+	}
+
+	.main-nav ul li {
+		padding: 60px 10px 0 10px;
+	}
+
+	.main-nav ul li a {
+		padding-bottom: 2px;
+	}
+
+	.main-nav ul li a:hover {
+		border-bottom: 1px solid #0a3641;
+	}
+
+	.main-nav .logo {
+		width: 200px;
+	}
+
+	.main-nav ul.main-menu {
+		flex: 1;
+		margin-left: 20px;
+	}
+
 	.menu-btn {
 		display: block;
 	}
@@ -435,6 +468,16 @@ span {
 
 	.main-nav ul.right-menu {
 		margin-right: 70px;
+		display: flex;
+	}
+
+	.main-nav .current {
+		margin: 0;
+		padding: 60px 10px 0 10px;
+	}
+
+	.search-menu {
+		display: none;
 	}
 
 	.main-nav ul.main-menu {
