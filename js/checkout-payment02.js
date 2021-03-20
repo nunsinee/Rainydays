@@ -16,7 +16,7 @@ cardName.addEventListener("input", () => {
 });
 
 cardNumber.addEventListener("input", () => {
-	if (checkLength(cardNumber.value, 12) === true) {
+	if (validateCreditcardNumber(cardNumber.value) === true) {
 		cardNum.style.display = "none";
 	} else {
 		cardNumError.style.display = "block";
@@ -53,7 +53,13 @@ pay.addEventListener("submit", submitForm);
 
 function submitForm(event) {
 	event.preventDefault();
-	if (checkLength(cardName.value, 0) && checkLength(cardNumber.value, 12)) {
+	if (
+		checkLength(cardName.value, 0) &&
+		checkLength(cardNumber.value, 12) &&
+		validateExpDate(expiredDate.value) &&
+		validateCreditcardNumber(cardNumber.value) &&
+		validateSecureNumber(secureNumber.value)
+	) {
 		//display the message when the form has been submitted
 		location.href = "checkout-page03.html";
 		message.innerHTML = `<div class="message"> Thank for your payment </div>`;
@@ -95,7 +101,3 @@ function validateSecureNumber(secureNumber) {
 	const patternMatches = secureNumRegex.test(secureNumber);
 	return patternMatches;
 }
-
-// validateExpDate(expiredDate.value) &&
-// validateCreditcardNumber(cardNumber.value) &&
-// validateSecureNumber(secureNumber.value)
