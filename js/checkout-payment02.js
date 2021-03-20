@@ -4,7 +4,6 @@ const cardNumber = document.querySelector("#cardNum");
 const expiredDate = document.querySelector("#expDate");
 const secureNumber = document.querySelector("#secureNum");
 const message = document.querySelector("#message");
-const payNow = document.querySelector("#payment");
 
 //1.1 if all the input  pass validation
 
@@ -48,19 +47,13 @@ secureNumber.addEventListener("input", () => {
 	}
 });
 
-payNow.addEventListener("click", submitForm);
+pay.addEventListener("submit", submitForm);
 
 //2.1 if all the inputs  pass validation
 
 function submitForm(event) {
 	event.preventDefault();
-	if (
-		checkLength(cardName.value, 0) &&
-		checkLength(cardNumber.value, 12) &&
-		validateExpDate(expiredDate.value) &&
-		validateCreditcardNumber(cardNumber.value) &&
-		validateSecureNumber(secureNumber.value)
-	) {
+	if (checkLength(cardName.value, 0) && checkLength(cardNumber.value, 12)) {
 		//display the message when the form has been submitted
 		location.href = "checkout-page03.html";
 		message.innerHTML = `<div class="message"> Thank for your payment </div>`;
@@ -102,3 +95,7 @@ function validateSecureNumber(secureNumber) {
 	const patternMatches = secureNumRegex.test(secureNumber);
 	return patternMatches;
 }
+
+// validateExpDate(expiredDate.value) &&
+// validateCreditcardNumber(cardNumber.value) &&
+// validateSecureNumber(secureNumber.value)
