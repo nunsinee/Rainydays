@@ -31,6 +31,14 @@ expiredDate.addEventListener("input", () => {
 	}
 });
 
+cardNumber.addEventListener("input", () => {
+	if (validateCreditcardNumber(cardNumber.value) === true) {
+		cardNumberError.style.display = "none";
+	} else {
+		cardNumberError.style.display = "block";
+	}
+});
+
 secureNumber.addEventListener("input", () => {
 	if (validateSecureNumber(secureNumber.value) === true) {
 		secureNumError.style.display = "none";
@@ -49,6 +57,7 @@ function submitForm(event) {
 		checkLength(cardName.value, 0) &&
 		checkLength(cardNumber.value, 12) &&
 		validateExpDate(expiredDate.value) &&
+		validateCreditcardNumber(cardNumber.value) &&
 		validateSecureNumber(secureNumber.value)
 	) {
 		//display the message when the form has been submitted
@@ -78,22 +87,11 @@ function validateExpDate(expDate) {
 
 //check validate card number
 
-// function validateCreditcardNumber(cardNumber) {
-// 	const re16digit = /^\d{16}$/;
-// 	const patternMatches = re16digit.test(cardNumber);
-// 	return patternMatches;
-// }
-
-// function ValidateCreditCardNumber(cardNumber) {
-// 	const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
-// 	const mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
-// 	const amexpRegEx = /^(?:3[47][0-9]{13})$/;
-// 	const patternMatches =
-// 		visaRegEx.test(cardNumber) ||
-// 		mastercardRegEx.test(cardNumber) ||
-// 		amexpRegEx.test(cardNumber);
-// 	return patternMatches;
-// }
+function validateCreditcardNumber(cardNumber) {
+	const re16digit = /^\d{16}$/;
+	const patternMatches = re16digit.test(cardNumber);
+	return patternMatches;
+}
 
 // easy validate secure code on card 3 or 4 digits /^[0-9]{3,4}$/
 
