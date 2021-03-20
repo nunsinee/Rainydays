@@ -4,6 +4,7 @@ const cardNumber = document.querySelector("#cardNum");
 const expiredDate = document.querySelector("#expDate");
 const secureNumber = document.querySelector("#secureNum");
 const message = document.querySelector("#message");
+const payNow = document.querySelector("#payment");
 
 //1.1 if all the input  pass validation
 
@@ -47,7 +48,7 @@ secureNumber.addEventListener("input", () => {
 	}
 });
 
-pay.addEventListener("submit", submitForm);
+payNow.addEventListener("click", submitForm);
 
 //2.1 if all the inputs  pass validation
 
