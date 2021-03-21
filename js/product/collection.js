@@ -95,16 +95,4 @@ let products = [
 		price: 1200,
 		inCart: 0,
 	},
-	{
-		proName: "Arild Parka ",
-		tag: "arildparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Arild Parka ",
-		tag: "arildparka",
-		price: 1200,
-		inCart: 0,
-	},
 ];

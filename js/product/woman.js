@@ -71,16 +71,4 @@ let products = [
 		price: 1200,
 		inCart: 0,
 	},
-	{
-		proName: "Kenvin Parka ",
-		tag: "Kenvinparka",
-		price: 1200,
-		inCart: 0,
-	},
-	{
-		proName: "Anna Parka ",
-		tag: "annaparka",
-		price: 1200,
-		inCart: 0,
-	},
 ];
