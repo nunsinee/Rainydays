@@ -659,8 +659,9 @@ span {
 		padding: 0 10px;
 		text-align: center;
 	}
+
 	#addcart-procart {
-		font-size: 1rem;
+		font-size: 0.7rem;
 		padding: 10px 14px;
 	}
 }
@@ -857,7 +858,7 @@ span {
 		top: 680px;
 	}
 	#addcart-procart {
-		font-size: 1rem;
+		font-size: 0.7rem;
 		padding: 10px 14px;
 	}
 }
@@ -946,8 +947,7 @@ span {
 
 	button {
 		font-size: 0.7rem;
-		line-height: 0.7rem;
-		padding: 5px 10px;
+		padding: 5px 15px;
 	}
 	.new-subtitle {
 		font-size: 0.7rem;
@@ -956,7 +956,7 @@ span {
 	}
 
 	#addcart-procart {
-		font-size: 1rem;
-		padding: 8px 10px;
+		font-size: 0.7rem;
+		padding: 10px 14px;
 	}
 }
