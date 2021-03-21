@@ -39,7 +39,7 @@ function cartNumberItems(product, action) {
 		localStorage.setItem("cartNumberItems", productNumbers + 1);
 		itemNo.textContent = productNumbers + 1;
 	} else {
-		localStorage.setItem("cartNumberItems", 1);
+		localStorage.setItem("cartNumberItems", 0);
 		itemNo.textContent = 0;
 	}
 	setItems(product);
