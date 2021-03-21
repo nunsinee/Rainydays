@@ -282,10 +282,11 @@ input[id="site-search"]:focus-within {
 
 .message {
 	background: rgb(253, 235, 75);
-	padding: 0.2em;
 	border: #fff solid 3px;
 	color: green;
-	margin-bottom: 1em;
+	padding: 5px 5px;
+	margin: 5px 0px 0px 8px;
+	max-width: 100%;
 }
 
 .main-content-2 h1 {
@@ -598,7 +599,7 @@ span {
 		max-width: 100px;
 		font-size: 1rem;
 		padding: 5px 10px;
-		margin: 0px 0 0px 20px;
+		margin: 20px 0 0px 20px;
 		float: left;
 		cursor: pointer;
 		transition: all 0.5s;
@@ -700,5 +701,10 @@ span {
 		margin: 2px 5px;
 		padding-left: 10px;
 		border: 1px solid #4ba894e7;
+	}
+	.message {
+		padding: 5px 5px;
+		margin: 5px 20px 0px 10px;
+		font-size: 1.2rem;
 	}
 }
