@@ -1,6 +1,6 @@
 let carts = document.querySelectorAll(".add-cart");
 let itemNo = document.querySelector(".cart span");
-let product;
+let product = "";
 
 // click event on add to cart button
 for (let i = 0; i < carts.length; i++) {
