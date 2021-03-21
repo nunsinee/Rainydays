@@ -1,6 +1,6 @@
 let carts = document.querySelectorAll(".add-cart");
 let itemNo = document.querySelector(".cart span");
-// let product = 0;
+let product;
 
 // click event on add to cart button
 for (let i = 0; i < carts.length; i++) {
@@ -39,8 +39,8 @@ function cartNumberItems(product, action) {
 		localStorage.setItem("cartNumberItems", productNumbers + 1);
 		itemNo.textContent = productNumbers + 1;
 	} else {
-		localStorage.setItem("cartNumberItems", 0);
-		itemNo.textContent = 0;
+		localStorage.setItem("cartNumberItems", 1);
+		itemNo.textContent = 1;
 	}
 	setItems(product);
 }
