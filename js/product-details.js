@@ -27,6 +27,7 @@ async function productArray(urlApi) {
 		const details = await response.json();
 		window.localStorage.setItem("productArray", JSON.stringify(details));
 		displayDetail(details);
+		changePageTitle(details);
 	} catch (error) {
 		console.log(error);
 	}
