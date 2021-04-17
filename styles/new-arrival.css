@@ -195,7 +195,8 @@ input[id="site-search"]:focus-within {
 	z-index: 2;
 }
 
-.main-content {
+.women-jackets,
+.men-jackets {
 	max-width: 100%;
 	display: grid;
 	margin: 0 auto;
@@ -210,18 +211,8 @@ input[id="site-search"]:focus-within {
 .main-content p {
 	font-size: 1rem;
 	font-weight: bold;
-	text-align: right;
+	text-align: left;
 	max-width: 100%;
-}
-
-.main-content-1,
-.main-content-2,
-.main-content-3,
-.main-content-4 {
-	display: flex;
-	width: 100%;
-	flex: 1;
-	flex-direction: column;
 }
 
 .main-content img {
@@ -233,7 +224,7 @@ input[id="site-search"]:focus-within {
 }
 
 /* span on cart items*/
-span {
+ul span {
 	position: relative;
 	bottom: 18px;
 	float: right;
@@ -248,11 +239,10 @@ span {
 	color: #fff;
 	font-size: 1rem;
 	line-height: 1.2rem;
-	padding: 2px 3px;
+	padding: 5px 8px;
+	margin: 2px 0;
 	border-radius: 5px;
-	text-align: left;
 	position: relative;
-	left: 110px;
 }
 
 .main-content a:hover {
@@ -486,7 +476,14 @@ span {
 	.new-subtitle h2 {
 		font-size: 1rem;
 	}
+
 	.main-content p {
+		font-size: 1rem;
+		max-width: 100%;
+		text-align: left;
+	}
+
+	.main-content h2 {
 		font-size: 0.8rem;
 		max-width: 100%;
 		text-align: left;
@@ -498,7 +495,7 @@ span {
 
 	.main-content a {
 		left: 10px;
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	.main-content img {
@@ -512,6 +509,20 @@ span {
 	.footer {
 		font-size: 0.8rem;
 	}
+
+	.women-jackets,
+	.men-jackets {
+		max-width: 100%;
+		display: grid;
+		margin: 0 auto;
+		grid-gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		background-color: #e5e9ea;
+		padding: 50px 20px 50px 30px;
+		border-top: 2px solid #e1ad01;
+		position: relative;
+		padding-bottom: 20px;
+	}
 }
 
 /* Media Queries for  Mobile screen device size 414px, Iphone 6/7/8 plus*/
@@ -519,15 +530,25 @@ span {
 @media (max-width: 414px) {
 	.new-subtitle,
 	.new-subtitle-2 {
+		font-size: 0.9rem;
 		margin: 30px 0 0 0;
+	}
+
+	.main-content img {
+		width: 100%;
+		justify-content: space-between;
 	}
 }
 
 /* Media Queries for  Mobile screen device size 375px Iphone 6/7/8 11OS*/
 
 @media (max-width: 375px) {
+	.container {
+		width: 100%;
+	}
+
 	.main-content {
-		padding: 30px 30px;
+		padding: 0px;
 	}
 
 	.new-title {
@@ -556,5 +577,21 @@ span {
 
 	.right-menu {
 		margin-right: 0px;
+	}
+}
+
+@media (max-width: 375px) {
+	.main-content a {
+		left: 10px;
+		font-size: 0.8rem;
+		width: 100%;
+	}
+
+	.main-content h3 {
+		font-size: 0.9rem;
+	}
+	.main-content img {
+		max-width: 100%;
+		margin-bottom: 0px;
 	}
 }

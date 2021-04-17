@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="styles/product-layout.css" />
 		<link rel="stylesheet" href="styles/product-page-form.css" />
 		<link rel="stylesheet" href="styles/product-page.css" />
+		<link rel="stylesheet" href="styles/loader-style.css" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
@@ -74,6 +75,7 @@
 							><i class="fas fa-heart fa-color-nav"></i
 						></a>
 					</li>
+
 					<li class="cart">
 						<a href="cart.html"
 							><span>0</span><i class="fas fa-shopping-cart fa-color-nav"></i
@@ -86,228 +88,60 @@
 		<!--Main-Container-->
 
 		<div class="container">
-			<h1 class="new-title">Jennie Women Parka Rain jacket</h1>
-			<h2 class="new-subtitle">1,200 NOK</h2>
+			<h1 class="new-title">
+				<a href="newarrival.html"
+					><i class="fas fa-arrow-circle-right"></i>Back to Our Collections
+				</a>
+			</h1>
+			<h2 class="new-subtitle"></h2>
+			<h5 class="new-subtitle-3" id="title"></h5>
 			<div class="main-content-1">
-				<section class="pro-photo">
-					<div class="photo-section">
-						<div class="photo-section-01">
-							<img
-								src="images/new-products/jennieparka.jpg"
-								alt="jennier parke jacket"
-							/>
-						</div>
-						<div class="photo-section-02">
-							<img
-								src="images/new-products/jennieparka.jpg"
-								alt="jennier parke jacket"
-							/>
-						</div>
-						<div class="photo-section-03">
-							<img
-								src="images/new-products/jennieparka.jpg"
-								alt="jennier parke jacket"
-							/>
-						</div>
-						<div class="photo-section-04">
-							<img
-								src="images/new-products/jennieparka.jpg"
-								alt="jennier parke jacket"
-							/>
-						</div>
-					</div>
-				</section>
-				<section class="pro-spec1">
-					<div class="pro-color">
-						<h4>Colors:</h4>
-						<label class="chk-container"
-							>YELLOW<input
-								type="checkbox"
-								id="color"
-								name="color"
-								value="yellow"
-								checked="checked" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>RED<input
-								type="checkbox"
-								id="color"
-								name="color"
-								value="red" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>GREEN<input
-								type="checkbox"
-								id="color"
-								name="color"
-								value="green" /><span class="checkmark"></span
-						></label>
-					</div>
-					<div class="pro-size">
-						<h4>Size:</h4>
-						<label class="chk-container"
-							>S<input type="checkbox" id="size" name="size" value="s" /><span
-								class="checkmark"
-							></span
-						></label>
-						<label class="chk-container"
-							>M<input type="checkbox" id="size" name="size" value="m" /><span
-								class="checkmark"
-							></span
-						></label>
-						<label class="chk-container"
-							>L<input type="checkbox" id="size" name="size" value="l" /><span
-								class="checkmark"
-							></span
-						></label>
-						<label class="chk-container"
-							>XL<input type="checkbox" id="size" name="size" value="xl" /><span
-								class="checkmark"
-							></span
-						></label>
-						<label class="chk-container"
-							>XXL<input
-								type="checkbox"
-								id="size"
-								name="size"
-								value="xxl" /><span class="checkmark"></span
-						></label>
-					</div>
-					<div class="pro-quant">
-						<h4>Quantity:</h4>
-						<label class="chk-container"
-							>1<input
-								type="checkbox"
-								id="number"
-								name="number"
-								value="1" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>2<input
-								type="checkbox"
-								id="number"
-								name="number"
-								value="2" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>3<input
-								type="checkbox"
-								id="number"
-								name="number"
-								value="3" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>4<input
-								type="checkbox"
-								id="number"
-								name="number"
-								value="4" /><span class="checkmark"></span
-						></label>
-						<label class="chk-container"
-							>5<input
-								type="checkbox"
-								id="number"
-								name="number"
-								value="5" /><span class="checkmark"></span
-						></label>
-					</div>
-				</section>
-				<section class="pro-spec2">
-					<div class="pro-specsi">
-						<h4>Specifications:</h4>
-						<ul>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-						</ul>
-					</div>
-					<div class="pro-func">
-						<h4>Functionals:</h4>
-						<ul>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-							<li><i class="far fa-check-circle"></i>Hood able to remove</li>
-						</ul>
-					</div>
-					<div class="pro-fav">
-						<h4><i class="fas fa-heart"></i>Your Favourite</h4>
-					</div>
-					<div class="pro-cart">
-						<button class="add-cart cart1" id="addcart-procart">
-							Add to Cart
-						</button>
-						<input type="hidden" value="1200" />
-					</div>
-				</section>
-				<section class="pro-typec">
-					<div class="pro-typec-list">
-						<img
-							src="images/new-products/yellow-women-200x150.jpg"
-							alt="yellow jacket jennie parka women"
-						/>
-						<div class="pro-typec-caption">YELLOW</div>
-					</div>
-					<div class="pro-typec-list">
-						<img
-							src="images/new-products/red-wome-200x150.jpg"
-							alt="red jacket parka women"
-						/>
-						<div class="pro-typec-caption">RED</div>
-					</div>
-					<div class="pro-typec-list">
-						<img
-							src="images/new-products/green-women-200x150.jpg"
-							alt="green jacket rosy parka women"
-						/>
-						<div class="pro-typec-caption">GREEN</div>
-					</div>
-				</section>
-
-				<section class="pro-info">
-					<h4>Product Information</h4>
-					<p>
-						Lorem is soluet. Nesciunt, omnis deserunt maxime perspiciatis
-						tenetur dolore repudiandae iure aliquam quae rem, iste blanditiis
-						fugiat nulla voluptate esse qui animi? Ea aliquam magnam aut
-						quisquam libero debitis, dolorum, aliquid incidunt quis inventore a
-						mollitia alias, animi laboriosam non quos ut expedita error.
-						Architecto at faci
-					</p>
-				</section>
-			</div>
-			<h2 class="new-subtitle">Best Seller</h2>
-			<div class="main-content-2">
-				<div class="best-sell">
-					<div class="best-list">
-						<img
-							src="images/new-products/annaparka.jpg"
-							alt="yellow jacket jennie parka women"
-						/>
-						<button class="add-cart cart2">Add to Cart</button>
-					</div>
-					<div class="best-list">
-						<img
-							src="images/new-products/jennieparka.jpg"
-							alt="red jacket parka women"
-						/><button class="add-cart cart3">Add to Cart</button>
-						<input type="hidden" value="1200" />
-					</div>
-					<div class="best-list">
-						<img
-							src="images/new-products/emmaparka.jpg"
-							alt="green jacket rosy parka women"
-						/><button class="add-cart cart4">Add to Cart</button>
-						<input type="hidden" value="1200" />
-					</div>
-					<div class="best-list">
-						<img
-							src="images/new-products/rosyparka.jpg"
-							alt="green jacket rosy parka women"
-						/><button class="add-cart cart5">Add to Cart</button>
-						<input type="hidden" value="1200" />
-					</div>
+				<div class="cart-container">
+					<div class="cart-list"></div>
+					<div class="total">Total:</div>
+					<a href="cart.html" class="checkout-btn">Checkout</a>
 				</div>
+				<!-- put on photo here -->
+				<section class="pro-photo">
+					<div class="gallery"><div class="loader"></div></div>
+				</section>
+				<!-- COLOR -->
+				<section class="pro-spec1">
+					<h4>Price:</h4>
+					<div class="product-price"></div>
+
+					<h4>Color:</h4>
+					<div class="pro-color">
+						<select id="product-color"></select>
+					</div>
+					<!-- SIZE -->
+					<h4>Size:</h4>
+					<div class="pro-size">
+						<select id="product-size"></select>
+					</div>
+
+					<h4>Quantity:</h4>
+					<div class="pro-quant">
+						<select id="product-quant"></select>
+					</div>
+
+					<!-- Add to cart Button -->
+
+					<button><a class="add-cart" href="#">Add to Cart</a></button>
+				</section>
+				<!-- Specification and functionals -->
+				<section class="pro-spec2"></section>
+				<div class="cart-container">
+					<div class="cart-list"></div>
+					<div class="total">Total:</div>
+					<a href="cart.html" class="checkout-btn">Checkout</a>
+				</div>
+			</div>
+
+			<h2 class="new-subtitle">Best Seller</h2>
+			<!-- best seller -->
+			<div class="main-content-2">
+				<div class="loader"></div>
 			</div>
 		</div>
 
@@ -396,7 +230,7 @@
 			</footer>
 		</div>
 		<script src="js/hambergermenu.js"></script>
-		<script src="js/product/productpage.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/product-detail.js"></script>
+		<script src="js/scripts-bestproduct.js"></script>
 	</body>
 </html>

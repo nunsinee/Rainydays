@@ -196,73 +196,6 @@ input[id="site-search"]:focus-within {
 	padding: 0px 20px;
 }
 
-.product-header {
-	max-width: 100%;
-	display: flex;
-	justify-content: flex-start;
-	border-bottom: 4px solid #025951;
-	margin: 0 auto;
-	padding: 10px 0;
-}
-
-.product-title {
-	width: 55%;
-}
-
-.price {
-	width: 10%;
-	display: flex;
-	align-items: center;
-	border-bottom: 1px solid #025951;
-}
-
-.quantity {
-	width: 15%;
-	display: flex;
-	align-items: center;
-	border-bottom: 1px solid #025951;
-	justify-content: space-around;
-}
-
-.total {
-	width: 20%;
-	display: flex;
-	align-items: center;
-	padding-left: 50px;
-	border-bottom: 1px solid #025951;
-}
-
-.product {
-	width: 55%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 10px 0;
-	border-bottom: 1px solid #025951;
-}
-
-.cartTotalContainer {
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	padding: 10px 0;
-}
-
-.cartTotal {
-	width: 20%;
-	font-size: 1.5rem;
-	text-align: right;
-	padding: 5px;
-	font-weight: bold;
-	border-radius: 4px;
-	background-color: #e5f3df;
-}
-.cartTotalTitle {
-	width: 10%;
-	text-align: left;
-	margin-right: 10px;
-}
-
 .fa-times-circle,
 .fa-plus-circle,
 .fa-minus-circle {
@@ -292,7 +225,7 @@ input[id="site-search"]:focus-within {
 }
 
 /* span on cart items*/
-span {
+ul span {
 	position: relative;
 	bottom: 18px;
 	float: right;
@@ -300,7 +233,7 @@ span {
 }
 
 /* my cart item style */
-.container-products {
+.cart-list {
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 5px;
@@ -402,7 +335,6 @@ span {
 	border: 1px solid #fff;
 	background-color: rgb(97, 212, 145);
 	color: darkgoldenrod;
-	float: right;
 	cursor: pointer;
 	border-radius: 4px;
 	transition: all 0.5s;
@@ -537,6 +469,27 @@ span.text-right {
 	border: 1px solid #707070;
 }
 
+/* CART */
+.cart-page {
+	margin: 0 auto;
+	background: #efefef;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.cart-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cart-image {
+	width: 150px;
+	height: 200px;
+	border-radius: 4px;
+	background-size: cover;
+}
+
 /* Media Queries for  ## Screen = max-width 845px */
 
 @media (max-width: 845px) {
@@ -582,8 +535,9 @@ span.text-right {
 	.btn-search {
 		font-size: 0.8rem;
 	}
+}
 
-	@media (max-width: 845px) {
+@media (max-width: 845px) {
 	.main-nav {
 		width: 100%;
 		font-size: 0.8rem;
