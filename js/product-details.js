@@ -1,12 +1,11 @@
 const priceContainer = document.querySelector(".new-subtitle");
 const nameContainer = document.querySelector("#title");
 const productPhoto = document.querySelector(".pro-photo");
-const productInfo = document.querySelector(".pro-spec2");
+const productInfo = document.querySelector(".spec-info");
 const colorSelect = document.querySelector("#product-color");
 const sizeSelect = document.querySelector("#product-size");
 const quantSelect = document.querySelector("#product-quant");
 const priceReg = document.querySelector(".product-price");
-// const addCartButton = document.querySelector(".add-cart-btn");
 
 //Get the id from the query string
 const queryString = document.location.search;
@@ -19,23 +18,20 @@ if (id === null) {
 	location.href = "/";
 }
 
-const urlID =
+const urlApi =
 	"https://rainydays.thaifolkinnorway.com/wp-json/wc/store/products/" + id;
 
-async function fetchProduct(urlID) {
+async function productArray(urlApi) {
 	try {
-		const response = await fetch(urlID);
+		const response = await fetch(urlApi);
 		const details = await response.json();
-		console.log(details);
-		window.localStorage.setItem("fetchProduct", JSON.stringify(details));
-
-		changePageTitle(details);
+		window.localStorage.setItem("productArray", JSON.stringify(details));
 		displayDetail(details);
 	} catch (error) {
 		console.log(error);
 	}
 }
-fetchProduct(urlID);
+productArray(urlApi);
 
 //Display Details
 
@@ -80,29 +76,29 @@ const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
 let cartArray = [];
 
-const product = JSON.parse(localStorage.getItem("fetchProduct")) || [];
-console.log(product);
-
-// fetchProduct().then(() => {
 // click event on add to cart button
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener("click", (e) => {
 		e.preventDefault(e);
-		cartNumberItems();
-		const product = JSON.parse(localStorage.getItem("fetchProduct")) || [];
-		const itemToAdd = product;
+
+		const products = JSON.parse(localStorage.getItem("productArray")) || [];
+
+		const itemToAdd = products;
 
 		cartArray.push(itemToAdd);
 		showCart(cartArray);
+		cartNumberItems(products);
 		localStorage.setItem("cartList", JSON.stringify(cartArray));
 	});
 }
 
-function showCart(product) {
+function showCart(products) {
 	cart.style.display = "flex";
 	cartList.innerHTML = "";
+	let total = 0;
 
-	product.forEach(function (product) {
+	products.forEach(function (product) {
+		total += product.prices.price;
 		cartList.innerHTML = `<div class="cart-item">
 		<h4> ${product.name}</h4>  
 		<div style ="background-image:url(${product.images[0].src})" class="cart-image"> </div>	
@@ -123,12 +119,11 @@ function onloadCartNumbers() {
 
 //show how many items on cart icon use localStorage
 
-function cartNumberItems() {
+function cartNumberItems(products) {
 	let productNumbers = localStorage.getItem("cartNumberItems");
 
 	// change from string to number
 	productNumbers = parseInt(productNumbers);
-
 	if (productNumbers) {
 		localStorage.setItem("cartNumberItems", productNumbers + 1);
 		itemNo.textContent = productNumbers + 1;
@@ -139,4 +134,3 @@ function cartNumberItems() {
 }
 
 onloadCartNumbers();
-// });

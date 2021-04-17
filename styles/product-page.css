@@ -507,6 +507,15 @@ ul span {
 	background-color: #fff;
 }
 
+.spec-fav {
+	padding: 40px 0px;
+}
+
+.spec-fav .fas {
+	color: #e1ad01;
+	font-size: 1.5rem;
+}
+
 /* Media Queries for  ## Screen = max-width 1024px */
 
 @media (max-width: 1024px) {

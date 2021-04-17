@@ -4,10 +4,11 @@ const totalContainer = document.querySelector(".total");
 
 let total = 0;
 cartItems.forEach(function (product) {
-	total += product.price;
+	total = product.prices.price;
 	cartContainer.innerHTML += `<div class="cart-item">
-        <h4>${product.name}</h4>
+        <h4><b>Product Name:</b>${product.name}</h4>
+				<h4><b>Price: Kr. </b>${product.prices.price}</h4>
         <div style="background-image: url(${product.images[0].src})" class="cart-image"></div>
-				<h3>Total: ${product.price_html}</h3>
 				</div>`;
 });
+totalContainer.innerHTML = `Total:${total}`;

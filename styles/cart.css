@@ -237,18 +237,7 @@ ul span {
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 5px;
-	padding: 20px 0px 0px 0px;
-	margin: 20px 0px 0px 0px;
 	justify-content: space-between;
-}
-
-.products,
-.product-header {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	color: #000;
 }
 
 .products {
@@ -471,10 +460,10 @@ span.text-right {
 
 /* CART */
 .cart-page {
-	margin: 0 auto;
 	background: #efefef;
 	border-radius: 4px;
 	padding: 20px;
+	margin: 0 auto;
 }
 
 .cart-item {
@@ -488,6 +477,7 @@ span.text-right {
 	height: 200px;
 	border-radius: 4px;
 	background-size: cover;
+	margin: 10px 0 10px 0;
 }
 
 /* Media Queries for  ## Screen = max-width 845px */
@@ -613,55 +603,6 @@ span.text-right {
 		margin: 0;
 	}
 
-	.product-header {
-		max-width: 100%;
-		font-size: 0.8em;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.product-title {
-		max-width: 45%;
-	}
-
-	.price {
-		max-width: 10%;
-	}
-
-	.quantity {
-		max-width: 20%;
-		padding-right: 10px;
-	}
-
-	.total {
-		max-width: 20%;
-		padding-left: 10px;
-		font-size: 0.9rem;
-	}
-
-	.product {
-		max-width: 55%;
-	}
-
-	.cartTotalContainer {
-		width: 100%;
-	}
-
-	.cartTotal {
-		width: 20%;
-		font-size: 0.9rem;
-		text-align: right;
-		font-weight: bold;
-	}
-	.cartTotalTitle {
-		width: 30%;
-		text-align: right;
-		margin-right: 10px;
-	}
-
-	.product h2 {
-		font-size: 0.9rem;
-	}
 	.fa-times-circle,
 	.fa-plus-circle,
 	.fa-minus-circle {
@@ -674,13 +615,25 @@ span.text-right {
 		padding: 0px;
 	}
 
+	.main-content img {
+		max-width: 350px;
+		margin-bottom: 10px;
+		border-radius: 4px;
+		box-shadow: var(--shadow);
+		padding-left: 20px;
+	}
+
 	.order,
 	.order-info {
 		width: 100%;
 	}
 
-	.main-content-1 img {
-		max-width: 20%;
+	.main-content h1 {
+		font-weight: bold;
+		color: #000;
+		font-size: 1.5rem;
+		padding-left: 20px;
+		padding: 20px 0 0 20px;
 	}
 
 	.main-content-2 h2,
@@ -704,11 +657,10 @@ span.text-right {
 
 	.main-content img {
 		max-width: 250px;
-		margin: 10px 0 0 10px;
 	}
 
 	.main-content h1 {
-		padding: 20px 0 0 10px;
+		padding: 20px 0 0 20px;
 	}
 
 	.menu-btn {
@@ -775,52 +727,6 @@ span.text-right {
 		margin: 0;
 	}
 
-	.product-header {
-		max-width: 100%;
-		font-size: 0.8em;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.product-title {
-		max-width: 45%;
-	}
-
-	.price {
-		max-width: 10%;
-	}
-
-	.quantity {
-		max-width: 20%;
-		padding-right: 10px;
-	}
-
-	.total {
-		max-width: 20%;
-		padding-left: 10px;
-		font-size: 0.8rem;
-	}
-
-	.product {
-		max-width: 55%;
-	}
-
-	.cartTotalContainer {
-		width: 100%;
-	}
-
-	.cartTotal {
-		width: 30%;
-		font-size: 0.6rem;
-		text-align: right;
-		font-weight: bold;
-	}
-	.cartTotalTitle {
-		width: 20%;
-		text-align: right;
-		margin-right: 10px;
-	}
-
 	.product h2 {
 		font-size: 0.8rem;
 	}
@@ -872,5 +778,31 @@ span.text-right {
 
 	.card-ico {
 		max-height: 27px;
+	}
+}
+
+/* Media Queries for  ## Screen = max-width 500px*/
+@media (max-width: 375px) {
+	.main-content-1 {
+		max-width: 100%;
+		padding: 10px 0px;
+	}
+
+	.main-nav .logo {
+		width: 180px;
+	}
+}
+
+@media (max-width: 320px) {
+	.main-content-1 {
+		max-width: 100%;
+		padding: 10px 0px;
+	}
+
+	.main-nav .logo {
+		width: 130px;
+	}
+	.main-nav ul li {
+		padding: 30px 10px 0 10px;
 	}
 }

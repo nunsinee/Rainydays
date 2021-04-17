@@ -7,7 +7,7 @@ async function getProducts() {
 	try {
 		const response = await fetch(url);
 		const getResults = await response.json();
-		//console.log(getResults);
+
 		womenJackets.innerHTML = "";
 		createHTML(getResults);
 		createBestList(getResults);
