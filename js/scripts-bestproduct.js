@@ -9,7 +9,7 @@ async function getProducts() {
 		bestList.innerHTML = "";
 		createBestList(getResults);
 	} catch (error) {
-		console.log(error);
+		console.log("An error occurred");
 	}
 }
 getProducts();

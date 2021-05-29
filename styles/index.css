@@ -433,6 +433,13 @@ span {
 	max-width: 90%;
 }
 
+.error {
+	border: 1px solid rgb(37, 240, 213);
+	padding: 1rem;
+	color: rgb(236, 37, 37);
+	background: rgba(255, 0, 0, 0.1);
+}
+
 @media (max-width: 1024px) {
 	.banner-info {
 		max-width: 80%;

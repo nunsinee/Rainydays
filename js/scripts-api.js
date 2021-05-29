@@ -12,7 +12,7 @@ async function getProducts() {
 		menJackets.innerHTML = "";
 		createHTML(getResults);
 	} catch (error) {
-		console.log(error);
+		console.log("An error occurred");
 	}
 }
 getProducts();

@@ -11,7 +11,6 @@ const priceReg = document.querySelector(".product-price");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-console.log(id);
 
 // //if the id is null, redirect to the homepage
 if (id === null) {
@@ -29,7 +28,7 @@ async function productArray(urlApi) {
 		displayDetail(details);
 		changePageTitle(details);
 	} catch (error) {
-		console.log(error);
+		console.log("An error occurred");
 	}
 }
 productArray(urlApi);

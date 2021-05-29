@@ -12,7 +12,7 @@ async function getProducts() {
 		createHTML(getResults);
 		createBestList(getResults);
 	} catch (error) {
-		console.log(error);
+		console.log("An error occurred");
 	}
 }
 getProducts();

@@ -12,7 +12,7 @@ async function getProducts() {
 	try {
 		const response = await fetch(url);
 		const getResults = await response.json();
-		console.log(getResults);
+
 		imageSlide.innerHTML = "";
 		createSlideHtml(getResults);
 
@@ -40,16 +40,16 @@ async function getProducts() {
 			track.style.transform = `translateX(-${index * carouselWidth}px)`;
 		});
 	} catch (error) {
-		console.log(error);
+		console.log("An error occurred");
+		imageSlide.innerHTML = displayError(
+			"An error occurred when calling the API"
+		);
 	}
 }
 getProducts();
 
 function createSlideHtml(slide) {
 	for (let i = 0; i < slide.length; i++) {
-		// if (i === 4) {
-		// 	break;
-		// }
 		imageSlide.innerHTML += `<div.card-container>
 		<div class="card">
 		<div class="slideImg">
@@ -64,5 +64,3 @@ function createSlideHtml(slide) {
 		</div>`;
 	}
 }
-
-//let index = 0;
