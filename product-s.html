@@ -35,12 +35,11 @@
 </head>
 
 <body>
-    <header>
-        <!--Hamburger Menu-->
-        <div class="menu-btn">
-            <i class="fa fa-bars fa-2x"></i>
-        </div>
-
+    <!--Hamburger Menu-->
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
         <!--Nav-->
         <nav class="main-nav">
             <a href="index.html"><img src="images/rainydays_logo.png" alt="Rainydays" class="logo" /></a>
@@ -55,89 +54,89 @@
             <form action="#" method="get" target="blank" class="search-menu">
                 <input type="search" id="site-search" name="search" placeholder="Search by color, Product name.." />
                 <button type="submit" name="submit" class="btn-search">
-					<a href="search_result.html">Search</a>
-				</button>
+						<a href="search_result.html">Search</a>
+					</button>
             </form>
             <!--RightMenu-->
             <ul class="right-menu">
                 <li>
                     <a href="favourit.html"><i class="fas fa-heart fa-color-nav"></i
-					></a>
+						></a>
                 </li>
 
                 <li class="cart">
                     <a href="cart.html"><span>0</span><i class="fas fa-shopping-cart fa-color-nav"></i
-					></a>
+						></a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <!--Main-Container-->
 
-
-    <h1 class="new-title">
-        <a href="newarrival.html"><i class="fas fa-arrow-circle-right"></i>Back to Our Collections
+    <div class="container">
+        <h1 class="new-title">
+            <a href="newarrival.html"><i class="fas fa-arrow-circle-right"></i>Back to Our Collections
 				</a>
-    </h1>
-    <h2 class="new-subtitle"></h2>
-    <h5 class="new-subtitle-3" id="title"></h5>
-    <div class="main-content-1">
-        <div class="cart-container">
-            <div class="cart-list"></div>
-            <div class="total">Total:</div>
-            <a href="cart.html" class="checkout-btn">Checkout</a>
+        </h1>
+        <h2 class="new-subtitle"></h2>
+        <h5 class="new-subtitle-3" id="title"></h5>
+        <div class="main-content-1">
+            <div class="cart-container">
+                <div class="cart-list"></div>
+                <div class="total">Total:</div>
+                <a href="cart.html" class="checkout-btn">Checkout</a>
+            </div>
+            <!-- put on photo here -->
+            <section class="pro-photo">
+                <div class="gallery">
+                    <div class="loader"></div>
+                </div>
+            </section>
+            <!-- COLOR -->
+            <section class="pro-spec1">
+                <h4>Price:</h4>
+                <div class="product-price"></div>
+
+                <h4>Color:</h4>
+                <div class="pro-color">
+                    <select id="product-color"></select>
+                </div>
+                <!-- SIZE -->
+                <h4>Size:</h4>
+                <div class="pro-size">
+                    <select id="product-size"></select>
+                </div>
+
+                <h4>Quantity:</h4>
+                <div class="pro-quant">
+                    <select id="product-quant"></select>
+                </div>
+
+                <!-- Add to cart Button -->
+
+                <button><a class="add-cart" href="#">Add to Cart</a></button>
+            </section>
+            <!-- Specification and functionals -->
+            <section class="pro-spec2">
+                <div class="spec-info"></div>
+                <div class="spec-fav">
+                    <span><i class="fas fa-heart fa-2x"></i>Add to your favourite</span>
+                </div>
+            </section>
+            <div class="cart-container">
+                <div class="cart-list"></div>
+                <div class="total">Total:</div>
+                <a href="cart.html" class="checkout-btn">Checkout</a>
+            </div>
         </div>
-        <!-- put on photo here -->
-        <section class="pro-photo">
-            <div class="gallery">
-                <div class="loader"></div>
-            </div>
-        </section>
-        <!-- COLOR -->
-        <section class="pro-spec1">
-            <h4>Price:</h4>
-            <div class="product-price"></div>
 
-            <h4>Color:</h4>
-            <div class="pro-color">
-                <select id="product-color"></select>
-            </div>
-            <!-- SIZE -->
-            <h4>Size:</h4>
-            <div class="pro-size">
-                <select id="product-size"></select>
-            </div>
-
-            <h4>Quantity:</h4>
-            <div class="pro-quant">
-                <select id="product-quant"></select>
-            </div>
-
-            <!-- Add to cart Button -->
-
-            <button><a class="add-cart" href="#">Add to Cart</a></button>
-        </section>
-        <!-- Specification and functionals -->
-        <section class="pro-spec2">
-            <div class="spec-info"></div>
-            <div class="spec-fav">
-                <span><i class="fas fa-heart fa-2x"></i>Add to your favourite</span>
-            </div>
-        </section>
-        <div class="cart-container">
-            <div class="cart-list"></div>
-            <div class="total">Total:</div>
-            <a href="cart.html" class="checkout-btn">Checkout</a>
+        <h2 class="new-subtitle">Best Seller</h2>
+        <!-- best seller -->
+        <div class="main-content-2">
+            <div class="loader"></div>
         </div>
     </div>
-
-    <h2 class="new-subtitle">Best Seller</h2>
-    <!-- best seller -->
-    <div class="main-content-2">
-        <div class="loader"></div>
-    </div>
-
 
     <!--BarMenu-->
     <div class="container">
