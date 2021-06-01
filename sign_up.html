@@ -1,130 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Sign Up- Rain jackets online shop</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Rainydays online shop homepage" />
-		<meta name="keywords" content="rain jacket, rainydays brand," />
-		<meta name="auther" content="Rainnydays" />
-		<link rel="stylesheet" href="styles/signup.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
-			integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
-			crossorigin="anonymous"
-		/>
-		<!-- Hotjar Tracking Code for https://infallible-wescoff-9c9edc.netlify.app/ -->
-		<script>
-			(function (h, o, t, j, a, r) {
-				h.hj =
-					h.hj ||
-					function () {
-						(h.hj.q = h.hj.q || []).push(arguments);
-					};
-				h._hjSettings = { hjid: 2264483, hjsv: 6 };
-				a = o.getElementsByTagName("head")[0];
-				r = o.createElement("script");
-				r.async = 1;
-				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-				a.appendChild(r);
-			})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-		</script>
-	</head>
 
-	<body>
-		<!--Hamburger Menu-->
-		<div class="menu-btn">
-			<i class="fa fa-bars fa-2x"></i>
-		</div>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up- Rain jackets online shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rainydays online shop homepage" />
+    <meta name="keywords" content="rain jacket, rainydays brand," />
+    <meta name="auther" content="Rainnydays" />
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous" />
+</head>
 
-		<div class="container">
-			<!--Nav-->
-			<nav class="main-nav">
-				<a href="index.html"
-					><img src="images/rainydays_logo.png" alt="Rainydays" class="logo"
-				/></a>
-				<ul class="main-menu">
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="women.html">Women</a></li>
-					<li><a href="men.html">Men</a></li>
-					<li><a href="newarrival.html">Collections</a></li>
-				</ul>
-				<!--Search Menu-->
-				<form action="#" method="get" target="blank" class="search-menu">
-					<input
-						type="search"
-						id="site-search"
-						name="q"
-						aria-label="Search by color, Product name.."
-						placeholder="Search by color, Product name.."
-					/>
-					<button class="btn-search">
+<body>
+    <!--Hamburger Menu-->
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <!--Nav-->
+        <nav class="main-nav">
+            <a href="index.html"><img src="images/rainydays_logo.png" alt="Rainydays" class="logo" /></a>
+            <ul class="main-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="newarrival.html">Collections</a></li>
+            </ul>
+            <!--Search Menu-->
+            <form action="#" method="get" target="blank" class="search-menu">
+                <input type="search" id="site-search" name="q" aria-label="Search by color, Product name.." placeholder="Search by color, Product name.." />
+                <button class="btn-search">
 						<a href="search_result.html">Search</a>
 					</button>
-				</form>
-				<!--RightMenu-->
-				<ul class="right-menu">
-					<li>
-						<a href="favourit.html"
-							><i class="fas fa-heart fa-color-nav"></i
+            </form>
+            <!--RightMenu-->
+            <ul class="right-menu">
+                <li>
+                    <a href="favourit.html"><i class="fas fa-heart fa-color-nav"></i
 						></a>
-					</li>
-					<li class="cart">
-						<a href="cart.html"
-							><span>0</span> <i class="fas fa-shopping-cart fa-color-nav"></i
+                </li>
+                <li class="cart">
+                    <a href="cart.html"><span>0</span> <i class="fas fa-shopping-cart fa-color-nav"></i
 						></a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-		<!--Main-Content-->
-		<div class="container">
-			<section class="main-content">
-				<div class="main-content-1">
-					<!--Sign In form-->
-					<h1>Sign Up</h1>
-					<form action="action_page.php" method="post">
-						<div class="form-container">
-							<p>Please fill in this form to create your account</p>
-							<hr />
+    <!--Main-Content-->
+    <div class="container">
+        <section class="main-content">
+            <div class="main-content-1">
+                <!--Sign In form-->
+                <h1>Sign Up</h1>
+                <form action="action_page.php" method="post">
+                    <div class="form-container">
+                        <p>Please fill in this form to create your account</p>
+                        <hr />
 
-							<label for="fname"><b>Name</b></label>
-							<input
-								type="text"
-								placeholder="Enter Name"
-								id="fname"
-								name="fname"
-								required
-							/>
-							<label for="email"><b>E-mail*</b></label>
-							<input
-								type="email"
-								placeholder="Enter your e-mail"
-								id="email"
-								name="email"
-								required
-							/>
-							<label for="psw"><b>Password*</b></label>
-							<input
-								type="password"
-								placeholder="Enter password"
-								id="psw"
-								name="psw"
-								required
-							/>
-							<label for="re-psw"><b>Repeat Password</b></label>
-							<input
-								type="password"
-								placeholder="Repeat password"
-								id="re-psw"
-								name="re-psw"
-								required
-							/>
-							<label
-								><input type="checkbox" name="remember" check="checked" /><b
+                        <label for="fname"><b>Name</b></label>
+                        <input type="text" placeholder="Enter Name" id="fname" name="fname" required />
+                        <label for="email"><b>E-mail*</b></label>
+                        <input type="email" placeholder="Enter your e-mail" id="email" name="email" required />
+                        <label for="psw"><b>Password*</b></label>
+                        <input type="password" placeholder="Enter password" id="psw" name="psw" required />
+                        <label for="re-psw"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat password" id="re-psw" name="re-psw" required />
+                        <label><input type="checkbox" name="remember" check="checked" /><b
 									>Remember me</b
 								></label
 							>
