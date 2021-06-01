@@ -401,25 +401,31 @@ button a:hover {
 
 /*............Bar Menu....................*/
 
+
+/*............Bar Menu....................*/
+
 .barmenu {
-    background-color: #0a3641;
+    background-color: #000;
     color: #fff;
     font-size: 1.2rem;
-    padding: 35px 0;
+    font-weight: 500;
+    padding: 20px 0;
 }
 
 .barmenu-inner {
-    max-width: 1100px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    padding-left: 35px;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .barmenu li {
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 .barmenu a {
