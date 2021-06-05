@@ -8,18 +8,17 @@
     <meta name="description" content=" A rain jacket with Gore-Tex technology® + camping rain jacket+ kayak jacket Rainydays online shop homepage" />
     <meta name="keywords" content="rain jacket, rainydays brand," />
     <meta name="auther" content="Rainnydays" />
+    <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!--Hamburger Menu-->
-    <div class="menu-btn">
-        <i class="fa fa-bars fa-2x"></i>
-    </div>
-
-    <div class="container">
-        <!--Nav-->
+    <header>
+        <!--Hamburger Menu-->
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
         <nav class="main-nav">
             <a href="index.html"><img src="images/rainydays_logo.png" alt="Rainydays" class="logo"></a>
             <ul class="main-menu">
@@ -27,25 +26,27 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="women.html">Women</a></li>
                 <li><a href="men.html">Men</a></li>
-                <li class="current"><a href="newarrival.html">Collections</a></li>
+                <li><a href="newarrival.html">Collections</a></li>
             </ul>
-            <!--Search Menu-->
-            <form action="#" method="get" target="blank" class="search-menu">
-                <input type="search" id="site-search" name="q" aria-label="Search by color, Product name.." placeholder="Search by color, Product name.." />
-                <button class="btn-search"><a href="search_result.html">Search</a></button>
-            </form>
 
             <!--RightMenu-->
             <ul class="right-menu">
-                <li><a href="favourit.html"><i class="fas fa-heart  fa-color-nav"></i></a></li>
-                <li class="cart"><a href="cart.html"><span>0</span><i class="fas fa-shopping-cart  fa-color-nav"></i></a></li>
+                <li>
+                    <a class="current" href="search_result.html"><i class="fas fa-search"></i></a>
+                </li>
+                <li>
+                    <a href="favourit.html"><i class="fas fa-heart fa-color-nav"></i></a>
+                </li>
+                <li class="cart">
+                    <a href="cart.html"><span>0</span><i class="fas fa-shopping-cart fa-color-nav"></i></a>
+                </li>
             </ul>
         </nav>
-    </div>
+    </header>
 
     <!--Main-Container-->
 
-    <div class="container">
+    <main>
         <section class="main-search">
             <p>Search result for "Green Jacket"</p>
             <h2><i class="fas fa-less-than"></i><i class="fas fa-less-than"></i>Found 8 items <i class="fas fa-greater-than"></i><i class="fas fa-greater-than"></i></h2>
@@ -55,41 +56,37 @@
             </form>
 
         </section>
-    </div>
+        <!--Show Product Search Result-->
+        <h2 class="new-subtitle">Search Result</h2>
+        <div class="main-content">
+            <div class="main-result-1">
+                <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+                <p>Rosy Parka 1,200NOK</p>
+                <a class="add-cart cart1" href="#">Add to Cart</a>
+                <input type="hidden" value="1200">
+            </div>
+            <div class="main-result-1">
+                <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+                <p>Rosy Parka 1,200NOK</p>
+                <a class="add-cart cart1" href="#">Add to Cart</a>
+                <input type="hidden" value="1200">
+            </div>
+            <div class="main-result-1">
+                <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+                <p>Rosy Parka 1,200NOK</p>
+                <a class="add-cart cart1" href="#">Add to Cart</a>
+                <input type="hidden" value="1200">
+            </div>
+            <div class="main-result-1">
+                <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
+                <p>Rosy Parka 1,200NOK</p>
+                <a class="add-cart cart1" href="#">Add to Cart</a>
+                <input type="hidden" value="1200">
+            </div>
 
-    <!--Show Product Search Result-->
-    <h2 class="new-subtitle">Search Result</h2>
-    <div class="main-content">
-        <div class="main-result-1">
-            <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
-            <p>Rosy Parka 1,200NOK</p>
-            <a class="add-cart cart1" href="#">Add to Cart</a>
-            <input type="hidden" value="1200">
-        </div>
-        <div class="main-result-1">
-            <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
-            <p>Rosy Parka 1,200NOK</p>
-            <a class="add-cart cart1" href="#">Add to Cart</a>
-            <input type="hidden" value="1200">
-        </div>
-        <div class="main-result-1">
-            <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
-            <p>Rosy Parka 1,200NOK</p>
-            <a class="add-cart cart1" href="#">Add to Cart</a>
-            <input type="hidden" value="1200">
-        </div>
-        <div class="main-result-1">
-            <img src="images/new-products/fav-rosy-women-341x341-green.jpg" class="product-links" alt="Rosy parka jacket in green color">
-            <p>Rosy Parka 1,200NOK</p>
-            <a class="add-cart cart1" href="#">Add to Cart</a>
-            <input type="hidden" value="1200">
         </div>
 
-    </div>
-    </div>
 
-    <!--BarMenu-->
-    <div class="container">
         <section class="barmenu">
             <div class="barmenu-inner">
                 <ul>
@@ -107,52 +104,52 @@
                 </ul>
             </div>
         </section>
-    </div>
-    <!--BarMenu-->
-    <div class="container">
-        <footer class="footer">
-            <div class="footer-inner">
-                <ul>
-                    <li>
-                        <h5>HELP & INFO</h5>
-                    </li>
-                    <li><a href="contact.html">Help</a></li>
-                    <li></li><a href="track_order.html">Track Order</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <h5>RAINYDAYS</h5>
-                    </li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
 
-                <ul>
-                    <li>
-                        <h5>PAYMENT ACCEPTED BY</h5>
-                    </li>
-                    <i class="fab fa-cc-visa fa-2x fa-color"></i>
-                    <i class="fab fa-cc-mastercard fa-2x fa-color"></i>
-                    <i class="fab fa-cc-amex fa-2x fa-color"></i>
-                    <i class="fab fa-cc-paypal fa-2x fa-color"></i>
-                </ul>
+    </main>
 
-                <ul>
-                    <li>
-                        <h5>FOLLOW US</h5>
-                    </li>
-                    <a href="https://www.facebook.com"></a> <i class="fab fa-facebook-square fa-2x fa-color"></i></a>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x fa-color"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x fa-color"></i></a>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                Rainydays Copyright &copy;2020
-        </footer>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <ul>
+                <li>
+                    <h5>HELP & INFO</h5>
+                </li>
+                <li><a href="contact.html">Help</a></li>
+                <li></li><a href="track_order.html">Track Order</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h5>RAINYDAYS</h5>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5>PAYMENT ACCEPTED BY</h5>
+                </li>
+                <i class="fab fa-cc-visa fa-2x fa-color"></i>
+                <i class="fab fa-cc-mastercard fa-2x fa-color"></i>
+                <i class="fab fa-cc-amex fa-2x fa-color"></i>
+                <i class="fab fa-cc-paypal fa-2x fa-color"></i>
+            </ul>
+
+            <ul>
+                <li>
+                    <h5>FOLLOW US</h5>
+                </li>
+                <a href="https://www.facebook.com"></a> <i class="fab fa-facebook-square fa-2x fa-color"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x fa-color"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x fa-color"></i></a>
+            </ul>
         </div>
-        <script src="js/hambergermenu.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/linktoproductpage.js"></script>
+        <div class="footer-copyright">
+            Rainydays Copyright &copy;2020
+    </footer>
+    <script src="js/hambergermenu.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/linktoproductpage.js"></script>
 </body>
 
 </html>
